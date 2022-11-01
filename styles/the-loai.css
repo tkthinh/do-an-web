@@ -1,0 +1,160 @@
+main {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.path{
+    font-size: 2rem;
+    padding: .5rem 0;
+    text-transform: uppercase;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+.shop {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.left-sidebar {
+  flex-basis: 25%;
+  padding: 2rem;
+  max-height: 60vh;
+}
+
+.category {
+  background-color: #ddd;
+  padding: 1rem;
+}
+
+.category li {
+  color: blue;
+  font-size: 1.6rem;
+  padding-left: 2rem;
+  margin-top: 0.5rem;
+}
+
+.sort {
+  background-color: #ddd;
+  padding: 2rem;
+  margin-top: 3rem;
+}
+
+.choice {
+  font-size: 1.4rem;
+  margin-top: 0.5rem;
+}
+
+/* trưng bày sản phẩm */
+.items {
+  flex-basis: 70%;
+  padding: 1rem;
+}
+
+/* item wrapper  */
+.item-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px 10px;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.item-img {
+  background-color: #fff;
+}
+
+.item-img img {
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+  object-fit: cover;
+  background-position: center;
+}
+
+.item-name {
+  padding-top: 0.5rem;
+  font-size: 2.4rem;
+  font-weight: 500;
+  color: black;
+}
+
+.book-author {
+  font-family: "Maitree", serif;
+  font-style: italic;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.book-author:hover {
+  text-decoration: underline;
+}
+
+.item-price {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #c92127;
+}
+
+.buy-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: var(--navy);
+  background-color: var(--smoke);
+  padding: 0.8rem 0.5rem;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.buy-btn:hover {
+  color: #fff;
+  background-color: var(--navy);
+}
+
+.buy-btn i {
+  font-size: 1.6rem;
+  padding-right: 0.5rem;
+}
+
+.buy-btn p {
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.page-counter{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-counter a{
+    font-size: 1.8rem;
+    padding: .5rem 1rem;
+    margin: 0 1rem;
+}
+
+.page-counter a:active{
+    background-color: var(--navy);
+    color: white;
+}
+
+.page-counter a:hover{
+    text-decoration: underline;
+}
+
+.page-counter a > i{
+    background-color: var(--navy);
+    color: white;
+    padding: 1rem;
+    margin: 0 3rem;
+}

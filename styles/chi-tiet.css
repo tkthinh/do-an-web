@@ -1,0 +1,173 @@
+main {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.path {
+  font-size: 2rem;
+  padding: 0.5rem 0;
+  text-transform: uppercase;
+}
+
+section {
+  margin: 3rem 0;
+}
+
+/* thong tin chinh san pham */
+.main-info {
+  width: 100%;
+  max-height: 50vh;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.item-img-large {
+  flex-basis: 30%;
+}
+
+.item-img-large img {
+  width: 100%;
+  height: 100%;
+}
+
+.item-info {
+  flex-basis: 70%;
+}
+
+.item-name-large {
+  font-size: 4.5rem;
+  font-weight: 600;
+  font-family: "Maitree", serif;
+}
+
+.author {
+  margin: 1rem 0;
+}
+
+.author .by {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.author-name {
+  font-size: 2rem;
+  font-weight: 500;
+  font-family: 'Maitree', serif;
+  font-style: italic;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.author-name:hover {
+  text-decoration: underline;
+}
+
+.price {
+  margin: 1rem 0;
+  font-size: 3.5rem;
+  color: #a31023;
+}
+
+.condition {
+  margin: 1rem auto;
+  display: flex;
+  gap: 8px;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.condition .con {
+  color: #38e54d;
+}
+
+.condition .het {
+  color: #ff1e00;
+}
+
+.btn {
+  padding: 1.5rem;
+  font-size: 2rem;
+  margin: 1rem 2rem 1rem 0;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.3);
+}
+
+.btn:hover {
+  scale: 1.1;
+}
+
+.add-cart {
+  color: white;
+  background-color: var(--navy);
+}
+
+.wishlist {
+  color: var(--navy);
+  background-color: #fff;
+}
+
+/* thong tin phu */
+h3 {
+  font-size: 2.6rem;
+  margin-bottom: 4rem;
+}
+
+.overview p {
+  margin-top: 3rem;
+  font-size: 2rem;
+  word-spacing: 0.3rem;
+  line-height: 3rem;
+}
+
+/* recommend */
+
+.item-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 10px 20px;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.item-img {
+  background-color: #fff;
+}
+
+.item-img img {
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+  object-fit: cover;
+  background-position: center;
+}
+
+.item-name {
+  padding-top: 0.5rem;
+  font-size: 2.4rem;
+  font-weight: 500;
+  color: black;
+}
+
+.book-author {
+  font-family: "Maitree", serif;
+  font-style: italic;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.book-author:hover {
+  text-decoration: underline;
+}
+
+.item-price {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #a31023;
+}
