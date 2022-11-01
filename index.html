@@ -13,35 +13,28 @@
       src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"
       defer
     ></script>
-    <script src="scripts/script.js" defer></script>
+    <script src="scripts/slideshow.js" defer></script>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
     />
+    <link rel="stylesheet" href="styles/shared.css">
     <link rel="stylesheet" href="styles/styles.css" />
   </head>
   <body>
     <header>
       <div class="top-menu">
         <a href="#" class="logo"><img src="img/logo.png" /></a>
-        <div class="menu-btn">
+        <span class="menu-btn">
           <i class="fa-solid fa-shapes"></i>
-          <i class="fa-solid fa-caret-down"></i>
-        </div>
-        <div class="search">
-          <input type="text" class="search-bar" />
-          <button class="search-btn">
-            <i class="fa-solid fa-magnifying-glass"></i>
-          </button>
-        </div>
+        </span>
+        <input type="text" class="search" placeholder="Tìm kiếm sản phẩm..."/>
         <div class="user-menu">
-          <a href="#">Đăng nhập/Đăng kí</a>
+          <a href="#" class="user-text">Đăng nhập/Đăng kí</a>
+          <a href="#"><i class="fa-solid fa-user user-icon"></i></a>
           <a href="#"><i class="fa-regular fa-heart"></i></a>
           <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
         </div>
-      </div>
-      <div class="navbar">
-        
       </div>
     </header>
     <main>
@@ -153,30 +146,6 @@
               <p>Thêm vào giỏ hàng</p>
             </button>
           </div>
-          <div class="item">
-            <a class="item-img" href="#"
-              ><img src="img/book/dac-nhan-tamjpg.jpg"
-            /></a>
-            <a class="item-name" href="#">Đắc nhân tâm</a>
-            <a class="book-author" href="#">Dale Carnegie</a>
-            <span class="item-price">69.000đ</span>
-            <button type="button" class="buy-btn">
-              <i class="fa-solid fa-cart-shopping"></i>
-              <p>Thêm vào giỏ hàng</p>
-            </button>
-          </div>
-          <div class="item">
-            <a class="item-img" href="#"
-              ><img src="img/book/dac-nhan-tamjpg.jpg"
-            /></a>
-            <a class="item-name" href="#">Đắc nhân tâm</a>
-            <a class="book-author" href="#">Dale Carnegie</a>
-            <span class="item-price">69.000đ</span>
-            <button type="button" class="buy-btn">
-              <i class="fa-solid fa-cart-shopping"></i>
-              <p>Thêm vào giỏ hàng</p>
-            </button>
-          </div>
         </div>
         <a href="#" class="more">Xem thêm</a>
       </section>
@@ -239,30 +208,6 @@
                 <p>Thêm vào giỏ hàng</p>
               </button>
             </div>
-            <div class="item">
-              <a class="item-img" href="#"
-                ><img src="img/book/dac-nhan-tamjpg.jpg"
-              /></a>
-              <a class="item-name" href="#">Đắc nhân tâm</a>
-              <a class="book-author" href="#">Dale Carnegie</a>
-              <span class="item-price">69.000đ</span>
-              <button type="button" class="buy-btn">
-                <i class="fa-solid fa-cart-shopping"></i>
-                <p>Thêm vào giỏ hàng</p>
-              </button>
-            </div>
-            <div class="item">
-              <a class="item-img" href="#"
-                ><img src="img/book/dac-nhan-tamjpg.jpg"
-              /></a>
-              <a class="item-name" href="#">Đắc nhân tâm</a>
-              <a class="book-author" href="#">Dale Carnegie</a>
-              <span class="item-price">69.000đ</span>
-              <button type="button" class="buy-btn">
-                <i class="fa-solid fa-cart-shopping"></i>
-                <p>Thêm vào giỏ hàng</p>
-              </button>
-            </div>
           </div>
           <a href="#" class="more">Xem thêm</a>
         </div>
@@ -273,30 +218,6 @@
             <button class="book-type-btn">Ngoại văn</button>
           </div>
           <div class="item-container">
-            <div class="item">
-              <a class="item-img" href="#"
-                ><img src="img/book/dac-nhan-tamjpg.jpg"
-              /></a>
-              <a class="item-name" href="#">Đắc nhân tâm</a>
-              <a class="book-author" href="#">Dale Carnegie</a>
-              <span class="item-price">69.000đ</span>
-              <button type="button" class="buy-btn">
-                <i class="fa-solid fa-cart-shopping"></i>
-                <p>Thêm vào giỏ hàng</p>
-              </button>
-            </div>
-            <div class="item">
-              <a class="item-img" href="#"
-                ><img src="img/book/dac-nhan-tamjpg.jpg"
-              /></a>
-              <a class="item-name" href="#">Đắc nhân tâm</a>
-              <a class="book-author" href="#">Dale Carnegie</a>
-              <span class="item-price">69.000đ</span>
-              <button type="button" class="buy-btn">
-                <i class="fa-solid fa-cart-shopping"></i>
-                <p>Thêm vào giỏ hàng</p>
-              </button>
-            </div>
             <div class="item">
               <a class="item-img" href="#"
                 ><img src="img/book/dac-nhan-tamjpg.jpg"
@@ -453,33 +374,50 @@
       </section>
     </main>
     <footer>
-      <h3>Thông tin liên hệ</h3>
-    <div class="info-container">
-      <div class="info">
-        <i class="fa-solid fa-school"></i>
-        <p><strong>Chi nhánh 1: </strong>273 An Dương Vương, Phường 3, Quận 5</p>
+      <div class="contact">
+        <form class="newsletter">
+            <h3>Đăng kí nhận thông tin khuyến mãi</h3>
+            <div class="input-box">
+              <input type="text" name="email" placeholder="Nhập mail của bạn">
+              <button type="button" class="send-btn"><i class="fa-solid fa-bullhorn"></i></button>
+            </div>
+        </form>
+        <div class="social-media">
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        </div>
       </div>
-      <div class="info">
-        <i class="fa-solid fa-school"></i>
-        <p><strong>Chi nhánh 1: </strong>105 Bà Huyện Thanh Quan, Phường 7, Quận 3</p>
+      <div class="info-section">
+        <h3>Thông tin liên hệ</h3>
+        <div class="info-container">
+          <div class="info">
+            <i class="fa-solid fa-school"></i>
+            <p>
+              <strong>Chi nhánh 1: </strong>1 Nguyễn Văn Cừ, Phường 3, Quận 5
+            </p>
+          </div>
+          <div class="info">
+            <i class="fa-solid fa-school"></i>
+            <p>
+              <strong>Chi nhánh 2: </strong>105 Nguyễn Thị Minh Khai, Phường 1,
+              Quận 3
+            </p>
+          </div>
+          </div>
+          <div class="info">
+            <i class="fa-solid fa-phone"></i>
+            <p><strong>Số điện thoại: </strong>38.696969</p>
+          </div>
+          <div class="info">
+            <i class="fa-regular fa-envelope"></i>
+            <p>
+              <strong>Email: </strong
+              ><a href="mailto:fahase@gmail.com">fahase@gmail.com</a>
+            </p>
+          </div>
+        </div>
       </div>
-      <div class="info">
-        <i class="fa-solid fa-school"></i>
-        <p><strong>Chi nhánh 1: </strong>04 Tôn Đức Thắng, Phường Bến Nghé, Quận 1</p>
-      </div>
-      <div class="info">
-        <i class="fa-solid fa-school"></i>
-        <p><strong>Chi nhánh 1: </strong>18-20 Ngô Thời Nhiệm, Phường Võ Thị Sáu, Quận 3</p>
-      </div>
-      <div class="info">
-        <i class="fa-solid fa-phone"></i>
-        <p><strong>Số điện thoại: </strong>38.696969</p>
-      </div>
-      <div class="info">
-        <i class="fa-regular fa-envelope"></i>
-        <p><strong>Email: </strong><a href="mailto:fahase@gmail.com">fahase@gmail.com</a></p>
-      </div>
-    </div>
     </footer>
   </body>
 </html>

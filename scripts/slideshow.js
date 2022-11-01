@@ -36,24 +36,24 @@ const slideshow = () => {
 
 slideshow();
 
-//carousel slider
+//swiper slider
 var swiper1 = new Swiper(".mySwiper", {
   slidesPerView: 2,
   spaceBetween: 10,
   slidesPerGroup: 3,
   breakpoints: {
     500: {
-      slidesPerView: 3
+      slidesPerView: 3,
     },
     750: {
-      slidesPerView: 4
+      slidesPerView: 4,
     },
     1050: {
-      slidesPerView: 5
+      slidesPerView: 5,
     },
     1250: {
-      slidesPerView: 7
-    }
+      slidesPerView: 7,
+    },
   },
   loop: false,
   loopFillGroupWithBlank: true,
