@@ -1,16 +1,20 @@
+/* main */
 section {
   width: 90%;
   margin: 5rem auto;
 }
 
-/* main */
+main{
+  position: relative;
+}
+
 .banner {
   width: 90%;
-  height: 40vh;
+  height: 45vh;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  gap: 0;
+  gap: 10px 20px;
   /* position: relative; */
   margin: 1rem auto 0 auto;
 }
@@ -37,10 +41,10 @@ section {
   opacity: 1;
 }
 
-.small-banner {
+.small-banner img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 /* section 1 */
@@ -118,6 +122,10 @@ section {
   font-size: 2.4rem;
   font-weight: 500;
   color: black;
+  /* cat chu thanh ... khi ko du cho */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .book-author {
@@ -185,6 +193,11 @@ section {
   position: relative;
 }
 
+.section-4{
+  margin: 5rem auto 0 auto;
+  padding-bottom: 3rem;
+}
+
 .book-type-btns {
   display: flex;
   flex-direction: row;
@@ -212,4 +225,52 @@ section {
 .book-type-btn:focus,
 :hover {
   opacity: 1;
+}
+
+/* responsive */
+@media (max-width: 950px) {
+  .banner {
+    height: 60vh;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .slideshow {
+    width: 100%;
+    height: 100%;
+  }
+
+  .slideshow div{
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+  }
+  .img-banner{
+    width: 80%;
+  }
+  .item-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  section {
+    width: 100%;
+  }
+
+  .banner{
+    width: 100%;
+    height: 30vh;
+  }
+
+  .slideshow{
+    grid-row: span 2;
+  }
+
+  .small-banner{
+    display: none;
+  }
+
+  .book-type-btn {
+    font-size: 2rem;
+  }
 }
