@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Danh sách sản phẩm</title>      
+        <script src="/scripts/admin.js"></script>
+
+        <link rel="stylesheet" href="admin.css" />
+    </head>
+    <body>
+        <div id="container">
+            <!-- Header -->
+            <div class="navigation">
+                <ul>
+                    <li>
+                        <a href="/index.html">
+                            <img src="/img/admin_page_images/homepage.png" class="navlogo"/>
+                            <span class="tittle">Trang chủ</span> 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/index.html">
+                            <img src="/img/admin_page_images/book.png" class="navlogo"/>
+                            <span class="tittle">Sản phẩm</span> 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="/img/admin_page_images/purchase-order.png" class="navlogo"/>
+                            <span class="tittle">Đơn hàng</span> 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="/img/admin_page_images/customers.png" class="navlogo"/>
+                            <span class="tittle">Khách hàng</span> 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="/img/admin_page_images/adimin-setting.png" class="navlogo"/>
+                            <span class="tittle">Quản lý tài khoản</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="/img/admin_page_images/log-out.png" class="navlogo"/>
+                            <span class="tittle">Đăng xuất</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Content -->
+            <div class="main">
+                <div class="topbar">
+                    <div class="toggle" onclick="toggleMenu()"></div>
+                    <a href="/index.html"><img src="/img/logo(1).png"/></a>
+                    <div class="users">
+                        <a href="#"><img src="/img/admin_page_images/shopping-cart.png"/></a>
+                        <div class="name">[Admin's name]</div>
+                    </div>
+                </div>
+                <div class="menu">
+                    <a href="#" class="card">
+                        <div>Sản phẩm</div>
+                        <img src="/img/admin_page_images/book.png" class="card-logo"/>
+                    </a>
+                    <a href="#" class="card" active>
+                        <div>Đơn hàng</div>
+                        <img src="/img/admin_page_images/purchase-order.png" class="card-logo"/>
+                    </a>
+                    <a href="#" class="card">
+                        <div>Khách hàng</div>
+                        <img src="/img/admin_page_images/customers.png" class="card-logo"/>
+                    </a>
+                    <a href="#" class="card">
+                        <div>Quản lý tài khoản</div>
+                        <img src="/img/admin_page_images/adimin-setting.png" class="card-logo"/>
+                    </a>
+                </div>
+                <div class=page-tittle>DANH MỤC SẢN PHẨM</div>
+                <div class="content">
+                    <div class="searching-bar">
+                        <input value="" placeholder="Tìm kiếm sản phẩm theo tên, thể loại, id...">
+                    </div>
+                    <table border="1px">
+                        <tr>
+                            <th>ID</th>
+                            <th>Ảnh</th>
+                            <th>Tên</th>
+                            <th>Giá</th>
+                            <th>Xem chi tiết</th>
+                            <th>Tùy chỉnh</th>
+                        </tr>
+                        <tr>
+                            <td>005611</td>
+                            <td><img src="/img/book/dac-nhan-tamjpg.jpg"/></td>
+                            <td>Dark nhân Tâmk</td>
+                            <td>1,000,000,000</td>
+                            <td><a href="#">Chi tiết</a></td>
+                            <td>
+                                <a href="#">Sửa</a> / <a href="#">Xóa</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>001</td>
+                            <td><img src="/img/book/dac-nhan-tamjpg.jpg"/></td>
+                            <td>Dark nhân Tâmk</td>
+                            <td>1,000,034613156050,000</td>
+                            <td><a href="#">Chi tiết</a></td>
+                            <td>
+                                <a href="#">Sửa</a> / <a href="#">Xóa</a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
