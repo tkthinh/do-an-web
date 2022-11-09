@@ -7,27 +7,45 @@
 a{  color: rgba(0, 0, 0, 0.858)}
 h3{    font-size: 13pt;    padding-bottom: 5px}
 /*Navigation(leftmenu)*/
+
 #container{
     position: relative;
     width: 100%;
 }
-.logo{margin: 0 auto}   
+
+#logo{
+    width: 200px;
+    height: 100px;
+}
+
+#logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 .navigation{
     position: fixed;
     height: 100%;
-    width: 200px;
-    background: turquoise;
+    min-width: 200px;
+    background: rgb(219, 226, 239);
     transition: 0.5s;
     overflow: hidden;
 }
+
 .navigation.active{    width: 30px}
+
 .navigation.active .logo{  display: none}
+
 .navlogo{
     height:30px;
     width:30px;
 }
+
 .navigation ul li:first-child{     margin-top: 200px}
+
 .navigation ul li:hover{	background:rgba(100, 100, 100, 0.2)}
+
 .navigation li a{ 
     position: relative;
     display: flex;
@@ -45,7 +63,7 @@ h3{    font-size: 13pt;    padding-bottom: 5px}
 /*Main menu*/
 .main{
     position:absolute;
-    background-image: url('image/book-background.jpg');
+    background-image: url('../img/admin/book-background.jpg');
     left: 200px;
     height: 100vh;
     right: 0;
@@ -78,7 +96,7 @@ h3{    font-size: 13pt;    padding-bottom: 5px}
     cursor: pointer;
 }
 .toggle::before{
-    content: url('image/menu-rounded.png');
+    content: url('../img/admin/menu-rounded.png');
     position: absolute;
     width: 100%;
     height: 100%;
@@ -138,8 +156,9 @@ table{
     box-shadow: -15px 0px 20px rgba(0, 0,0, 0.25) ;
 }
 table th{
-    background-color: red;    
+    background-color: rgb(17, 45, 78);    
     height: 40px;
+    color: #fff;
 }
 table td{
     text-align: center;
