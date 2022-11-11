@@ -57,7 +57,7 @@ h3 {
 /* item wrapper  */
 .item-container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 20px 10px;
 }
 
@@ -110,7 +110,7 @@ h3 {
   justify-content: center;
   color: var(--navy);
   background-color: var(--smoke);
-  padding: 0.8rem 0.5rem;
+  padding: 0.5rem;
   cursor: pointer;
   transition: 0.25s;
 }
@@ -157,4 +157,38 @@ h3 {
     color: white;
     padding: 1rem;
     margin: 0 3rem;
+}
+
+/* responsive */
+@media(max-width: 900px){
+  .item-container{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media(max-width: 700px){
+  main{
+    width: 100%;
+  }
+
+  .shop{
+    display: block;
+  }
+
+  .left-sidebar{
+    display: none;
+  }
+
+  .items{
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .item-name{
+    font-size: 2rem;
+  }
+
+  .buy-btn p{
+    font-size: 1.2rem;
+  }
 }

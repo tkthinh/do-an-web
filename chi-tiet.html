@@ -24,24 +24,24 @@
 <body>
     <header>
         <div class="top-menu">
-          <a href="#" class="logo"><img src="img/logo.png" /></a>
+          <a href="index.html" class="logo"><img src="img/logo.png" /></a>
           <span class="menu-btn">
             <i class="fa-solid fa-shapes"></i>
           </span>
           <input type="text" class="search" placeholder="Tìm kiếm sản phẩm..."/>
           <div class="user-menu">
-            <a href="#" class="user-text">Đăng nhập/Đăng kí</a>
-            <a href="#"><i class="fa-solid fa-user user-icon"></i></a>
+            <a href="login.html" class="user-text">Đăng nhập/Đăng kí</a>
+            <a href="login.html"><i class="fa-solid fa-user user-icon"></i></a>
             <a href="#"><i class="fa-regular fa-heart"></i></a>
             <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
           </div>
         </div>
       </header>
       <main>
-        <div class="path">
+        <section class="path">
           <span>Trang chủ ></span>
           <span class="type-name">Thể loại</span>
-        </div>
+        </section>
         <section class="main-info">
           <div class="item-img-large">
             <img src="/img/book/dac-nhan-tamjpg.jpg">
@@ -76,47 +76,63 @@
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati veniam, omnis sint soluta fugiat aperiam assumenda illum minus provident voluptate.</p>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ad nam fuga, earum sed at eveniet eligendi, blanditiis tempora perferendis eius maiores, possimus amet cupiditate! Minima laborum illo ipsum perferendis impedit sit quam sequi recusandae aut, commodi eaque corrupti maiores soluta fugit. Nisi possimus perferendis rerum exercitationem aliquid cum dolor?</p>
         </section>
-        <section class="recommend">
+        <div class="recommend">
           <h3>Có thể bạn sẽ thích</h3>
-          <div class="item-container">
-            <div class="item">
-              <a class="item-img" href="#"
-                ><img src="img/book/dac-nhan-tamjpg.jpg"
-              /></a>
-              <a class="item-name" href="#">Đắc nhân tâm</a>
-              <a class="book-author" href="#">Dale Carnegie</a>
-              <span class="item-price">69.000đ</span>
-              
-            </div>
-            <div class="item">
-              <a class="item-img" href="#"
-                ><img src="img/book/dac-nhan-tamjpg.jpg"
-              /></a>
-              <a class="item-name" href="#">Đắc nhân tâm</a>
-              <a class="book-author" href="#">Dale Carnegie</a>
-              <span class="item-price">69.000đ</span>
-              
-            </div>
-            <div class="item">
-              <a class="item-img" href="#"
-                ><img src="img/book/dac-nhan-tamjpg.jpg"
-              /></a>
-              <a class="item-name" href="#">Đắc nhân tâm</a>
-              <a class="book-author" href="#">Dale Carnegie</a>
-              <span class="item-price">69.000đ</span>
-              
-            </div>
-            <div class="item">
-              <a class="item-img" href="#"
-                ><img src="img/book/dac-nhan-tamjpg.jpg"
-              /></a>
-              <a class="item-name" href="#">Đắc nhân tâm</a>
-              <a class="book-author" href="#">Dale Carnegie</a>
-              <span class="item-price">69.000đ</span>
-              
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="item swiper-slide">
+                <a class="item-img" href="#"
+                  ><img src="img/book/dac-nhan-tamjpg.jpg"
+                /></a>
+                <a class="item-name" href="#">Đắc nhân tâm</a>
+                <a class="book-author" href="#">Dale Carnegie</a>
+                <span class="item-price">69.000đ</span>
+              </div>
+              <div class="item swiper-slide">
+                <a class="item-img" href="#"
+                  ><img src="img/book/dac-nhan-tamjpg.jpg"
+                /></a>
+                <a class="item-name" href="#">Đắc nhân tâm</a>
+                <a class="book-author" href="#">Dale Carnegie</a>
+                <span class="item-price">69.000đ</span>
+              </div>
+              <div class="item swiper-slide">
+                <a class="item-img" href="#"
+                  ><img src="img/book/dac-nhan-tamjpg.jpg"
+                /></a>
+                <a class="item-name" href="#">Đắc nhân tâm</a>
+                <a class="book-author" href="#">Dale Carnegie</a>
+                <span class="item-price">69.000đ</span>
+              </div>
+              <div class="item swiper-slide">
+                <a class="item-img" href="#"
+                  ><img src="img/book/dac-nhan-tamjpg.jpg"
+                /></a>
+                <a class="item-name" href="#">Đắc nhân tâm</a>
+                <a class="book-author" href="#">Dale Carnegie</a>
+                <span class="item-price">69.000đ</span>
+              </div>
+              <div class="item swiper-slide">
+                <a class="item-img" href="#"
+                  ><img src="img/book/dac-nhan-tamjpg.jpg"
+                /></a>
+                <a class="item-name" href="#">Đắc nhân tâm</a>
+                <a class="book-author" href="#">Dale Carnegie</a>
+                <span class="item-price">69.000đ</span>
+              </div>
+              <div class="item swiper-slide">
+                <a class="item-img" href="#"
+                  ><img src="img/book/dac-nhan-tamjpg.jpg"
+                /></a>
+                <a class="item-name" href="#">Đắc nhân tâm</a>
+                <a class="book-author" href="#">Dale Carnegie</a>
+                <span class="item-price">69.000đ</span>
+              </div>
             </div>
           </div>
-        </section>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
       </main>
       <footer>
         <div class="contact">
@@ -164,5 +180,28 @@
           </div>
         </div>
       </footer>
+      <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 2,
+        spaceBetween: 30,
+        loopFillGroupWithBlank: true,
+        breakpoints: {
+          650: {
+            slidesPerView: 3,
+          },
+          900: {
+            slidesPerView: 4,
+          },
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
 </body>
 </html>
