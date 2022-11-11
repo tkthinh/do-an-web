@@ -1,0 +1,50 @@
+[
+{
+    "image":"img/book/but.jpg" ,
+    "title":"Hộp 20 bút bi 0.5mm" ,
+    "author":"Thiên Long" ,
+    "price":"69.000đ"
+},
+{
+    "image":"img/book/tap.jpg" ,
+    "title":"Tập Sinh Viên 4 Ô Ly" ,
+    "author":"Elephant" ,
+    "price":"17.000đ"
+},
+{
+    "image":"img/book/balo.jpg" ,
+    "title":"Cặp Đa Năng Simplex 06" ,
+    "author":"STARGO",
+    "price":"462.000đ"
+},
+{
+    "image":"img/book/chi.jpg" ,
+    "title":"Ruột Chì Ngòi Lớn 2B",
+    "author":"Uyên Loan",
+    "price":"4.000đ" 
+},
+{
+    "image":"img/book/bothuchanh.jpg" ,
+    "title":"Bộ 2 Hộp Thực Hành Toán Lớp 2" ,
+    "author":"Việt Nam" ,
+    "price":"188.000đ"
+},
+{
+    "image":"img/book/puzzle.jpg" ,
+    "title":"Bộ Xếp Hình Puzzle" ,
+    "author":"Castorland",
+    "price":"649.000đ" 
+},
+{
+    "image":"img/book/cal.jpg" ,
+    "title":"Máy Tính Vinacal 570 ES Plus II ",
+    "author":"Vinacal",
+    "price":"540.000đ" 
+},
+{
+    "image":"img/book/butdaquang.jpg" ,
+    "title":"Bút dạ quang",
+    "author":"Schneider" ,
+    "price":"17.000đ" 
+}
+]
