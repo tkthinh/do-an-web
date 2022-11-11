@@ -35,6 +35,12 @@ h3 {
   font-size: 1.6rem;
   padding-left: 2rem;
   margin-top: 0.5rem;
+  cursor : pointer;
+}
+.active {
+  background-color:blue;
+  color: #fff;
+  border: solid 1px black;
 }
 
 .sort {
@@ -191,4 +197,5 @@ h3 {
   .buy-btn p{
     font-size: 1.2rem;
   }
+
 }

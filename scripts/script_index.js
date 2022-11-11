@@ -8,7 +8,7 @@ http.onload = function(){
       for(let item of products){
          output += `
             <div class="item">
-               <a class="item-img" href="#"><img src="${item.image}"/></a>
+               <a class="item-img"><img src="${item.image}"/></a>
                <p class="item-name">${item.title}</p> 
                <p class="book-author">${item.author}</p>        
                <p class="item-price">${item.price}</p>
