@@ -27,6 +27,23 @@ body {
 }
 
 /* header */
+header{
+  width: 100%;
+  z-index: 20;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: .5s;
+}
+
+.sticky{
+  background-color: var(--navy);
+}
+
+.sticky div, .sticky div a{
+  color: #fff;
+}
+
 .top-menu {
   padding: 1.5rem 0;
   display: flex;
@@ -99,12 +116,16 @@ body {
   border-radius: 50%;
   text-align: center;
   font-size: 1rem;
-  color: #fff;
-  background-color: var(--navy);
+  color: var(--navy);
+  background-color: #FFD384;
 }
 
 .user-icon {
   display: none;
+}
+
+main{
+  padding-top: 10rem;
 }
 
 /* footer */
@@ -165,6 +186,10 @@ footer h3 {
 
 /* responsive */
 @media (max-width: 950px) {
+  main{
+    padding-top: 15rem;
+  }
+
   .user-text {
     display: none;
   }
