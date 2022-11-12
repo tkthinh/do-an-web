@@ -42,7 +42,7 @@ h3{    font-size: 13pt;    padding-bottom: 5px}
     width:30px;
 }
 
-.navigation ul li:first-child{     margin-top: 200px}
+.navigation ul li:first-child{     margin-top: 125px}
 
 .navigation ul li:hover{	background:rgba(100, 100, 100, 0.2)}
 
@@ -65,7 +65,7 @@ h3{    font-size: 13pt;    padding-bottom: 5px}
     position:absolute;
     background-image: url('../img/admin/book-background.jpg');
     left: 200px;
-    height: 100vh;
+    min-height: 100vh;
     right: 0;
     transition: 0.5s;
 }
@@ -112,7 +112,7 @@ h3{    font-size: 13pt;    padding-bottom: 5px}
     font-family: 'Times New Roman', Times, serif;
 }
 /*Content*/
-.menu{
+.card-box{
     display: none;
     height: auto;
     margin: 20px 0px;
@@ -164,12 +164,12 @@ table td{
     text-align: center;
     font-size: 13pt;
 }
-table td:first-child{   width: 10%}
-table td:nth-child(5),
-table td:last-child
+table td,th:first-child ,
+table td,th:nth-child(5) ,
+table td,th:last-child
 {    width: 10%}
 table td img{ width: 150px; height:150px}
-table td:nth-child(2){  width: 15%}
+table td,th:nth-child(2){  width: 150px}
 table a{ font-size: 11pt ;color: red}
 
 @media(max-width:715px){
@@ -177,7 +177,7 @@ table a{ font-size: 11pt ;color: red}
         left: 0;
     }
     .toggle{display: none;}
-    .menu{
+    .card-box{
         display: grid;
         grid-template-columns: repeat(4,1fr);
     }
@@ -187,7 +187,7 @@ table a{ font-size: 11pt ;color: red}
         left: 0;
         width: 540px;
     }
-    .menu{
+    .card-box{
         width: 100%;
         display: grid;
         grid-template-columns: repeat(2, 200px);
