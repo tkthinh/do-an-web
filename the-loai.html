@@ -14,14 +14,12 @@
           defer
         ></script>
         <script src="/scripts/navbar.js" defer></script>
-        <script src="scripts/script_index.js" defer ></script> 
-        <script src="scripts/filter.js" defer ></script>
+        <script src="/scripts/script_index.js" defer ></script> 
+        <script src="/scripts/filter.js" defer ></script>
         <link
           rel="stylesheet"
           href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
         />
-        <script src="scripts/script_index.js" defer ></script> 
-        <script src="scripts/filter.js" defer ></script>
         <link rel="stylesheet" href="styles/shared.css">
         <link rel="stylesheet" href="styles/the-loai.css" />
       </head>
@@ -32,7 +30,7 @@
           <span class="menu-btn">
             <i class="fa-solid fa-shapes"></i>
           </span>
-          <input type="text" class="search" placeholder="Tìm kiếm sản phẩm..."/>
+          <input type="text" id="search_bar"  onkeyup="search_bar()" class="search" placeholder="Tìm kiếm sản phẩm..." />
           <div class="user-menu">
             <a href="login.html" class="user-text">Đăng nhập/Đăng kí</a>
             <a href="login.html"><i class="fa-solid fa-user user-icon"></i></a>
@@ -50,14 +48,14 @@
             <div class="left-sidebar">
                 <ul class="category">
                     <h3>Thể loại</h3>
-                    <li><a class="btn btn-primary active" data-filter="All">All</a></li>
-                    <li><a class="btn btn-primary" data-filter="Kinh tế">Kinh tế</a></li>
-                    <li><a class="btn btn-primary" data-filter="Tiểu thuyết">Tiểu thuyết</a></li>
-                    <li><a class="btn btn-primary" data-filter="Kỹ năng sống">Kỹ năng sống</a></li>
-                    <li><a class="btn btn-primary" data-filter="Kinh dị">Kinh dị</a></li>
-                    <li><a class="btn btn-primary" data-filter="Khoa học">Khoa học</a></li>  
-                    <li><a class="btn btn-primary" data-filter="Trẻ em">Trẻ em</a></li>
-                    <li><a class="btn btn-primary" data-filter="Truyện tranh">Truyện Tranh</a></li>
+                    <li><a class="btn btn-primary active" onclick="filter_type('All')">All</a></li>
+                    <li><a class="btn btn-primary" onclick="filter_type('Kinh tế')">Kinh tế</a></li>
+                    <li><a class="btn btn-primary" onclick="filter_type('Tiểu thuyết')">Tiểu thuyết</a></li>
+                    <li><a class="btn btn-primary" onclick="filter_type('Kỹ năng sống')">Kỹ năng sống</a></li>
+                    <li><a class="btn btn-primary" onclick="filter_type('Kinh dị')">Kinh dị</a></li>
+                    <li><a class="btn btn-primary" onclick="filter_type('Khoa học')">Khoa học</a></li>  
+                    <li><a class="btn btn-primary" onclick="filter_type('Trẻ em')">Trẻ em</a></li>
+                    <li><a class="btn btn-primary" onclick="filter_type('Truyện tranh')">Truyện Tranh</a></li>
                 </ul>
                 <div class="sort">
                     <h3>Lọc theo giá</h3>
@@ -85,6 +83,13 @@
             </div>
             <div class="items">
                 <div class="item-container"></div>
+                <template>
+                  <div class="card">
+                    <div class="name"> </div>
+                    <div class="price"> </div>
+                    <div class="img"> </div>
+                  </div>
+                </template>
                   <div class="page-counter">
                     <a href="#"><i class="fa-solid fa-chevron-left"></i></a>
                     <a href="#">1</a>

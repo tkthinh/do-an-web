@@ -1,38 +1,101 @@
 [
     {
+        "image":"img/book/TT2.jpg" ,
+        "title":"Tiểu Thuyết Chuyển Thể - Thanh Gươm Diệt Quỷ",
+        "author":"Koyoharu Gotouge" ,
+        "price":"51.000đ",
+        "type":["All","Tiểu thuyết","Truyện tranh","Trẻ em"]
+    },
+    {
         "image":"img/book/KT1.jpg" ,
         "title":"Lập Chiến Lược Kinh Doanh Tối Giản",
         "author":"Vaughan Evans" ,
         "price":"102.000đ",
-        "type":["Kinh tế"]
+        "type":["All","Kinh tế"]
+    },
+    {
+        "image":"img/book/jujutsu.jpg" ,
+        "title":"Jujutsu Kaisen - limited",
+        "author":"Gege Akutami",
+        "price":"50.000đ",
+        "type":["Truyện tranh","All"]
+    },
+    {
+        "image":"img/book/komi.jpg" ,
+        "title":"Komi-san",
+        "author":"Tomohito Oda",
+        "price":"25.000đ",
+        "type":["Truyện tranh","Trẻ em","All"]
     },
     {
         "image":"img/book/KT2.jpg" ,
         "title":"Đô Thị Thông Minh, Tương Lai Xán Lạn",
         "author":"Mike Barlow" ,
         "price":"133.000đ",
-        "type":["Kinh tế"]
+        "type":["All","Kinh tế"]
+    },
+    {
+        "image":"img/book/TT6.jpg" ,
+        "title":"Sword Art Online Progressive",
+        "author":"REKI KAWAHARA" ,
+        "price":"92.000đ",
+        "type":["All","Tiểu thuyết","Truyện tranh","Trẻ em"]
+    },
+    {
+        "image": "img/book/chainsawman.jpg",
+        "title": "Chainsaw man",
+        "author": "Tatsuki Fujimoto",
+        "price": "45.000đ",
+        "type":["Truyện tranh","Kinh dị","All"]
     },
     {
         "image":"img/book/KT4.jpg" ,
         "title":"Tỷ Phú Không Tiền",
         "author":"Conor O Clery" ,
         "price":"132.000đ",
-        "type":["Kinh tế"]
+        "type":["All","Kinh tế"]
+    },
+    {
+        "image":"img/book/KN17.jpg" ,
+        "title":"Tâm Lý Học Thành Công",
+        "author":"Carol S Dweck" ,
+        "price":"153.000đ",
+        "type":["Kỹ năng sống","All"]
+    },
+    {
+        "image":"img/book/KN18.jpg" ,
+        "title":"Little Stories",
+        "author":"Sracey Riches" ,
+        "price":"46.000đ",
+        "type":["Kỹ năng sống","All","Tiểu thuyết"]
     },
     {
         "image":"img/book/KT13.jpg" ,
         "title":"Tinh Thần Chiến Đấu Rực Lửa",
         "author":"Inamori Kazuo" ,
         "price":"113.000đ",
-        "type":["Kinh tế"]
+        "type":["All","Kinh tế"]
     },
     {
         "image":"img/book/KT3.jpg" ,
         "title":"Vị Tu Sĩ Bán Chiếc Ferrari",
         "author":"Robin Sharma" ,
         "price":"77.000đ",
-        "type":["Kinh tế"]
+        "type":["All","Kinh tế"]
+    },
+    {
+        "image":"img/book/KD5.jpg" ,
+        "title":"Tryện Kinh Dị Việt Nam",
+        "author":"Thế Lữ" ,
+        "price":"99.000đ",
+        "type":["Kinh dị","All"]
+    },
+    {
+        "image":"img/book/KD6.jpg" ,
+        "title":"Tryện Kinh Dị Việt Nam",
+        "author":"Thế Lữ" ,
+        "price":"63.000đ",
+        "type":["Kinh dị","All"]
     },
 
     {
@@ -40,56 +103,56 @@
         "title":"Tôi Đã Kiếm 1 Triệu Đô Đầu Tiên",
         "author":"Ewen Chia" ,
         "price":"189.000đ",
-        "type":["Kinh tế"]
+        "type":["All","Kinh tế"]
     },
     {
         "image":"img/book/KT6.jpg" ,
         "title":"Bất Động Sản Cho Thế Hệ Tương Lai",
         "author":"Vicki Wusche" ,
         "price":"67.000đ",
-        "type":["Kinh tế"]
+        "type":["All","Kinh tế"]
     },
     {
         "image":"img/book/KT7.jpg" ,
         "title":"Think And Grow Rich",
         "author":"Napoleon Hill" ,
         "price":"104.000đ",
-        "type":["Kinh tế"]
+        "type":["All","Kinh tế"]
     },
     {
         "image":"img/book/KT8.jpg" ,
         "title":"Bezonomics - Kinh Tế Học Bezos",
         "author":"Brian Dumaine" ,
         "price":"151.000đ",
-        "type":["Kinh tế","Khoa học"]
+        "type":["All","Kinh tế","Khoa học"]
     },
     {
         "image":"img/book/KT9.jpg" ,
         "title":"The Leadership Triangle",
         "author":"Kevin Ford" ,
         "price":"76.000đ",
-        "type":["Kinh tế","Khoa học"]
+        "type":["All","Kinh tế","Khoa học"]
     },
     {
         "image":"img/book/KT10.jpg" ,
         "title":"Xây Dựng Sự Độc Đáo",
         "author":"Riccardo Pozzoll" ,
         "price":"78.000đ",
-        "type":["Kinh tế"]
+        "type":["All","Kinh tế"]
     },
     {
         "image":"img/book/KT11.jpg" ,
         "title":"Stage Designer",
         "author":"Hoan Nguyễn" ,
         "price":"111.000đ",
-        "type":["Kinh tế","Khoa học"]
+        "type":["All","Kinh tế","Khoa học"]
     },
     {
         "image":"img/book/KT12.jpg" ,
         "title":"Masayoshi Son",
         "author":"Onishi Takahiro" ,
         "price":"114.000đ",
-        "type":["Kinh tế"]
+        "type":["All","Kinh tế"]
     },
 
     {
@@ -97,386 +160,348 @@
         "title":"Bí Mật Tư Duy Triệu Phú (Tái Bản 2021)",
         "author":"T Harv Eker" ,
         "price":"87.000đ",
-        "type":["Kinh tế"]
+        "type":["All","Kinh tế"]
     },
     {
         "image":"img/book/TT1.jpg" ,
         "title":"Từ Điển Tiếng “Em” - Tái Bản 2021",
         "author":"Khotudien" ,
         "price":"55.000đ",
-        "type":["Tiểu thuyết"]
+        "type":["All","Tiểu thuyết"]
     },
-    {
-        "image":"img/book/TT2.jpg" ,
-        "title":"Tiểu Thuyết Chuyển Thể - Thanh Gươm Diệt Quỷ",
-        "author":"Koyoharu Gotouge" ,
-        "price":"51.000đ",
-        "type":["Tiểu thuyết","Truyện tranh","Trẻ em"]
-    },
+
     {
         "image":"img/book/TT3.jpg" ,
         "title":"Bước Chậm Lại Giữa Thế Gian Vội Vã",
         "author":"Hae Min" ,
         "price":"58.000đ",
-        "type":["Tiểu thuyết"]
+        "type":["All","Tiểu thuyết"]
+    },
+    {
+        "image":"img/book/thientai.jpg" ,
+        "title":"Thiên tài bên trái, kẻ điên bên phải" ,
+        "author":"Cao Minh",
+        "price":"97.000đ" ,
+        "type":["Khoa học","All","Tiểu thuyết"]
+    },
+    {
+        "image":"img/book/dac-nhan-tamjpg.jpg" ,
+        "title":"Đắc Nhân Tâm",
+        "author":"Nguyễn Văn Phước" ,
+        "price":"70.000đ" ,
+        "type":["Kỹ năng sống","Khoa học","All"]
+    },
+    {
+        "image":"img/book/yeu.jpg" ,
+        "title":"OSHO - Yêu - Being In Love",
+        "author":"OSHO" ,
+        "price":"119.000đ",
+        "type":["All","Tiểu thuyết","Trẻ em"]
     },
     {
         "image":"img/book/TT4.jpg" ,
         "title":"Bố Già (Đông A)",
         "author":"Mario Puzo" ,
         "price":"104.000đ",
-        "type":["Tiểu thuyết","Kinh tế"]
+        "type":["All","Tiểu thuyết","Kinh tế"]
     },
     {
         "image":"img/book/TT5.jpg" ,
         "title":"Thế Giới Otome Game",
         "author":"Mishima Yomu" ,
         "price":"112.000đ",
-        "type":["Tiểu thuyết","Truyện tranh","Trẻ em"]
+        "type":["All","Tiểu thuyết","Truyện tranh","Trẻ em"]
     },
-    {
-        "image":"img/book/TT6.jpg" ,
-        "title":"Sword Art Online Progressive",
-        "author":"REKI KAWAHARA" ,
-        "price":"92.000đ",
-        "type":["Tiểu thuyết","Truyện tranh","Trẻ em"]
-    },
+
     {
         "image":"img/book/TT7.jpg" ,
         "title":"Hai Số Phận",
         "author":"Jeffrey Archer" ,
         "price":"104.000đ",
-        "type":["Tiểu thuyết"]
+        "type":["All","Tiểu thuyết"]
     },
     {
         "image":"img/book/TT8.jpg" ,
         "title":"Hai Vạn Dặm Dưới Đáy Biển ",
         "author":"Jules Verne" ,
         "price":"74.000đ",
-        "type":["Tiểu thuyết"]
+        "type":["All","Tiểu thuyết"]
     },
     {
         "image":"img/book/KN1.jpg" ,
         "title":"Thay Đổi Cuộc Sống Với Nhân Số Học",
         "author":"Lê Đỗ Quỳnh Hương" ,
         "price":"177.000đ",
-        "type":["Kỹ năng sống","Khoa học"]
+        "type":["Kỹ năng sống","Khoa học","All"]
     },
     {
         "image":"img/book/KN2.jpg" ,
         "title":"Đọc Vị Bất Kỳ Ai",
         "author":"TS David J Lieberman" ,
         "price":"54.000đ",
-        "type":["Kỹ năng sống","Khoa học"]
+        "type":["Kỹ năng sống","Khoa học","All"]
     },
     {
         "image":"img/book/KN3.jpg" ,
         "title":"Hiểu Về Trái Tim",
         "author":"Minh Niệm" ,
         "price":"126.000đ",
-        "type":["Kỹ năng sống","Khoa học","Tiểu thuyết"]
+        "type":["Kỹ năng sống","Khoa học","All","Tiểu thuyết"]
     },
     {
         "image":"img/book/KN4.jpg" ,
         "title":"Tâm Lý Học - Phác Họa Chân Dung Kẻ Phạm Tội",
         "author":"Vũ" ,
         "price":"108.000đ",
-        "type":["Kỹ năng sống","Khoa học"]
-    },
-    {
-        "image":"img/book/KN5.jpg" ,
-        "title":"Đời Ngắn Đừng Ngủ Dài",
-        "author":"Robin Sharma" ,
-        "price":"55.000đ",
-        "type":["Kỹ năng sống","Khoa học"]
-    },
-    {
-        "image":"img/book/KN6.jpg" ,
-        "title":"Rèn Luyện Tư Duy Phản Biện",
-        "author":"Albert Rutherford" ,
-        "price":"65.000đ",
-        "type":["Kỹ năng sống","Khoa học"]
-    },
-    {
-        "image":"img/book/KN7.jpg" ,
-        "title":"Tuổi Trẻ Đáng Giá Bao Nhiêu",
-        "author":"Rossie" ,
-        "price":"63.000đ",
-        "type":["Kỹ năng sống"]
-    },
-    {
-        "image":"img/book/KN8.jpg" ,
-        "title":"Sức Mạnh Tiềm Thức ",
-        "author":"Joseph Murphyc" ,
-        "price":"102.000đ",
-        "type":["Kỹ năng sống","Khoa học"]
-    },
-    {
-        "image":"img/book/KN9.jpg" ,
-        "title":"Chủ Nghĩa Khắc Kỷ",
-        "author":"William B Irvine" ,
-        "price":"87.000đ",
-        "type":["Kỹ năng sống"]
-    },
-    {
-        "image":"img/book/KN10.jpg" ,
-        "title":"Đừng Lựa Chọn An Nhàn Khi Còn Trẻ",
-        "author":"Cảnh Thiên" ,
-        "price":"87.000đ",
-        "type":["Kỹ năng sống"]
-    },
-    {
-        "image":"img/book/KN11.jpg" ,
-        "title":"Khéo Ăn Nói Sẽ Có Được Thiên Hạ",
-        "author":"Trác Nhả" ,
-        "price":"76.000đ",
-        "type":["Kỹ năng sống","Khoa học"]
-    },
-    {
-        "image":"img/book/KN12.jpg" ,
-        "title":"Người Giàu Có Nhất Thành Babylon",
-        "author":"George S Clason" ,
-        "price":"52.000đ",
-        "type":["Kỹ năng sống","Trẻ em"]
-    },
-    {
-        "image":"img/book/KN13.jpg" ,
-        "title":"Thần Số Học: Thấu Hiểu Nhân Tâm",
-        "author":"Tống Khánh Thượng" ,
-        "price":"76.000đ",
-        "type":["Kỹ năng sống"]
-    },
-    {
-        "image":"img/book/KN14.jpg" ,
-        "title":"Một Đời Như Kẻ Tìm Đường",
-        "author":"Phan Văn Trường" ,
-        "price":"166.000đ",
-        "type":["Kỹ năng sống"]
-    },
-    {
-        "image":"img/book/KN15.jpg" ,
-        "title":"Tư Duy Phản Biện",
-        "author":"Zoe McKey" ,
-        "price":"55.000đ",
-        "type":["Kỹ năng sống","Khoa học"]
-    },
-    {
-        "image":"img/book/KN16.jpg" ,
-        "title":"Kiếp Nào Ta Cũng Tìm Thấy Nhau ",
-        "author":"Brian L Weiss" ,
-        "price":"69.000đ",
-        "type":["Kỹ năng sống","Tiểu thuyết"]
-    },
-    {
-        "image":"img/book/KN17.jpg" ,
-        "title":"Tâm Lý Học Thành Công",
-        "author":"Carol S Dweck" ,
-        "price":"153.000đ",
-        "type":["Kỹ năng sống"]
-    },
-    {
-        "image":"img/book/KN18.jpg" ,
-        "title":"Little Stories",
-        "author":"Sracey Riches" ,
-        "price":"46.000đ",
-        "type":["Kỹ năng sống","Tiểu thuyết"]
-    },
-    {
-        "image":"img/book/KN19.jpg" ,
-        "title":"Cân Bằng CảM Xúc, Cả Lúc Bão Giông",
-        "author":"Richard Nicholls" ,
-        "price":"74.000đ",
-        "type":["Kỹ năng sống","Khoa học"]
-    },
-    {
-        "image":"img/book/TE1.jpg" ,
-        "title":"Cẩm Nang Cấu Trúc Tiếng Anh",
-        "author":"Trang" ,
-        "price":"72.000đ",
-        "type":["Trẻ em","Khoa học"]
-    },
-    {
-        "image":"img/book/TE2.jpg" ,
-        "title":"Ngữ Pháp Tiếng Anh ",
-        "author":"Mai Lan Hương" ,
-        "price":"50.000đ",
-        "type":["Trẻ em","Khoa học"]
-    },
-    {
-        "image":"img/book/TE3.jpg" ,
-        "title":"Tiếng Nhật Cho Mọi Người",
-        "author":"Minna no Nihongo" ,
-        "price":"71.000đ",
-        "type":["Trẻ em","Khoa học"]
-    },
-    {
-        "image":"img/book/TE4.jpg" ,
-        "title":"Sách Tự Học Hiragana Katakana",
-        "author":"AOTS" ,
-        "price":"64.000đ",
-        "type":["Trẻ em","Khoa học"]
-    },
-    {
-        "image":"img/book/TE6.jpg" ,
-        "title":"Ngữ Pháp Tiếng Hàn Thông Dụng",
-        "author":"Ahn Jean Myung" ,
-        "price":"213.000đ",
-        "type":["Trẻ em","Khoa học"]
-    },
-    {
-        "image":"img/book/KD1.jpg" ,
-        "title":"Dị Chủng 2 - Tàn Thế",
-        "author":"Guillermo Del" ,
-        "price":"114.000đ",
-        "type":["Kinh dị","Tiểu thuyết"]
-    },
-    {
-        "image":"img/book/KD2.jpg" ,
-        "title":"Mùa Hạn Kinh Hoàng - The Dry",
-        "author":"Jane Harper" ,
-        "price":"70.000đ",
-        "type":["Kinh dị"]
-    },
-    {
-        "image":"img/book/KD3.jpg" ,
-        "title":"Di Sản Kinh Hoàng",
-        "author":"Lisa Gardner" ,
-        "price":"137.000đ",
-        "type":["Kinh dị"]
-    },
-    {
-        "image":"img/book/KD4.jpg" ,
-        "title":"Tryện Kinh Dị Việt Nam",
-        "author":"Thế Lữ" ,
-        "price":"59.000đ",
-        "type":["Kinh dị"]
-    },
-    {
-        "image":"img/book/KD5.jpg" ,
-        "title":"Tryện Kinh Dị Việt Nam",
-        "author":"Thế Lữ" ,
-        "price":"99.000đ",
-        "type":["Kinh dị"]
-    },
-    {
-        "image":"img/book/KD6.jpg" ,
-        "title":"Tryện Kinh Dị Việt Nam",
-        "author":"Thế Lữ" ,
-        "price":"63.000đ",
-        "type":["Kinh dị"]
-    },
-    {
-        "image":"img/book/KD7.jpg" ,
-        "title":"Tryện Kinh Dị Việt Nam",
-        "author":"Lan Khai" ,
-        "price":"87.000đ",
-        "type":["Kinh dị"]
-    },
-    {
-        "image":"img/book/TE7.jpg" ,
-        "title":"Tiếng Hàn Tổng Hợp",
-        "author":"Cho Hang Rok" ,
-        "price":"120.000đ",
-        "type":["Khoa học"]
-    },
-    {
-        "image":"img/book/TE8.jpg" ,
-        "title":"Giáo Trình Hán Ngữ 1",
-        "author":"Chưa cập nhật" ,
-        "price":"71.000đ",
-        "type":["Khoa học"]
-    },
-    {
-        "image":"img/book/TE9.jpg" ,
-        "title":"Keep It Up - Tập Viết Chữ Há",
-        "author":"Jeyong" ,
-        "price":"56.000đ",
-        "type":[]
-    },
-
-   {
-        "image": "img/book/chainsawman.jpg",
-        "title": "Chainsaw man",
-        "author": "Tatsuki Fujimoto",
-        "price": "45.000đ",
-        "type":["Truyện tranh","Kinh dị"]
+        "type":["Kỹ năng sống","Khoa học","All"]
     },
     {
         "image":"img/book/tokyo.jpg" ,
         "title":"Tokyo Revengers - tập 6",
         "author":"Ken Wakui",
         "price":"115.000đ",
-        "type":["Truyện tranh"]
+        "type":["Truyện tranh","All"]
     },
     {
         "image":"img/book/spyxfamily.jpg" ,
         "title":"SPY x FAMILY",
         "author":"Tatsuya Endo",
         "price":"25.000đ",
-        "type":["Truyện tranh","Trẻ em"]
+        "type":["Truyện tranh","Trẻ em","All"]
     },
     {
         "image":"img/book/kimestu.jpg" ,
         "title":"Kimestu no Yaiba",
         "author":"Koyoharu Gotouge",
         "price":"25.000đ",
-        "type":["Truyện tranh","Trẻ em"]
+        "type":["Truyện tranh","Trẻ em","All"]
     },
     {
-        "image":"img/book/jujutsu.jpg" ,
-        "title":"Jujutsu Kaisen - limited",
-        "author":"Gege Akutami",
+        "image":"img/book/KN5.jpg" ,
+        "title":"Đời Ngắn Đừng Ngủ Dài",
+        "author":"Robin Sharma" ,
+        "price":"55.000đ",
+        "type":["Kỹ năng sống","Khoa học","All"]
+    },
+    {
+        "image":"img/book/KN6.jpg" ,
+        "title":"Rèn Luyện Tư Duy Phản Biện",
+        "author":"Albert Rutherford" ,
+        "price":"65.000đ",
+        "type":["Kỹ năng sống","Khoa học","All"]
+    },
+    {
+        "image":"img/book/KN7.jpg" ,
+        "title":"Tuổi Trẻ Đáng Giá Bao Nhiêu",
+        "author":"Rossie" ,
+        "price":"63.000đ",
+        "type":["Kỹ năng sống","All"]
+    },
+    {
+        "image":"img/book/KN8.jpg" ,
+        "title":"Sức Mạnh Tiềm Thức ",
+        "author":"Joseph Murphyc" ,
+        "price":"102.000đ",
+        "type":["Kỹ năng sống","Khoa học","All"]
+    },
+    {
+        "image":"img/book/KN9.jpg" ,
+        "title":"Chủ Nghĩa Khắc Kỷ",
+        "author":"William B Irvine" ,
+        "price":"87.000đ",
+        "type":["Kỹ năng sống","All"]
+    },
+    {
+        "image":"img/book/KN10.jpg" ,
+        "title":"Đừng Lựa Chọn An Nhàn Khi Còn Trẻ",
+        "author":"Cảnh Thiên" ,
+        "price":"87.000đ",
+        "type":["Kỹ năng sống","All"]
+    },
+    {
+        "image":"img/book/TE1.jpg" ,
+        "title":"Cẩm Nang Cấu Trúc Tiếng Anh",
+        "author":"Trang" ,
+        "price":"72.000đ",
+        "type":["Trẻ em","Khoa học","All"]
+    },
+    {
+        "image":"img/book/TE2.jpg" ,
+        "title":"Ngữ Pháp Tiếng Anh ",
+        "author":"Mai Lan Hương" ,
         "price":"50.000đ",
-        "type":["Truyện tranh"]
+        "type":["Trẻ em","Khoa học","All"]
     },
     {
-        "image":"img/book/komi.jpg" ,
-        "title":"Komi-san",
-        "author":"Tomohito Oda",
-        "price":"25.000đ",
-        "type":["Truyện tranh","Trẻ em"]
+        "image":"img/book/TE3.jpg" ,
+        "title":"Tiếng Nhật Cho Mọi Người",
+        "author":"Minna no Nihongo" ,
+        "price":"71.000đ",
+        "type":["Trẻ em","Khoa học","All"]
+    },
+    {
+        "image":"img/book/TE4.jpg" ,
+        "title":"Sách Tự Học Hiragana Katakana",
+        "author":"AOTS" ,
+        "price":"64.000đ",
+        "type":["Trẻ em","Khoa học","All"]
+    },
+    {
+        "image":"img/book/KN11.jpg" ,
+        "title":"Khéo Ăn Nói Sẽ Có Được Thiên Hạ",
+        "author":"Trác Nhả" ,
+        "price":"76.000đ",
+        "type":["Kỹ năng sống","Khoa học","All"]
+    },
+    {
+        "image":"img/book/KN12.jpg" ,
+        "title":"Người Giàu Có Nhất Thành Babylon",
+        "author":"George S Clason" ,
+        "price":"52.000đ",
+        "type":["Kỹ năng sống","Trẻ em","All"]
+    },
+    {
+        "image":"img/book/KN13.jpg" ,
+        "title":"Thần Số Học: Thấu Hiểu Nhân Tâm",
+        "author":"Tống Khánh Thượng" ,
+        "price":"76.000đ",
+        "type":["Kỹ năng sống","All"]
+    },
+    {
+        "image":"img/book/KN14.jpg" ,
+        "title":"Một Đời Như Kẻ Tìm Đường",
+        "author":"Phan Văn Trường" ,
+        "price":"166.000đ",
+        "type":["Kỹ năng sống","All"]
+    },
+    {
+        "image":"img/book/KN15.jpg" ,
+        "title":"Tư Duy Phản Biện",
+        "author":"Zoe McKey" ,
+        "price":"55.000đ",
+        "type":["Kỹ năng sống","Khoa học","All"]
+    },
+    {
+        "image":"img/book/KN16.jpg" ,
+        "title":"Kiếp Nào Ta Cũng Tìm Thấy Nhau ",
+        "author":"Brian L Weiss" ,
+        "price":"69.000đ",
+        "type":["Kỹ năng sống","All","Tiểu thuyết"]
+    },
+    
+    {
+        "image":"img/book/KN19.jpg" ,
+        "title":"Cân Bằng CảM Xúc, Cả Lúc Bão Giông",
+        "author":"Richard Nicholls" ,
+        "price":"74.000đ",
+        "type":["Kỹ năng sống","Khoa học","All"]
+    },
+    
+    {
+        "image":"img/book/TE6.jpg" ,
+        "title":"Ngữ Pháp Tiếng Hàn Thông Dụng",
+        "author":"Ahn Jean Myung" ,
+        "price":"213.000đ",
+        "type":["Trẻ em","Khoa học","All"]
+    },
+    {
+        "image":"img/book/KD1.jpg" ,
+        "title":"Dị Chủng 2 - Tàn Thế",
+        "author":"Guillermo Del" ,
+        "price":"114.000đ",
+        "type":["Kinh dị","All","Tiểu thuyết"]
+    },
+    {
+        "image":"img/book/KD2.jpg" ,
+        "title":"Mùa Hạn Kinh Hoàng - The Dry",
+        "author":"Jane Harper" ,
+        "price":"70.000đ",
+        "type":["Kinh dị","All"]
+    },
+    {
+        "image":"img/book/KD3.jpg" ,
+        "title":"Di Sản Kinh Hoàng",
+        "author":"Lisa Gardner" ,
+        "price":"137.000đ",
+        "type":["Kinh dị","All"]
+    },
+    {
+        "image":"img/book/KD4.jpg" ,
+        "title":"Tryện Kinh Dị Việt Nam",
+        "author":"Thế Lữ" ,
+        "price":"59.000đ",
+        "type":["Kinh dị","All"]
+    },
+
+    {
+        "image":"img/book/KD7.jpg" ,
+        "title":"Tryện Kinh Dị Việt Nam",
+        "author":"Lan Khai" ,
+        "price":"87.000đ",
+        "type":["Kinh dị","All"]
+    },
+    {
+        "image":"img/book/TE7.jpg" ,
+        "title":"Tiếng Hàn Tổng Hợp",
+        "author":"Cho Hang Rok" ,
+        "price":"120.000đ",
+        "type":["Khoa học","All"]
+    },
+    {
+        "image":"img/book/TE8.jpg" ,
+        "title":"Giáo Trình Hán Ngữ 1",
+        "author":"Chưa cập nhật" ,
+        "price":"71.000đ",
+        "type":["Khoa học","All"]
+    },
+    {
+        "image":"img/book/TE9.jpg" ,
+        "title":"Keep It Up - Tập Viết Chữ Há",
+        "author":"Jeyong" ,
+        "price":"56.000đ",
+        "type":["All","Trẻ em","Khoa học"]
     },
     {
         "image":"img/book/OP.jpg" ,
         "title":"Vivre Card ",
         "author":"Eiichiro Oda",
         "price":"120.000đ",
-        "type":["Truyện tranh","Trẻ em"]
+        "type":["Truyện tranh","Trẻ em","All"]
     },
     {
         "image":"img/book/blackjack.jpg" ,
         "title":"Black Jack - tập 11 ",
         "author":"Osamu Tezuka",
         "price":"30.000đ",
-        "type":["Truyện tranh","Kinh dị"]
+        "type":["Truyện tranh","Kinh dị","All"]
     },
     {
         "image":"img/book/bleach.jpg" ,
         "title":"BLEACH - tập 70 ",
         "author":"Tite Kubo",
         "price":"25.000đ",
-        "type":["Truyện tranh"]
+        "type":["Truyện tranh","All"]
     },
     {
         "image":"img/book/ranma.jpg" ,
         "title":"Ranma 1/2 - tập 19 ",
         "author":"Rumiko TAKAHASHI",
         "price":"70.000đ",
-        "type":["Truyện tranh"]
+        "type":["Truyện tranh","All"]
     },
     {
         "image":"img/book/conan.jpg" ,
         "title":"CONAN - tập 98 ",
         "author":"Gosho Aoyama",
         "price":"20.000đ",
-        "type":["Truyện tranh","Khoa học","Kinh dị"]
+        "type":["Truyện tranh","Khoa học","Kinh dị","All"]
     },
     {
         "image":"img/book/overlord.jpg" ,
         "title":"OVERLORD - tập 13 ",
         "author":"Maruyama Kugane",
         "price":"48.000đ",
-        "type":["Truyện tranh","Khoa học"]
+        "type":["Truyện tranh","Khoa học","All"]
     },
 
     {
@@ -484,74 +509,50 @@
         "title":"30 Chủ đề từ vựng tiếng anh",
         "author":"Trang Anh",
         "price": "133.000đ",
-        "type":["Trẻ em","Khoa học"]
+        "type":["Trẻ em","Khoa học","All"]
     },
     {
         "image":"img/book/hoahoc.jpg" ,
         "title":"Sổ tay hóa học",
         "author":"Trần Thị Yến" ,
         "price":"40.000đ",
-        "type":[]
+        "type":["All","Khoa học","Trẻ em"]
     },
     {
         "image":"img/book/giakim.jpg",
         "title":"Nhà giả kim" ,
         "author":"Paulo Coelho",
         "price":"65.000đ",
-        "type":["Tiểu thuyết","Kỹ năng sống"]
+        "type":["All","Tiểu thuyết","Kỹ năng sống"]
     },
     {
         "image":"img/book/demvinhhang.jpg" ,
         "title":"Đêm Vĩnh Hằng",
         "author":"Guillermo Del Toro" ,
         "price":"140.000đ",
-        "type":["Kinh dị","Tiểu thuyết"]
+        "type":["Kinh dị","All","Tiểu thuyết"]
     },
     {
         "image":"img/book/eng.jpg" ,
         "title":"English Grammar in Use Book w Ans",
         "author":"Raymond Murphy" ,
         "price":"170.000đ",
-        "type":["Trẻ em","Khoa học"]
+        "type":["Trẻ em","Khoa học","All"]
     },
     {
         "image":"img/book/kinang.jpg" ,
         "title":"Kĩ năng sống",
         "author":"PGS TS Huỳnh Văn Sơn",
         "price":"30.000đ" ,
-        "type":["Khoa học","Kỹ năng sống"]
+        "type":["Khoa học","Kỹ năng sống","All"]
     },
     {
         "image":"img/book/ando.jpg" ,
         "title":"mahabharata" ,
         "author":"DK" ,
         "price":"520.000đ",
-        "type":["Tiểu thuyết","Trẻ em"]
-    },
-    
-    {
-        "image":"img/book/thientai.jpg" ,
-        "title":"Thiên tài bên trái, kẻ điên bên phải" ,
-        "author":"Cao Minh",
-        "price":"97.000đ" ,
-        "type":["Khoa học","Tiểu thuyết"]
-    },
-    {
-        "image":"img/book/dac-nhan-tamjpg.jpg" ,
-        "title":"Đắc Nhân Tâm",
-        "author":"Nguyễn Văn Phước" ,
-        "price":"70.000đ" ,
-        "type":["Kỹ năng sống","Khoa học"]
-    },
-    {
-        "image":"img/book/yeu.jpg" ,
-        "title":"OSHO - Yêu - Being In Love",
-        "author":"OSHO" ,
-        "price":"119.000đ",
-        "type":["Tiểu thuyết","Trẻ em"]
+        "type":["All","Tiểu thuyết","Trẻ em","All"]
     }
-
     
-    
-
+ 
 ]

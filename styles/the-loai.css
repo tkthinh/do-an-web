@@ -37,14 +37,8 @@ h3 {
   margin-top: 0.5rem;
   cursor : pointer;
 }
-<<<<<<< HEAD
 .active {
   background-color:blue;
-=======
-
-.active {
-  background-color:var(--blue);
->>>>>>> 25af74d8e633fb3665c85bc36dc5c4c5b872f7ad
   color: #fff;
   border: solid 1px black;
 }

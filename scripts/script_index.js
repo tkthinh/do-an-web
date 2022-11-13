@@ -9,13 +9,8 @@ http.onload = function(){
          output += `
             <div class="item">
                <a class="item-img"><img src="${item.image}"/></a>
-<<<<<<< HEAD
                <p class="item-name">${item.title}</p> 
-               <p class="book-author">${item.author}</p>        
-=======
-               <a class="item-name">${item.title}</a> 
-               <a class="book-author">${item.author}</a>        
->>>>>>> 25af74d8e633fb3665c85bc36dc5c4c5b872f7ad
+               <p class="book-author">${item.author}</p>             
                <p class="item-price">${item.price}</p>
                <button type="button" class="buy-btn">
                 <i class="fa-solid fa-cart-shopping"></i>
@@ -25,5 +20,10 @@ http.onload = function(){
          `;
       }
       document.querySelector(".item-container").innerHTML = output;
+      
    }
 }
+fetch('../data/index_book.json')
+.then(res =>res.json)
+.then(data => {})
+ 
