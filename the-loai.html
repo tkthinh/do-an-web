@@ -30,7 +30,7 @@
           <span class="menu-btn">
             <i class="fa-solid fa-shapes"></i>
           </span>
-          <input type="text" id="search_bar"  onkeyup="search_bar()" class="search" placeholder="Tìm kiếm sản phẩm..." />
+          <input type="search" id="search"   class="search" placeholder="Tìm kiếm sản phẩm..." data-search/>
           <div class="user-menu">
             <a href="login.html" class="user-text">Đăng nhập/Đăng kí</a>
             <a href="login.html"><i class="fa-solid fa-user user-icon"></i></a>
@@ -82,12 +82,13 @@
                 </div>
             </div>
             <div class="items">
-                <div class="item-container"></div>
-                <template>
+                <div class="item-container" data-user-cards-container></div>
+                <template data-user-template>
                   <div class="card">
-                    <div class="name"> </div>
-                    <div class="price"> </div>
-                    <div class="img"> </div>
+                    <div class="img" data-image> </div>
+                    <div class="title" data-title> </div>
+                    <div class="price" data-price> </div>
+                    <div class="type" data-type> </div>
                   </div>
                 </template>
                   <div class="page-counter">

@@ -1,3 +1,6 @@
+const userCardTemplate = document.querySelector("[data-user-template]")
+const userCardContainer = document.querySelector("[data-user-cards-container]")
+const searchInput = document.querySelector("[data-search]")
 let http = new XMLHttpRequest();
 http.open('get','../data/index_book.json', true);
 http.send();
@@ -23,7 +26,29 @@ http.onload = function(){
       
    }
 }
+let users=[]
+searchInput.addEventListener("onkeyup", e=>{
+   const value = e.target.value
+   users.forEach(user =>{
+      const isVisible = user.title.toLowerCase().includes(value) || user.type.toLowerCase().includes(value)
+   })
+})
 fetch('../data/index_book.json')
-.then(res =>res.json)
-.then(data => {})
+.then(res =>res.json())
+.then(data => {
+   user = data.map(user => {
+      const card = userCardTemplate.content.cloneNode(true).children[0]
+      const img = card.querySelector("[data-image]")
+      const titl = card.querySelector("[data-title]")
+      const pri = card.querySelector("[data-price]")
+      const typ = card.querySelector("[data-type]")
+      img.textContent = user.image;
+      titl.textContent = user.title;
+      pri.textContent = user.price;
+      typ.textContent = user.type;
+      userCardContainer.append(card)
+      return{ image: user.image, title: user.title, price: user.price, type: user.type, element: card }
+   })
+   
+})
  
