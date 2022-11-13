@@ -40,7 +40,7 @@ header{
   background-color: var(--navy);
 }
 
-.sticky div, .sticky div a{
+.sticky div > a, .sticky .dropdown button{
   color: #fff;
 }
 
@@ -50,7 +50,7 @@ header{
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  overflow: hidden;
+  /* overflow: hidden; */
   z-index: 15;
   gap: 10px;
 }
@@ -66,11 +66,51 @@ header{
   object-fit: cover;
 }
 
-.menu-btn {
+.dropdown {
   flex-basis: 5%;
+  position: relative;
+}
+
+.dropdown-btn{
   font-size: 3.5rem;
   color: var(--blue);
+  background-color: transparent;
+  border: none;
   cursor: pointer;
+}
+
+.dropdown-menu{
+  position: absolute;
+  display: inline-block;
+  width: 200px;
+  left: 0;
+  top: calc(100% + .5rem);
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 5px;
+  pointer-events: none;
+  box-shadow: 0 .2rem .5rem rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 200ms ease-in-out, transform 200ms ease-in-out;
+}
+
+.dropdown.active > .dropdown-menu{
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.dropdown-menu li{
+  border-top: 1px solid black;
+}
+
+.dropdown-menu li a{
+  display: block;
+  margin: 0 auto;
+  font-size: 1.8rem;
+  padding: 1rem .5rem;
+  color: #333;
 }
 
 .search {
