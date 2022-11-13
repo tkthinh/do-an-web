@@ -27,8 +27,20 @@
     <header>
       <div class="top-menu">
         <a href="index.html" class="logo"><img src="img/logo.png" /></a>
-        <div class="menu-btn">
-          <i class="fa-solid fa-shapes"></i>
+        <div class="dropdown">
+          <button class="dropdown-btn" data-dropdown-btn>
+            <i class="fa-solid fa-shapes"></i>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a href="/the-loai.html">Best seller</a></li>
+            <li><a href="/the-loai.html">Tiểu thuyết</a></li>
+            <li><a href="/the-loai.html">Sách kinh tế</a></li>
+            <li><a href="/the-loai.html">Kỹ năng sống</a></li>
+            <li><a href="/the-loai.html">Truyện tranh</a></li>
+            <li><a href="/the-loai.html">Manga</a></li>
+            <li><a href="/the-loai.html">Sách giáo khoa</a></li>
+            <li><a href="/the-loai.html">Văn phòng phẩm</a></li>
+          </ul>
         </div>
         <input type="text" id="search_bar" class="search" onkeyup="search_bar()" placeholder="Tìm kiếm sản phẩm..." data-search/>
         <template>
