@@ -152,26 +152,34 @@ h3 {
     align-items: center;
 }
 
-.page-counter a{
+.page-counter div{
     font-size: 1.8rem;
     padding: .5rem 1rem;
     margin: 0 1rem;
 }
 
-.page-counter a:active{
+.page-counter div:active{
     background-color: var(--navy);
     color: white;
 }
 
-.page-counter a:hover{
+.page-counter div:hover{
     text-decoration: underline;
 }
 
-.page-counter a > i{
+.page-counter div > i{
     background-color: var(--navy);
     color: white;
     padding: 1rem;
     margin: 0 3rem;
+}
+
+#pagination-numbers {
+  display: flex
+}
+
+#pagination-numbers > div {
+  margin-left: 20px;
 }
 
 /* responsive */
@@ -206,5 +214,6 @@ h3 {
   .buy-btn p{
     font-size: 1.2rem;
   }
-
+  
 }
+

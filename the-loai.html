@@ -14,8 +14,10 @@
           defer
         ></script>
         <script src="/scripts/navbar.js" defer></script>
+        <script src="/data/index_products.js" defer></script>
         <script src="/scripts/script_index.js" defer ></script> 
         <script src="/scripts/filter.js" defer ></script>
+        <script src="/scripts/search_bar.js" defer></script>
         <link
           rel="stylesheet"
           href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
@@ -30,13 +32,15 @@
           <span class="menu-btn">
             <i class="fa-solid fa-shapes"></i>
           </span>
-          <input type="search" id="search"   class="search" placeholder="Tìm kiếm sản phẩm..." data-search/>
+          <input type="search" id="search" class="search" placeholder="Tìm kiếm sản phẩm..." data-search  />
+          
           <div class="user-menu">
             <a href="login.html" class="user-text">Đăng nhập/Đăng kí</a>
             <a href="login.html"><i class="fa-solid fa-user user-icon"></i></a>
             <a href="#"><i class="fa-regular fa-heart"></i></a>
             <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
           </div>
+
         </div>
       </header>
       <main>
@@ -81,23 +85,21 @@
                     </div>
                 </div>
             </div>
+
             <div class="items">
-                <div class="item-container" data-user-cards-container></div>
-                <template data-user-template>
-                  <div class="card">
-                    <div class="img" data-image> </div>
-                    <div class="title" data-title> </div>
-                    <div class="price" data-price> </div>
-                    <div class="type" data-type> </div>
-                  </div>
-                </template>
-                  <div class="page-counter">
+                <div class="item-container" id="list"></div>
+                <div class="page-counter" >
+                  <div ><i class="fa-solid fa-chevron-left"></i></div>>
+                  <div id="pagination-numbers"></div>            
+                  <div ><i class="fa-solid fa-chevron-right"></i></div>>
+                </div>
+                  <!-- <div class="page-counter">
                     <a href="#"><i class="fa-solid fa-chevron-left"></i></a>
                     <a href="#">1</a>
                     <a href="#">2</a>
                     <a href="#">3</a>
                     <a href=""><i class="fa-solid fa-chevron-right"></i></a>
-                  </div>
+                  </div> -->
             </div>
         </div>
       </main>

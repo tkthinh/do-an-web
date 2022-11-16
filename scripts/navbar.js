@@ -6,11 +6,11 @@ window.addEventListener("scroll", function(){
 })
 
 
-document.addEventListener("click", function(){
-    const dropdown = document.querySelector(".dropdown")
-    dropdown.classList.add('active')
+// document.addEventListener("click", function(){
+//     const dropdown = document.querySelector(".dropdown")
+//     dropdown.classList.add('active')
 
-    if(!dropdown.contains(event.target)){
-        dropdown.classList.remove('active')
-    }
-})
+//     if(!dropdown.contains(event.target)){
+//         dropdown.classList.remove('active')
+//     }
+// })
