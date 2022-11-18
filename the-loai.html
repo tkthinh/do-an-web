@@ -15,9 +15,8 @@
         ></script>
         <script src="/scripts/navbar.js" defer></script>
         <script src="/data/index_products.js" defer></script>
-        <script src="/scripts/script_index.js" defer ></script> 
         <script src="/scripts/filter.js" defer ></script>
-        <script src="/scripts/search_bar.js" defer></script>
+     
         <link
           rel="stylesheet"
           href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
@@ -32,8 +31,8 @@
           <span class="menu-btn">
             <i class="fa-solid fa-shapes"></i>
           </span>
-          <input type="search" id="search" class="search" placeholder="Tìm kiếm sản phẩm..." data-search  />
-          
+          <input type="text" id="search" class="search" placeholder="Tìm kiếm sản phẩm..." data-search  />
+          <div class="box"></div>
           <div class="user-menu">
             <a href="login.html" class="user-text">Đăng nhập/Đăng kí</a>
             <a href="login.html"><i class="fa-solid fa-user user-icon"></i></a>
@@ -51,38 +50,21 @@
         <div class="shop">
             <div class="left-sidebar">
                 <ul class="category">
-                    <h3>Thể loại</h3>
-                    <li><a class="btn btn-primary active" onclick="filter_type('All')">All</a></li>
-                    <li><a class="btn btn-primary" onclick="filter_type('Kinh tế')">Kinh tế</a></li>
-                    <li><a class="btn btn-primary" onclick="filter_type('Tiểu thuyết')">Tiểu thuyết</a></li>
-                    <li><a class="btn btn-primary" onclick="filter_type('Kỹ năng sống')">Kỹ năng sống</a></li>
-                    <li><a class="btn btn-primary" onclick="filter_type('Kinh dị')">Kinh dị</a></li>
-                    <li><a class="btn btn-primary" onclick="filter_type('Khoa học')">Khoa học</a></li>  
-                    <li><a class="btn btn-primary" onclick="filter_type('Trẻ em')">Trẻ em</a></li>
-                    <li><a class="btn btn-primary" onclick="filter_type('Truyện tranh')">Truyện Tranh</a></li>
+                    <h3>Thể loại</h3>    
+                    <li><input class="btn btn-primary type" type="checkbox" onchange="filter()" value="Kinh tế">Kinh tế</li>
+                    <li><input class="btn btn-primary type" type="checkbox" onchange="filter()" value="Tiểu thuyết">Tiểu thuyết</li>
+                    <li><input class="btn btn-primary type" type="checkbox" onchange="filter()" value="Kỹ năng sống">Kỹ năng sống</li>
+                    <li><input class="btn btn-primary type" type="checkbox" onchange="filter()" value="Kinh dị">Kinh dị</li>
+                    <li><input class="btn btn-primary type" type="checkbox" onchange="filter()" value="Khoa học">Khoa học</li>  
+                    <li><input class="btn btn-primary type" type="checkbox" onchange="filter()" value="Trẻ em">Trẻ em</li>
+                    <li><input class="btn btn-primary type" type="checkbox" onchange="filter()" value="Truyện tranh">Truyện Tranh</li>
                 </ul>
                 <div class="sort">
                     <h3>Lọc theo giá</h3>
-                    <div class="choice">
-                        <input type="radio" name="price">
-                        <label for="price">Tất cả</label>
-                    </div>
-                    <div class="choice">
-                        <input type="radio" name="price">
-                        <label for="price">0-100.000đ</label>
-                    </div>
-                    <div class="choice">
-                        <input type="radio" name="price">
-                        <label for="price">100.000đ-300.000đ</label>
-                    </div>
-                    <div class="choice">
-                        <input type="radio" name="price">
-                        <label for="price">300.000đ-500.000đ</label>
-                    </div>
-                    <div class="choice">
-                        <input type="radio" name="price">
-                        <label for="price">Trên 500.000đ</label>
-                    </div>
+                    <li><input class="btn btn-primary price" type="checkbox" onchange="filter()" value="1">Dưới 100.000đ</li>
+                    <li><input class="btn btn-primary price" type="checkbox" onchange="filter()" value="2">100.000đ -> 300.000đ</li>
+                    <li><input class="btn btn-primary price" type="checkbox" onchange="filter()" value="3">300.00đ -> 500.000đ</li>  
+                    <li><input class="btn btn-primary price" type="checkbox" onchange="filter()" value="4">Trên 500.000đ</li>
                 </div>
             </div>
 
@@ -93,13 +75,7 @@
                   <div id="pagination-numbers"></div>            
                   <div ><i class="fa-solid fa-chevron-right"></i></div>>
                 </div>
-                  <!-- <div class="page-counter">
-                    <a href="#"><i class="fa-solid fa-chevron-left"></i></a>
-                    <a href="#">1</a>
-                    <a href="#">2</a>
-                    <a href="#">3</a>
-                    <a href=""><i class="fa-solid fa-chevron-right"></i></a>
-                  </div> -->
+
             </div>
         </div>
       </main>

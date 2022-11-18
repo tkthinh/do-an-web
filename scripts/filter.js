@@ -1,187 +1,154 @@
-const filter_button=document.querySelectorAll('.left-sidebar .btn');
-// đổi màu nút khi click
-Array.from(filter_button).forEach(function(element){
-    element.addEventListener('click',function(event){
-        for(let i=0; i<filter_button.length; i++)
-        filter_button[i].classList.remove('active');
-        this.classList.add('active');
-    })
-})
-// lọc item và phân trang
-const main =JSON.parse(window.localStorage.product);
-
+const main =JSON.parse(window.localStorage.product).book;
+//=========================filter box==============================================
+let sp=main
 let totalPage=0
-let limitPage=9
-
-filter_type=(name)=>{
-    let perPage=[]
-    let currentPage=1
-    let products = main.book;
-
-    products= products.filter(function(ele){return (ele.type.includes(name));});
-    
+const limitPage=9
+let item_eachPage=[]
+let currentPage=1
+rendermainPage=(products,item_eachPage,currentPage)=>{
     totalPage = Math.ceil(products.length/limitPage)
-    
-    
-    perPage = products.slice(
-        (currentPage-1)*limitPage,
-        (currentPage-1)*limitPage + limitPage
-    )
-    renderPage(products)
-    renderItem(perPage)
-    
+        
+        item_eachPage = products.slice(
+            (currentPage-1)*limitPage,
+            (currentPage-1)*limitPage + limitPage,
+        )
+     
+        renderItem=(products)=>{
+            let output = "";
+            products.forEach(item => {
+            output += `
+              <div class="item">
+                 <a class="item-img"><img src="`+item.image+`"/></a>
+                 <p class="item-name">`+item.title+`</p> 
+                 <p class="book-author">`+item.author+`</p>             
+                 <p class="item-price">`+item.price+'.000đ'+`</p>
+                 <button type="button" class="buy-btn">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                <p>Thêm vào giỏ hàng</p>
+                  </button>
+              </div>
+              `;
+        })
+        document.querySelector(".item-container").innerHTML = output
+        }
+        renderPage=(products)=>{
+            totalPage =Math.ceil(products.length/limitPage)
+            let output = "";
+            for(let i=1; i<= totalPage; i++)
+            { output += `<div onclick="handlePageNumber(${i})">${i}</div>`}
+            document.getElementById("pagination-numbers").innerHTML=output
+        }
+        renderPage(products)
+        renderItem(item_eachPage)
+        
+        handlePageNumber=(num)=>{
+        currentPage = num
+        item_eachPage = products.slice(
+            (currentPage-1)*limitPage,
+            (currentPage-1)*limitPage + limitPage,
+        )
+        renderItem(item_eachPage)
+        }
 }
+rendermainPage(sp,item_eachPage,currentPage)   
 
-handlePageNumber=(num)=>{
-    currentPage = num
-    perPage = products.slice(
-        (currentPage-1)*limitPage,
-        (currentPage-1)*limitPage + limitPage
-    )
-    renderItem(perPage)
+filter=()=>{
+     item_eachPage=[]
+     currentPage=1
+     totalPage=0
+    let products=[]
+    let type_choices= document.getElementsByClassName("type")
+    let price_choices= document.getElementsByClassName("price")
+    let savingtype_choices=[]
+    let savingprice_choices=[]
+ //===================lọc dk=================
+    for( i=0; i<type_choices.length;i++){
+        if(type_choices[i].checked == true) 
+        savingtype_choices.push(type_choices[i].value)
+    }
+    
+    for( i=0; i<price_choices.length;i++){
+        if(price_choices[i].checked == true) 
+        savingprice_choices.push(price_choices[i].value)
+    }
+    // if(!savingtype_choices.length){rendermainPage(sp,item_eachPage,currentPage)}
+//===================lọc dk=================
+//===================lọc sp theo dk================
+ type_clear=(a)=>{
+    let temp1=[]
+    for( i=0; i<savingtype_choices.length;i++){
+     let temp= a.filter(function(ele){return (ele.type.includes(savingtype_choices[i]))})
+        for(j=0; j<temp.length; j++){
+            temp1.unshift(temp[j])
+        }
+    }
+    return temp1
+    }
+price_clear=(a)=>{
+    let temp1=[]
+    for( i=0; i<savingprice_choices.length;i++){
+        let temp= a.filter(function(ele){
+            switch(savingprice_choices[i]){
+                case "1": {return (ele.price <=100)}
+                case "2": {return (ele.price <=300 && ele.price >=100)}
+                case "3": {return (ele.price <=500 && ele.price >=300)}
+                case "4": {return (ele.price >=500)}
+            }   
+        })
+           for(j=0; j<temp.length; j++){
+               temp1.unshift(temp[j])
+           }
+       }
+       return temp1
+    }
+//===================lọc sp theo dk================
+//===================các Th lọc====================
+    if(savingtype_choices.length !=0 &&  savingprice_choices.length ==0){products=type_clear(main)}
+    else if(savingtype_choices.length ==0 &&  savingprice_choices.length !=0){products=price_clear(main)}
+    else if(savingtype_choices.length !=0 &&  savingprice_choices.length !=0){
+        products=type_clear(main)
+        products=price_clear(products)}
+    else{rendermainPage(sp,item_eachPage,currentPage); return}
+//===================các Th lọc====================
+
+    rendermainPage(products,item_eachPage,currentPage)
 }
+//=========================filter box==============================================
 
-renderPage=(products)=>{
-    totalPage =Math.ceil(products.length/limitPage)
-    let output = "";
-    for(let i=1; i<= totalPage; i++)
-    { output += `<div onclick="handlePageNumber(${i})">${i}</div>`}
-    document.getElementById("pagination-numbers").innerHTML=output
-}
-
-renderItem=(products)=>{
-    let output = "";
-    products.forEach(item => {
-    output += `
-      <div class="item">
-         <a class="item-img"><img src="`+item.image+`"/></a>
-         <p class="item-name">`+item.title+`</p> 
-         <p class="book-author">`+item.author+`</p>             
-         <p class="item-price">`+item.price+`</p>
-         <button type="button" class="buy-btn">
-          <i class="fa-solid fa-cart-shopping"></i>
-        <p>Thêm vào giỏ hàng</p>
-          </button>
-      </div>
-      `;
+//=========================filter bar==============================================
+let box = document.getElementsByClassName('box')[0]
+let search =document.getElementById('search')
+window.addEventListener('load', ()=>{
+    sp.forEach(ele =>{
+        const {image, title, price} = ele
+        let card = document.createElement('a')
+        card.innerHTML=`<img src="${image}">
+                         <div class="content">
+                            <h6>${title}</h6>           
+                            <p>${price}.000đ</p>
+                         </div>`;
+        box.appendChild(card);
+    })
+    console.log(box)
 })
-document.querySelector(".item-container").innerHTML = output
-}
-// renderItem=()=>{
-//     let output = "";
-//     products.forEach(item => {
-//     output += `
-//       <div class="item">
-//          <a class="item-img"><img src="`+item.image+`"/></a>
-//          <p class="item-name">`+item.title+`</p> 
-//          <p class="book-author">`+item.author+`</p>             
-//          <p class="item-price">`+item.price+`</p>
-//          <button type="button" class="buy-btn">
-//           <i class="fa-solid fa-cart-shopping"></i>
-//         <p>Thêm vào giỏ hàng</p>
-//           </button>
-//       </div>
-//       `;
-// })
-// document.querySelector(".item-container").innerHTML = output
-// }
-   
-      //  products.forEach(function(item, index) {
-      //   if(index < 8) {
-      //     output += `
-      //        <div class="item">
-      //           <a class="item-img"><img src="`+item.image+`"/></a>
-      //           <p class="item-name">`+item.title+`</p> 
-      //           <p class="book-author">`+item.author+`</p>             
-      //           <p class="item-price">`+item.price+`</p>
-      //           <button type="button" class="buy-btn">
-      //            <i class="fa-solid fa-cart-shopping"></i>
-      //          <p>Thêm vào giỏ hàng</p>
-      //            </button>
-      //        </div>
-      //        `;
-      //   }
-      // document.querySelector(".item-container").innerHTML = output;
+search.addEventListener('keyup',()=>{
+    let filter= search.value.toUpperCase();
+    let a = box.getElementsByTagName('a')
+    for (i = 0; i < a.length; i++) {
 
-      //  })
-      // }       
+        let b =a[i].getElementsByClassName('content')[0]
+        let c =b.getElementsByTagName('h6')[0]
+        let text =c.textContent || c.innerText
 
-
-//====================================================================================================
-// let perPage = 9;
-// let currentPage = 1;
-// let start = 0;
-// let end = 0;
-// const totalPage = Math.ceil(products.length / perPage);
-// const btnNext = document.querySelector('.btnNext');
-// const btnPrev = document.querySelector('.btnPrevious');
-
-// function getCurrentPage(currentPage){
-//     start = (currentPage - 1) * perPage;
-//     end = (currentPage - 1) * perPage + perPage;
-//     console.log(start,end);
-// }
-
-// function renderProduct() {
-//     html = '';
-//     const content_product = product.map((item, index) => {
-//         if (index >= start && index < end) {
-//             html += '<div class ="col l-3">'
-//             html += '<div class = "item">';
-//             html += '<img src=' + item.image + '>';
-//             html += '<h2>' + item.title + '</h2>';
-//             html += '<h3>' + item.price + '</h3>';
-//             html += '<button class="btn_buy">'+item.buy+'</button>';
-//             html += '</div>'
-//             html += '</div>'
-//             return html;
-//         }
-//     })
-//     document.getElementById('product').innerHTML = html;
-// }
-
-// renderProduct();
-// renderListPage()
-// function renderListPage() {
-//     let html = '';
-//     html += `<li class="count_page"><button>${1}</button></li>`;
-//     for (let i = 2; i <= totalPage; i++) {
-//         html += `<li class="count_page"><button>${i}</button></li>`;
-//     }
-//     document.getElementById('number-page').innerHTML = html;
-    
-//     function changePage() {
-//         const currentPages = document.querySelectorAll('.number-page li');
-//         console.log(currentPage);
-//         for(let i = 0 ; i < currentPages.length; i++){
-//             currentPages[i].onclick=()=>{
-//                 let value = i + 1;
-//                 currentPage = value;
-//                 getCurrentPage(currentPage);
-//                 renderProduct();
-//             }
-//         }
-//     }
-//     changePage();
-// }
-
-
-// renderListPage();
-// btnNext.addEventListener('click', () => {
-//     currentPage++;
-//     if (currentPage > totalPage) {
-//         currentPage = totalPage;
-//     }
-//     getCurrentPage(currentPage);
-//     renderProduct();
-
-// })
-// btnPrev.addEventListener('click', () => {
-//     currentPage--;
-//     if (currentPage <= 1) {
-//         currentPage = 1;
-//     }
-//     getCurrentPage(currentPage);
-//     renderProduct();
-
-// })
+        if(text.toUpperCase().indexOf(filter) > -1){
+            a[i].style.display = ''
+            box.style.visibility = "visible"
+            box.style.opacity = 1
+        }
+        else{ a[i].style.display = 'none'}
+        if(search.value == 0){
+            box.style.visibility = "hidden"
+            box.style.opacity = 0
+        } 
+    }
+})
