@@ -1,7 +1,7 @@
 
 
-const books = JSON.parse(window.localStorage.product).book;
-const stationery = JSON.parse(window.localStorage.product).vpp;
+const books = JSON.parse(window.localStorage.books);
+const stationery = JSON.parse(window.localStorage.vpp);
 let current_page = 1, products_per_page = 5;
 //Chuyển đổi menu
 function toggleMenu(){
