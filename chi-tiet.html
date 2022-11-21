@@ -22,33 +22,61 @@
         <link rel="stylesheet" href="styles/chi-tiet.css" />
       </head>
 <body>
-    <header>
-        <div class="top-menu">
-          <a href="index.html" class="logo"><img src="img/logo.png" /></a>
-          <div class="dropdown">
-            <button class="dropdown-btn" data-dropdown-btn>
-              <i class="fa-solid fa-shapes"></i>
-            </button>
-            <ul class="dropdown-menu">
-              <li><a href="/the-loai.html">Best seller</a></li>
-              <li><a href="/the-loai.html">Tiểu thuyết</a></li>
-              <li><a href="/the-loai.html">Sách kinh tế</a></li>
-              <li><a href="/the-loai.html">Kỹ năng sống</a></li>
-              <li><a href="/the-loai.html">Truyện tranh</a></li>
-              <li><a href="/the-loai.html">Manga</a></li>
-              <li><a href="/the-loai.html">Sách giáo khoa</a></li>
-              <li><a href="/the-loai.html">Văn phòng phẩm</a></li>
-            </ul>
-          </div>
-          <input type="text" class="search" placeholder="Tìm kiếm sản phẩm..."/>
-          <div class="user-menu">
-            <a href="login.html" class="user-text">Đăng nhập/Đăng kí</a>
-            <a href="login.html"><i class="fa-solid fa-user user-icon"></i></a>
-            <a href="#"><i class="fa-regular fa-heart"></i></a>
-            <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
-          </div>
+  <header>
+    <div class="top-menu">
+      <a href="index.html" class="logo"><img src="img/logo.png" /></a>
+      <div class="dropdown">
+        <button class="dropdown-btn">
+          <i class="fa-solid fa-shapes"></i>
+        </button>
+        <ul class="dropdown-menu">
+          <li><a href="/the-loai.html">Best seller</a></li>
+          <li><a href="/the-loai.html">Tiểu thuyết</a></li>
+          <li><a href="/the-loai.html">Sách kinh tế</a></li>
+          <li><a href="/the-loai.html">Kỹ năng sống</a></li>
+          <li><a href="/the-loai.html">Truyện tranh</a></li>
+          <li><a href="/the-loai.html">Manga</a></li>
+          <li><a href="/the-loai.html">Sách giáo khoa</a></li>
+          <li><a href="/the-loai.html">Văn phòng phẩm</a></li>
+        </ul>
+      </div>
+      <div class="search" data-dropdown-btn>
+        <input type="text" id="search_bar" onkeyup="search_bar()" placeholder="Tìm kiếm sản phẩm..." data-search/>
+        <ul class="search-results">
+          <li class="result">
+            <a href="chi-tiet.html" class="result-img">
+              <img src="/img/book/ando.jpg">
+            </a>
+            <dt class="result-info">
+              <a href="chi-tiet.html" class="result-name">Lorem ipsum dolor sit.</a>
+              <span class="result-price">100.000đ</span>
+            </dt>
+          </li>
+          <li class="result">
+            <a href="chi-tiet.html" class="result-img">
+              <img src="/img/book/bleach.jpg">
+            </a>
+            <dt class="result-info">
+              <a href="chi-tiet.html" class="result-name">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum, magnam beatae.</a>
+              <span class="result-price">50.000đ</span>
+            </dt>
+          </li>
+        </ul>
+      </div>
+      <div class="user-menu">
+        <a href="login.html" class="user-text">Đăng nhập/Đăng kí</a>
+        <a href="login.html"><i class="fa-solid fa-user user-icon"></i></a>
+        <div class="fav">
+          <a href="#"><i class="fa-regular fa-heart"></i></a>
+          <p class="counter fav-counter">4</p>
         </div>
-      </header>
+        <div class="cart">
+          <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+          <p class="counter cart-counter">2</p>
+        </div>
+      </div>
+    </div>
+  </header>
       <main>
         <section class="path">
           <span>Trang chủ ></span>

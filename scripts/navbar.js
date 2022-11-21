@@ -5,12 +5,27 @@ window.addEventListener("scroll", function(){
     // topElement.classList.toggle("sticky", window.scrollY > 0);
 })
 
+const menuBtn = document.querySelector('.dropdown');
 
-document.addEventListener("click", function(){
-    const dropdown = document.querySelector(".dropdown")
-    dropdown.classList.add('active')
+const searchBar = document.querySelector('.search');
+const searchInput = document.getElementById('search_bar')
+const searchResult = document.querySelector('.search-results')
 
-    if(!dropdown.contains(event.target)){
-        dropdown.classList.remove('active')
+menuBtn.addEventListener("click", () => {
+    menuBtn.classList.toggle('drop');
+    searchBar.classList.remove('drop');
+})
+
+searchBar.addEventListener("click", () =>{
+    menuBtn.classList.remove('drop');
+    if(searchInput.value = ''){
+        searchBar.classList.remove('drop')
+    }
+    else{
+        searchBar.classList.toggle('drop');
     }
 })
+
+window.onbeforeunload = function () {
+    if(window.scrollTo) window.scrollTo(0,0);
+};

@@ -1,62 +1,64 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Danh sách sản phẩm</title>      
-        <script src="/scripts/admin.js"></script>
-
         <link rel="stylesheet" href="styles/admin.css" />
     </head>
     <body>
         <div id="container">
             <!-- Header -->
-            <div class="navigation">
+            <div class="leftmenu">
                 <ul>
                     <li>
                         <a href="#">
+                            <img src="img/admin/homepage.png" class="navlogo"/>
+                            <span class="title">Trang chủ</span> 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
                             <img src="img/admin/books.png" class="navlogo"/>
-                            <span class="tittle">Sản phẩm</span> 
+                            <span class="title">Sản phẩm</span> 
                         </a>
                     </li>
                     <li>
                         <a href="#">
                             <img src="img/admin/purchase-order.png" class="navlogo"/>
-                            <span class="tittle">Đơn hàng</span> 
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="img/admin/customer.png" class="navlogo"/>
-                            <span class="tittle">Khách hàng</span> 
+                            <span class="title">Đơn hàng</span> 
                         </a>
                     </li>
                     <li>
                         <a href="#">
                             <img src="img/admin/accsetting.png" class="navlogo"/>
-                            <span class="tittle">Quản lý tài khoản</span>
+                            <span class="title">Quản lý tài khoản</span>
                         </a>
                     </li>
                     <li>
                         <a href="/index.html">
                             <img src="img/admin/log-out.png" class="navlogo"/>
-                            <span class="tittle">Đăng xuất</span>
+                            <span class="title">Đăng xuất</span>
                         </a>
                     </li>
                 </ul>
             </div>
             <!-- Content -->
-            <div class="main">
-                <div class="topbar">
-                    <div class="toggle" onclick="toggleMenu()"></div>
-                    <a href="/index.html" id="logo"><img src="/img/logo.png"/></a>
-                    <div class="users">
-                        <a href="#"><img src="img/admin/shopping-cart.png"/></a>
-                        <div class="name">[Admin's name]</div>
-                    </div>
+            <div class="topbar">
+                <div class="toggle" onclick="toggleMenu()"></div>
+                <a href="/index.html" id="logo"><img src="img/logo.png"/></a>
+                <div class="admin-info">
+                    <a href="#" class="admin-cart"><img src="img/admin/shopping-cart.png"/></a>
+                    <div class="name">[Admin's name]</div>
                 </div>
-                <div class="menu">
+            </div>
+            <div class="main">
+                <div class="card-box">
+                    <a href="#" class="card">
+                        <div>Trang chủ</div>
+                        <img src="img/admin/homepage.png" class="card-logo"/>
+                    </a>
                     <a href="#" class="card">
                         <div>Sản phẩm</div>
                         <img src="img/admin/books.png" class="card-logo"/>
@@ -66,51 +68,66 @@
                         <img src="img/admin/purchase-order.png" class="card-logo"/>
                     </a>
                     <a href="#" class="card">
-                        <div>Khách hàng</div>
-                        <img src="img/admin/customer.png" class="card-logo"/>
-                    </a>
-                    <a href="#" class="card">
                         <div>Quản lý tài khoản</div>
                         <img src="img/admin/accsetting.png" class="card-logo"/>
                     </a>
                 </div>
-                <div class=page-tittle>DANH MỤC SẢN PHẨM</div>
+                <div class=page-title>DANH MỤC SẢN PHẨM</div>
                 <div class="content">
                     <div class="searching-bar">
                         <input value="" placeholder="Tìm kiếm sản phẩm theo tên, thể loại, id...">
                     </div>
+                    
+                    <div class="options">
+                        <div>
+                            <label for="choices">Sản phẩm: </label>
+                            <select name="luaChon" id="choices">
+                                <option type="text" value="">Sách</option>
+                                <option type="text" value="">Văn phòng phẩm</option>
+                                <option type="text" value="">Tất cả</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="choices">Sắp xếp theo: </label>
+                            <select name="luaChon" id="choices">
+                                <option type="text" value="">ID tăng dần</option>
+                            <option type="text" value="">ID giảm dần</option>
+                            <option type="text" value="">Tên (A-Z)</option>
+                            <option type="text" value="">Tên (Z-A)</option>
+                            </select>
+                        </div>
+                    </div>
+
+
+
                     <table border="1px">
-                        <tr>
-                            <th>ID</th>
-                            <th>Ảnh</th>
-                            <th>Tên</th>
-                            <th>Giá</th>
-                            <th>Xem chi tiết</th>
-                            <th>Tùy chỉnh</th>
-                        </tr>
-                        <tr>
-                            <td>005611</td>
-                            <td><img src="/img/book/dac-nhan-tamjpg.jpg"/></td>
-                            <td>Dark nhân Tâmk</td>
-                            <td>1,000,000,000</td>
-                            <td><a href="#">Chi tiết</a></td>
-                            <td>
-                                <a href="#">Sửa</a> / <a href="#">Xóa</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>001</td>
-                            <td><img src="/img/book/dac-nhan-tamjpg.jpg"/></td>
-                            <td>Dark nhân Tâmk</td>
-                            <td>1,000,034613156050,000</td>
-                            <td><a href="#">Chi tiết</a></td>
-                            <td>
-                                <a href="#">Sửa</a> / <a href="#">Xóa</a>
-                            </td>
-                        </tr>
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Ảnh</th>
+                                <th>Tên</th>
+                                <th>Giá</th>
+                                <th>Chi tiết</th>
+                                <th>Tùy chỉnh</th>
+                                </tr>
+                        </thead>
+                        <tbody class="products">
+                        </tbody>
                     </table>
+                    <div class="pagination-wrap">
+                        <button class="pagination-button" id="prev-button" disabled>
+                            &lt;
+                        </button>
+                        <div class="pagination-numbers">
+
+                        </div>
+                        <button class="pagination-button" id="next-button" disabled>
+                            &gt;
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
     </body>
+    <script src="scripts/admin.js"></script>
 </html>

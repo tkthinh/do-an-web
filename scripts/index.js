@@ -23,8 +23,8 @@ document.querySelector(".bestseller").innerHTML=renderItem(bestsell)
 document.querySelector(".sachmoi").innerHTML = renderItem(books)
 document.querySelector(".vpp").innerHTML=renderItem(vpps)
 
-let box = document.getElementsByClassName('box')[0]
-let search =document.getElementById('search')
+// let box = document.getElementsByClassName('box')[0]
+// let search =document.getElementById('search')
 // window.addEventListener('load', ()=>{
 //     books.forEach(ele =>{
 //         const {image, title, price} = ele
@@ -58,3 +58,5 @@ let search =document.getElementById('search')
 //         } 
 //     }
 // })
+
+
