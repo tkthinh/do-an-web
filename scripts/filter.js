@@ -22,9 +22,9 @@ rendermainPage=(products,item_eachPage,currentPage)=>{
                  <p class="item-name">`+item.title+`</p> 
                  <p class="book-author">`+item.author+`</p>             
                  <p class="item-price">`+item.price+'.000đ'+`</p>
-                 <button type="button" class="buy-btn">
-                  <i class="fa-solid fa-cart-shopping"></i>
-                <p>Thêm vào giỏ hàng</p>
+                 <button class="buy-btn" data-id="`+products[i].id+`" >
+                  <i class="fas fa-shopping-cart" ></i>
+                    Thêm vào giỏ hàng
                   </button>
               </div>
               `;
@@ -129,7 +129,6 @@ window.addEventListener('load', ()=>{
                          </div>`;
         box.appendChild(card);
     })
-    console.log(box)
 })
 search.addEventListener('keyup',()=>{
     let filter= search.value.toUpperCase();

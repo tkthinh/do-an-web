@@ -4,6 +4,7 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
     window.localStorage.product = JSON.stringify({
         book: [
             {
+                "id":1,
                 "image": "img/book/TT2.jpg",
                 "title": "Tiểu Thuyết Chuyển Thể - Thanh Gươm Diệt Quỷ",
                 "author": "Koyoharu Gotouge",
@@ -11,6 +12,7 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "type": ["All", "Tiểu thuyết", "Truyện tranh", "Trẻ em"]
             },
             {
+                "id":2,
                 "image": "img/book/KT1.jpg",
                 "title": "Lập Chiến Lược Kinh Doanh Tối Giản",
                 "author": "Vaughan Evans",
@@ -18,20 +20,23 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "type": ["All", "Kinh tế"]
             },
             {
+                "id":3,
                 "image": "img/book/jujutsu.jpg",
                 "title": "Jujutsu Kaisen - limited",
                 "author": "Gege Akutami",
                 "price": 50,
-                "type": ["Best seller","Truyện tranh", "All"]
+                "type": ["Truyện tranh", "All"]
             },
             {
+                "id":4,
                 "image": "img/book/komi.jpg",
                 "title": "Komi-san",
                 "author": "Tomohito Oda",
                 "price": 25,
-                "type": ["Best seller","Truyện tranh", "Trẻ em", "All"]
+                "type": ["Truyện tranh", "Trẻ em", "All"]
             },
             {
+                "id":5,
                 "image": "img/book/KT2.jpg",
                 "title": "Đô Thị Thông Minh, Tương Lai Xán Lạn",
                 "author": "Mike Barlow",
@@ -39,6 +44,7 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "type": ["All", "Kinh tế"]
             },
             {
+                "id":6,
                 "image": "img/book/TT6.jpg",
                 "title": "Sword Art Online Progressive",
                 "author": "REKI KAWAHARA",
@@ -46,13 +52,15 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "type": ["All", "Tiểu thuyết", "Truyện tranh", "Trẻ em"]
             },
             {
+                "id":7,
                 "image": "img/book/chainsawman.jpg",
                 "title": "Chainsaw man",
                 "author": "Tatsuki Fujimoto",
                 "price": 45,
-                "type": ["Best seller","Truyện tranh", "Kinh dị", "All"]
+                "type": ["Truyện tranh", "Kinh dị", "All"]
             },
             {
+                "id":8,
                 "image": "img/book/KT4.jpg",
                 "title": "Tỷ Phú Không Tiền",
                 "author": "Conor O Clery",
@@ -60,6 +68,7 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "type": ["All", "Kinh tế"]
             },
             {
+                "id":9,
                 "image": "img/book/KN17.jpg",
                 "title": "Tâm Lý Học Thành Công",
                 "author": "Carol S Dweck",
@@ -67,6 +76,7 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "type": ["Kỹ năng sống", "All"]
             },
             {
+                "id":10,
                 "image": "img/book/KN18.jpg",
                 "title": "Little Stories",
                 "author": "Sracey Riches",
@@ -74,6 +84,7 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "type": ["Best seller","Kỹ năng sống", "All", "Tiểu thuyết"]
             },
             {
+                "id":11,
                 "image": "img/book/KT13.jpg",
                 "title": "Tinh Thần Chiến Đấu Rực Lửa",
                 "author": "Inamori Kazuo",
@@ -81,6 +92,7 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "type": ["All", "Kinh tế"]
             },
             {
+                "id":12,
                 "image": "img/book/KT3.jpg",
                 "title": "Vị Tu Sĩ Bán Chiếc Ferrari",
                 "author": "Robin Sharma",
@@ -88,6 +100,7 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "type": ["All", "Kinh tế"]
             },
             {
+                "id":13,
                 "image": "img/book/KD5.jpg",
                 "title": "Tryện Kinh Dị Việt Nam",
                 "author": "Thế Lữ",
@@ -95,6 +108,7 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "type": ["Kinh dị", "All"]
             },
             {
+                "id":14,
                 "image": "img/book/KD6.jpg",
                 "title": "Tryện Kinh Dị Việt Nam",
                 "author": "Thế Lữ",
@@ -103,6 +117,7 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
             },
 
             {
+                "id":15,
                 "image": "img/book/KT5.jpg",
                 "title": "Tôi Đã Kiếm 1 Triệu Đô Đầu Tiên",
                 "author": "Ewen Chia",
@@ -110,6 +125,7 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "type": ["All", "Kinh tế"]
             },
             {
+                "id":16,
                 "image": "img/book/KT6.jpg",
                 "title": "Bất Động Sản Cho Thế Hệ Tương Lai",
                 "author": "Vicki Wusche",
@@ -117,6 +133,7 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "type": ["All", "Kinh tế"]
             },
             {
+                "id":17,
                 "image": "img/book/KT7.jpg",
                 "title": "Think And Grow Rich",
                 "author": "Napoleon Hill",
@@ -124,6 +141,7 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "type": ["All", "Kinh tế"]
             },
             {
+                "id":18,
                 "image": "img/book/KT8.jpg",
                 "title": "Bezonomics - Kinh Tế Học Bezos",
                 "author": "Brian Dumaine",
@@ -131,6 +149,7 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "type": ["All", "Kinh tế", "Khoa học"]
             },
             {
+                "id":19,
                 "image": "img/book/KT9.jpg",
                 "title": "The Leadership Triangle",
                 "author": "Kevin Ford",
@@ -138,6 +157,7 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "type": ["Best seller","All", "Kinh tế", "Khoa học"]
             },
             {
+                "id":20,
                 "image": "img/book/KT10.jpg",
                 "title": "Xây Dựng Sự Độc Đáo",
                 "author": "Riccardo Pozzoll",
@@ -145,6 +165,7 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "type": ["All", "Kinh tế"]
             },
             {
+                "id":21,
                 "image": "img/book/KT11.jpg",
                 "title": "Stage Designer",
                 "author": "Hoan Nguyễn",
@@ -152,6 +173,7 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "type": ["All", "Kinh tế", "Khoa học"]
             },
             {
+                "id":22,
                 "image": "img/book/KT12.jpg",
                 "title": "Masayoshi Son",
                 "author": "Onishi Takahiro",
@@ -160,6 +182,7 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
             },
 
             {
+                "id":23,
                 "image": "img/book/KT14.jpg",
                 "title": "Bí Mật Tư Duy Triệu Phú (Tái Bản 2021)",
                 "author": "T Harv Eker",
@@ -167,14 +190,16 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "type": ["All", "Kinh tế"]
             },
             {
+                "id":24,
                 "image": "img/book/TT1.jpg",
                 "title": "Từ Điển Tiếng “Em” - Tái Bản 2021",
                 "author": "Khotudien",
                 "price": 55,
-                "type": ["All", "Tiểu thuyết"]
+                "type": ["Best seller","All", "Tiểu thuyết"]
             },
 
             {
+                "id":25,
                 "image": "img/book/TT3.jpg",
                 "title": "Bước Chậm Lại Giữa Thế Gian Vội Vã",
                 "author": "Hae Min",
@@ -182,6 +207,7 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "type": ["All", "Tiểu thuyết"]
             },
             {
+                "id":26,
                 "image": "img/book/thientai.jpg",
                 "title": "Thiên tài bên trái, kẻ điên bên phải",
                 "author": "Cao Minh",
@@ -189,6 +215,7 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "type": ["Best seller","Khoa học", "All", "Tiểu thuyết"]
             },
             {
+                "id":27,
                 "image": "img/book/dac-nhan-tamjpg.jpg",
                 "title": "Đắc Nhân Tâm",
                 "author": "Nguyễn Văn Phước",
@@ -196,6 +223,7 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "type": ["Kỹ năng sống", "Khoa học", "All"]
             },
             {
+                "id":28,
                 "image": "img/book/yeu.jpg",
                 "title": "OSHO - Yêu - Being In Love",
                 "author": "OSHO",
@@ -203,6 +231,7 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "type": ["All", "Tiểu thuyết", "Trẻ em"]
             },
             {
+                "id":29,
                 "image": "img/book/TT4.jpg",
                 "title": "Bố Già (Đông A)",
                 "author": "Mario Puzo",
@@ -210,14 +239,16 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "type": ["All", "Tiểu thuyết", "Kinh tế"]
             },
             {
+                "id":30,
                 "image": "img/book/TT5.jpg",
                 "title": "Thế Giới Otome Game",
                 "author": "Mishima Yomu",
                 "price": 112,
-                "type": ["All", "Tiểu thuyết", "Truyện tranh", "Trẻ em"]
+                "type": ["All","Best seller", "Tiểu thuyết", "Truyện tranh", "Trẻ em"]
             },
 
             {
+                "id":31,
                 "image": "img/book/TT7.jpg",
                 "title": "Hai Số Phận",
                 "author": "Jeffrey Archer",
@@ -225,6 +256,7 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "type": ["All", "Tiểu thuyết"]
             },
             {
+                "id":32,
                 "image": "img/book/TT8.jpg",
                 "title": "Hai Vạn Dặm Dưới Đáy Biển ",
                 "author": "Jules Verne",
@@ -232,6 +264,7 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "type": ["All", "Tiểu thuyết"]
             },
             {
+                "id":33,
                 "image": "img/book/KN1.jpg",
                 "title": "Thay Đổi Cuộc Sống Với Nhân Số Học",
                 "author": "Lê Đỗ Quỳnh Hương",
@@ -239,6 +272,7 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "type": ["Kỹ năng sống", "Khoa học", "All"]
             },
             {
+                "id":34,
                 "image": "img/book/KN2.jpg",
                 "title": "Đọc Vị Bất Kỳ Ai",
                 "author": "TS David J Lieberman",
@@ -246,6 +280,7 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "type": ["Kỹ năng sống", "Khoa học", "All"]
             },
             {
+                "id":35,
                 "image": "img/book/KN3.jpg",
                 "title": "Hiểu Về Trái Tim",
                 "author": "Minh Niệm",
@@ -253,6 +288,7 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "type": ["Kỹ năng sống", "Khoa học", "All", "Tiểu thuyết"]
             },
             {
+                "id":36,
                 "image": "img/book/KN4.jpg",
                 "title": "Tâm Lý Học - Phác Họa Chân Dung Kẻ Phạm Tội",
                 "author": "Vũ",
@@ -260,13 +296,15 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "type": ["Kỹ năng sống", "Khoa học", "All"]
             },
             {
+                "id":37,
                 "image": "img/book/tokyo.jpg",
                 "title": "Tokyo Revengers - tập 6",
                 "author": "Ken Wakui",
                 "price": 115,
-                "type": ["Truyện tranh", "All"]
+                "type": ["Best seller","Truyện tranh", "All"]
             },
             {
+                "id":38,
                 "image": "img/book/spyxfamily.jpg",
                 "title": "SPY x FAMILY",
                 "author": "Tatsuya Endo",
@@ -274,6 +312,7 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "type": ["Truyện tranh", "Trẻ em", "All"]
             },
             {
+                "id":39,
                 "image": "img/book/kimestu.jpg",
                 "title": "Kimestu no Yaiba",
                 "author": "Koyoharu Gotouge",
@@ -281,6 +320,7 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "type": ["Truyện tranh", "Trẻ em", "All"]
             },
             {
+                "id":40,
                 "image": "img/book/KN5.jpg",
                 "title": "Đời Ngắn Đừng Ngủ Dài",
                 "author": "Robin Sharma",
@@ -288,6 +328,7 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "type": ["Kỹ năng sống", "Khoa học", "All"]
             },
             {
+                "id":41,
                 "image": "img/book/KN6.jpg",
                 "title": "Rèn Luyện Tư Duy Phản Biện",
                 "author": "Albert Rutherford",
@@ -295,6 +336,7 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "type": ["Kỹ năng sống", "Khoa học", "All"]
             },
             {
+                "id":42,
                 "image": "img/book/KN7.jpg",
                 "title": "Tuổi Trẻ Đáng Giá Bao Nhiêu",
                 "author": "Rossie",
@@ -302,6 +344,7 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "type": ["Kỹ năng sống", "All"]
             },
             {
+                "id":43,
                 "image": "img/book/KN8.jpg",
                 "title": "Sức Mạnh Tiềm Thức ",
                 "author": "Joseph Murphyc",
@@ -309,6 +352,7 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "type": ["Kỹ năng sống", "Khoa học", "All"]
             },
             {
+                "id":44,
                 "image": "img/book/KN9.jpg",
                 "title": "Chủ Nghĩa Khắc Kỷ",
                 "author": "William B Irvine",
@@ -316,6 +360,7 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "type": ["Kỹ năng sống", "All"]
             },
             {
+                "id":45,
                 "image": "img/book/KN10.jpg",
                 "title": "Đừng Lựa Chọn An Nhàn Khi Còn Trẻ",
                 "author": "Cảnh Thiên",
@@ -323,6 +368,7 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "type": ["Kỹ năng sống", "All"]
             },
             {
+                "id":46,
                 "image": "img/book/TE1.jpg",
                 "title": "Cẩm Nang Cấu Trúc Tiếng Anh",
                 "author": "Trang",
@@ -330,6 +376,7 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "type": ["Trẻ em", "Khoa học", "All"]
             },
             {
+                "id":47,
                 "image": "img/book/TE2.jpg",
                 "title": "Ngữ Pháp Tiếng Anh ",
                 "author": "Mai Lan Hương",
@@ -337,6 +384,7 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "type": ["Trẻ em", "Khoa học", "All"]
             },
             {
+                "id":48,
                 "image": "img/book/TE3.jpg",
                 "title": "Tiếng Nhật Cho Mọi Người",
                 "author": "Minna no Nihongo",
@@ -344,6 +392,7 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "type": ["Trẻ em", "Khoa học", "All"]
             },
             {
+                "id":49,
                 "image": "img/book/TE4.jpg",
                 "title": "Sách Tự Học Hiragana Katakana",
                 "author": "AOTS",
@@ -351,6 +400,7 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "type": ["Trẻ em", "Khoa học", "All"]
             },
             {
+                "id":50,
                 "image": "img/book/KN11.jpg",
                 "title": "Khéo Ăn Nói Sẽ Có Được Thiên Hạ",
                 "author": "Trác Nhả",
@@ -358,6 +408,7 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "type": ["Kỹ năng sống", "Khoa học", "All"]
             },
             {
+                "id":51,
                 "image": "img/book/KN12.jpg",
                 "title": "Người Giàu Có Nhất Thành Babylon",
                 "author": "George S Clason",
@@ -365,6 +416,7 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "type": ["Kỹ năng sống", "Trẻ em", "All"]
             },
             {
+                "id":52,
                 "image": "img/book/KN13.jpg",
                 "title": "Thần Số Học: Thấu Hiểu Nhân Tâm",
                 "author": "Tống Khánh Thượng",
@@ -372,6 +424,7 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "type": ["Kỹ năng sống", "All"]
             },
             {
+                "id":53,
                 "image": "img/book/KN14.jpg",
                 "title": "Một Đời Như Kẻ Tìm Đường",
                 "author": "Phan Văn Trường",
@@ -379,6 +432,7 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "type": ["Kỹ năng sống", "All"]
             },
             {
+                "id":54,
                 "image": "img/book/KN15.jpg",
                 "title": "Tư Duy Phản Biện",
                 "author": "Zoe McKey",
@@ -386,6 +440,7 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "type": ["Kỹ năng sống", "Khoa học", "All"]
             },
             {
+                "id":55,
                 "image": "img/book/KN16.jpg",
                 "title": "Kiếp Nào Ta Cũng Tìm Thấy Nhau ",
                 "author": "Brian L Weiss",
@@ -394,6 +449,7 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
             },
 
             {
+                "id":56,
                 "image": "img/book/KN19.jpg",
                 "title": "Cân Bằng CảM Xúc, Cả Lúc Bão Giông",
                 "author": "Richard Nicholls",
@@ -402,6 +458,7 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
             },
 
             {
+                "id":57,
                 "image": "img/book/TE6.jpg",
                 "title": "Ngữ Pháp Tiếng Hàn Thông Dụng",
                 "author": "Ahn Jean Myung",
@@ -409,6 +466,7 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "type": ["Trẻ em", "Khoa học", "All"]
             },
             {
+                "id":58,
                 "image": "img/book/KD1.jpg",
                 "title": "Dị Chủng 2 - Tàn Thế",
                 "author": "Guillermo Del",
@@ -416,6 +474,7 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "type": ["Kinh dị", "All", "Tiểu thuyết"]
             },
             {
+                "id":59,
                 "image": "img/book/KD2.jpg",
                 "title": "Mùa Hạn Kinh Hoàng - The Dry",
                 "author": "Jane Harper",
@@ -423,6 +482,7 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "type": ["Kinh dị", "All"]
             },
             {
+                "id":60,
                 "image": "img/book/KD3.jpg",
                 "title": "Di Sản Kinh Hoàng",
                 "author": "Lisa Gardner",
@@ -430,6 +490,7 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "type": ["Best seller","Kinh dị", "All"]
             },
             {
+                "id":61,
                 "image": "img/book/KD4.jpg",
                 "title": "Tryện Kinh Dị Việt Nam",
                 "author": "Thế Lữ",
@@ -438,6 +499,7 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
             },
 
             {
+                "id":62,
                 "image": "img/book/KD7.jpg",
                 "title": "Tryện Kinh Dị Việt Nam",
                 "author": "Lan Khai",
@@ -445,6 +507,7 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "type": ["Kinh dị", "All"]
             },
             {
+                "id":63,
                 "image": "img/book/TE7.jpg",
                 "title": "Tiếng Hàn Tổng Hợp",
                 "author": "Cho Hang Rok",
@@ -452,6 +515,7 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "type": ["Khoa học", "All"]
             },
             {
+                "id":64,
                 "image": "img/book/TE8.jpg",
                 "title": "Giáo Trình Hán Ngữ 1",
                 "author": "Chưa cập nhật",
@@ -459,6 +523,7 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "type": ["Khoa học", "All"]
             },
             {
+                "id":65,
                 "image": "img/book/TE9.jpg",
                 "title": "Keep It Up - Tập Viết Chữ Hán",
                 "author": "Jeyong",
@@ -466,6 +531,7 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "type": ["All", "Trẻ em", "Khoa học"]
             },
             {
+                "id":66,
                 "image": "img/book/OP.jpg",
                 "title": "Vivre Card ",
                 "author": "Eiichiro Oda",
@@ -473,6 +539,7 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "type": ["Truyện tranh", "Trẻ em", "All"]
             },
             {
+                "id":67,
                 "image": "img/book/blackjack.jpg",
                 "title": "Black Jack - tập 11 ",
                 "author": "Osamu Tezuka",
@@ -480,6 +547,7 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "type": ["Truyện tranh", "Kinh dị", "All"]
             },
             {
+                "id":68,
                 "image": "img/book/bleach.jpg",
                 "title": "BLEACH - tập 70 ",
                 "author": "Tite Kubo",
@@ -487,6 +555,7 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "type": ["Truyện tranh", "All"]
             },
             {
+                "id":69,
                 "image": "img/book/ranma.jpg",
                 "title": "Ranma 1/2 - tập 19 ",
                 "author": "Rumiko TAKAHASHI",
@@ -494,6 +563,7 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "type": ["Truyện tranh", "All"]
             },
             {
+                "id":70,
                 "image": "img/book/conan.jpg",
                 "title": "CONAN - tập 98 ",
                 "author": "Gosho Aoyama",
@@ -501,6 +571,7 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "type": ["Truyện tranh", "Khoa học", "Kinh dị", "All"]
             },
             {
+                "id":71,
                 "image": "img/book/overlord.jpg",
                 "title": "OVERLORD - tập 13 ",
                 "author": "Maruyama Kugane",
@@ -509,6 +580,7 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
             },
 
             {
+                "id":72,
                 "image": "img/book/tienganh.jpg",
                 "title": "30 Chủ đề từ vựng tiếng anh",
                 "author": "Trang Anh",
@@ -516,6 +588,7 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "type": ["Best seller","Trẻ em", "Khoa học", "All"]
             },
             {
+                "id":73,
                 "image": "img/book/hoahoc.jpg",
                 "title": "Sổ tay hóa học",
                 "author": "Trần Thị Yến",
@@ -523,6 +596,7 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "type": ["All", "Khoa học", "Trẻ em"]
             },
             {
+                "id":74,
                 "image": "img/book/giakim.jpg",
                 "title": "Nhà giả kim",
                 "author": "Paulo Coelho",
@@ -530,6 +604,7 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "type": ["All", "Tiểu thuyết", "Kỹ năng sống"]
             },
             {
+                "id":75,
                 "image": "img/book/demvinhhang.jpg",
                 "title": "Đêm Vĩnh Hằng",
                 "author": "Guillermo Del Toro",
@@ -537,6 +612,7 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "type": ["Kinh dị", "All", "Tiểu thuyết"]
             },
             {
+                "id":76,
                 "image": "img/book/eng.jpg",
                 "title": "English Grammar in Use Book w Ans",
                 "author": "Raymond Murphy",
@@ -544,6 +620,7 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "type": ["Trẻ em", "Khoa học", "All"]
             },
             {
+                "id":77,
                 "image": "img/book/kinang.jpg",
                 "title": "Kĩ năng sống",
                 "author": "PGS TS Huỳnh Văn Sơn",
@@ -551,6 +628,7 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "type": ["Khoa học", "Kỹ năng sống", "All"]
             },
             {
+                "id":78,
                 "image": "img/book/ando.jpg",
                 "title": "mahabharata",
                 "author": "DK",
@@ -561,51 +639,59 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
         
         vpp: [
             {
+                "id":79,
                 "image": "img/book/but.jpg",
                 "title": "Hộp 20 bút bi 0.5mm",
                 "author": "Thiên Long",
                 "price": 69
             },
             {
+                "id":80,
                 "image": "img/book/tap.jpg",
                 "title": "Tập Sinh Viên 4 Ô Ly",
                 "author": "Elephant",
                 "price": 17
             },
             {
+                "id":81,
                 "image": "img/book/balo.jpg",
                 "title": "Cặp Đa Năng Simplex 06",
                 "author": "STARGO",
                 "price": 462
             },
             {
+                "id":82,
                 "image": "img/book/chi.jpg",
                 "title": "Ruột Chì Ngòi Lớn 2B",
                 "author": "Uyên Loan",
                 "price": 4
             },
             {
+                "id":83,
                 "image": "img/book/bothuchanh.jpg",
                 "title": "Bộ 2 Hộp Thực Hành Toán Lớp 2",
                 "author": "Việt Nam",
                 "price": 188
             },
             {
+                "id":84,
                 "image": "img/book/puzzle.jpg",
                 "title": "Bộ Xếp Hình Puzzle",
                 "author": "Castorland",
                 "price": 649
             },
             {
+                "id":85,
                 "image": "img/book/cal.jpg",
                 "title": "Máy Tính Vinacal 570 ES Plus II ",
                 "author": "Vinacal",
                 "price": 540
             },
             {
+                "id":86,
                 "image": "img/book/butdaquang.jpg",
                 "title": "Bút dạ quang",
-                "author": "Schneider",
+                "author": "Schner",
                 "price": 17
             }
         ]

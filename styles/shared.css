@@ -137,16 +137,16 @@ header{
 .user-menu i {
   font-size: 3rem;
 }
-
-.fav, .cart{
+/* I CHANGE HERE */
+.fav, .cart-icon{
   position: relative;
   margin: 0 .5rem;
 }
 
-.fav i, .cart i{
+.fav i, .cart-icon i{
   font-size: 3rem;
 }
-
+/* TO HERE */
 .counter{
   position: absolute;
   top: -10px;

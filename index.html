@@ -5,21 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Trang chủ</title>
-    <script
-      src="https://kit.fontawesome.com/d717109192.js"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"
-      defer
-    ></script>
+    <script src="https://kit.fontawesome.com/d717109192.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js" defer></script>
     <script src="scripts/slideshow.js" defer></script>
     <script src="/scripts/navbar.js" defer></script>
-    <script src="scripts/script_index.js" defer></script>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
-    />
+    <script src="/data/index_products.js" defer></script>
+    <script src="/scripts/index.js" defer></script>
+    <script src="/scripts/cart.js" defer></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="styles/shared.css">
     <link rel="stylesheet" href="styles/styles.css" />
   </head>
@@ -42,7 +36,8 @@
             <li><a href="/the-loai.html">Văn phòng phẩm</a></li>
           </ul>
         </div>
-        <input type="text" id="search_bar" class="search" onkeyup="search_bar()" placeholder="Tìm kiếm sản phẩm..." data-search/>
+        <input type="text" id="search" class="search" placeholder="Tìm kiếm sản phẩm..." data-search  />
+        <div class="box"></div>
         <div class="user-menu">
           <a href="login.html" class="user-text">Đăng nhập/Đăng kí</a>
           <a href="login.html"><i class="fa-solid fa-user user-icon"></i></a>
@@ -50,10 +45,14 @@
             <a href="#"><i class="fa-regular fa-heart"></i></a>
             <p class="counter fav-counter">4</p>
           </div>
-          <div class="cart">
-            <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
-            <p class="counter cart-counter">2</p>
+
+          <div class="cart-icon">
+          <span class="nav-icon">
+            <i class="fas fa-cart-shopping"></i>
+          </span>
+          <p class="counter cart-counter">0</p>
           </div>
+
         </div>
       </div>
     </header>
@@ -117,7 +116,7 @@
       </section>
       <section class="section-2">
         <div class="img-banner"><img src="img/banner/best-seller.png" /></div>
-        <div class="item-container" data-user-cards-container></div>
+        <div class="item-container bestseller"></div>
           <a href="#" class="more">Xem thêm</a>
         </div>
       </section>
@@ -125,209 +124,36 @@
         <div class="img-banner">
           <img src="img/banner/sach-moi.png" />
         </div>
-          <div class="item-container">
-            <div class="item">
-              <a class="item-img" href="#"
-                ><img src="img/book/dac-nhan-tamjpg.jpg"
-              /></a>
-              <a class="item-name" href="#">Đắc nhân tâm</a>
-              <a class="book-author" href="#">Dale Carnegie</a>
-              <span class="item-price">69.000đ</span>
-              <button type="button" class="buy-btn">
-                <i class="fa-solid fa-cart-shopping"></i>
-                <p>Thêm vào giỏ hàng</p>
-              </button>
-            </div>
-            <div class="item">
-              <a class="item-img" href="#"
-                ><img src="img/book/dac-nhan-tamjpg.jpg"
-              /></a>
-              <a class="item-name" href="#">Đắc nhân tâm</a>
-              <a class="book-author" href="#">Dale Carnegie</a>
-              <span class="item-price">69.000đ</span>
-              <button type="button" class="buy-btn">
-                <i class="fa-solid fa-cart-shopping"></i>
-                <p>Thêm vào giỏ hàng</p>
-              </button>
-            </div>
-            <div class="item">
-              <a class="item-img" href="#"
-                ><img src="img/book/dac-nhan-tamjpg.jpg"
-              /></a>
-              <a class="item-name" href="#">Đắc nhân tâm</a>
-              <a class="book-author" href="#">Dale Carnegie</a>
-              <span class="item-price">69.000đ</span>
-              <button type="button" class="buy-btn">
-                <i class="fa-solid fa-cart-shopping"></i>
-                <p>Thêm vào giỏ hàng</p>
-              </button>
-            </div>
-            <div class="item">
-              <a class="item-img" href="#"
-                ><img src="img/book/dac-nhan-tamjpg.jpg"
-              /></a>
-              <a class="item-name" href="#">Đắc nhân tâm</a>
-              <a class="book-author" href="#">Dale Carnegie</a>
-              <span class="item-price">69.000đ</span>
-              <button type="button" class="buy-btn">
-                <i class="fa-solid fa-cart-shopping"></i>
-                <p>Thêm vào giỏ hàng</p>
-              </button>
-            </div>
-            <div class="item">
-              <a class="item-img" href="#"
-                ><img src="img/book/dac-nhan-tamjpg.jpg"
-              /></a>
-              <a class="item-name" href="#">Đắc nhân tâm</a>
-              <a class="book-author" href="#">Dale Carnegie</a>
-              <span class="item-price">69.000đ</span>
-              <button type="button" class="buy-btn">
-                <i class="fa-solid fa-cart-shopping"></i>
-                <p>Thêm vào giỏ hàng</p>
-              </button>
-            </div>
-            <div class="item">
-              <a class="item-img" href="#"
-                ><img src="img/book/dac-nhan-tamjpg.jpg"
-              /></a>
-              <a class="item-name" href="#">Đắc nhân tâm</a>
-              <a class="book-author" href="#">Dale Carnegie</a>
-              <span class="item-price">69.000đ</span>
-              <button type="button" class="buy-btn">
-                <i class="fa-solid fa-cart-shopping"></i>
-                <p>Thêm vào giỏ hàng</p>
-              </button>
-            </div>
-            <div class="item">
-              <a class="item-img" href="#"
-                ><img src="img/book/dac-nhan-tamjpg.jpg"
-              /></a>
-              <a class="item-name" href="#">Đắc nhân tâm</a>
-              <a class="book-author" href="#">Dale Carnegie</a>
-              <span class="item-price">69.000đ</span>
-              <button type="button" class="buy-btn">
-                <i class="fa-solid fa-cart-shopping"></i>
-                <p>Thêm vào giỏ hàng</p>
-              </button>
-            </div>
-            <div class="item">
-              <a class="item-img" href="#"
-                ><img src="img/book/dac-nhan-tamjpg.jpg"
-              /></a>
-              <a class="item-name" href="#">Đắc nhân tâm</a>
-              <a class="book-author" href="#">Dale Carnegie</a>
-              <span class="item-price">69.000đ</span>
-              <button type="button" class="buy-btn">
-                <i class="fa-solid fa-cart-shopping"></i>
-                <p>Thêm vào giỏ hàng</p>
-              </button>
-            </div>
-          </div>
+          <div class="item-container sachmoi"></div>
           <a href="#" class="more">Xem thêm</a>
         </div>
       </section>
       <section class="section-4">
         <div class="img-banner"><img src="img/banner/vpp.png" /></div>
-        <div class="item-container">
-          <div class="item">
-            <a class="item-img" href="#"
-              ><img src="img/vpp/but-bi-thien-long.jpg"
-            /></a>
-            <a class="item-name" href="#">Bút bi Thiên Long</a>
-            <a class="book-author" href="#">Thiên Long</a>
-            <span class="item-price">4.000đ</span>
-            <button type="button" class="buy-btn">
-              <i class="fa-solid fa-cart-shopping"></i>
-              <p>Thêm vào giỏ hàng</p>
-            </button>
-          </div>
-          <div class="item">
-            <a class="item-img" href="#"
-              ><img src="img/vpp/but-bi-thien-long.jpg"
-            /></a>
-            <a class="item-name" href="#">Bút bi Thiên Long</a>
-            <a class="book-author" href="#">Thiên Long</a>
-            <span class="item-price">4.000đ</span>
-            <button type="button" class="buy-btn">
-              <i class="fa-solid fa-cart-shopping"></i>
-              <p>Thêm vào giỏ hàng</p>
-            </button>
-          </div>
-          <div class="item">
-            <a class="item-img" href="#"
-              ><img src="img/vpp/but-bi-thien-long.jpg"
-            /></a>
-            <a class="item-name" href="#">Bút bi Thiên Long</a>
-            <a class="book-author" href="#">Thiên Long</a>
-            <span class="item-price">4.000đ</span>
-            <button type="button" class="buy-btn">
-              <i class="fa-solid fa-cart-shopping"></i>
-              <p>Thêm vào giỏ hàng</p>
-            </button>
-          </div>
-          <div class="item">
-            <a class="item-img" href="#"
-              ><img src="img/vpp/but-bi-thien-long.jpg"
-            /></a>
-            <a class="item-name" href="#">Bút bi Thiên Long</a>
-            <a class="book-author" href="#">Thiên Long</a>
-            <span class="item-price">4.000đ</span>
-            <button type="button" class="buy-btn">
-              <i class="fa-solid fa-cart-shopping"></i>
-              <p>Thêm vào giỏ hàng</p>
-            </button>
-          </div>
-          <div class="item">
-            <a class="item-img" href="#"
-              ><img src="img/vpp/but-bi-thien-long.jpg"
-            /></a>
-            <a class="item-name" href="#">Bút bi Thiên Long</a>
-            <a class="book-author" href="#">Thiên Long</a>
-            <span class="item-price">4.000đ</span>
-            <button type="button" class="buy-btn">
-              <i class="fa-solid fa-cart-shopping"></i>
-              <p>Thêm vào giỏ hàng</p>
-            </button>
-          </div>
-          <div class="item">
-            <a class="item-img" href="#"
-              ><img src="img/vpp/but-bi-thien-long.jpg"
-            /></a>
-            <a class="item-name" href="#">Bút bi Thiên Long</a>
-            <a class="book-author" href="#">Thiên Long</a>
-            <span class="item-price">4.000đ</span>
-            <button type="button" class="buy-btn">
-              <i class="fa-solid fa-cart-shopping"></i>
-              <p>Thêm vào giỏ hàng</p>
-            </button>
-          </div>
-          <div class="item">
-            <a class="item-img" href="#"
-              ><img src="img/vpp/but-bi-thien-long.jpg"
-            /></a>
-            <a class="item-name" href="#">Bút bi Thiên Long</a>
-            <a class="book-author" href="#">Thiên Long</a>
-            <span class="item-price">4.000đ</span>
-            <button type="button" class="buy-btn">
-              <i class="fa-solid fa-cart-shopping"></i>
-              <p>Thêm vào giỏ hàng</p>
-            </button>
-          </div>
-          <div class="item">
-            <a class="item-img" href="#"
-              ><img src="img/vpp/but-bi-thien-long.jpg"
-            /></a>
-            <a class="item-name" href="#">Bút bi Thiên Long</a>
-            <a class="book-author" href="#">Thiên Long</a>
-            <span class="item-price">4.000đ</span>
-            <button type="button" class="buy-btn">
-              <i class="fa-solid fa-cart-shopping"></i>
-              <p>Thêm vào giỏ hàng</p>
-            </button>
-          </div>
-        </div>
+        <div class="item-container vpp"></div>
         <a href="#" class="more">Xem thêm</a>
       </section>
+<!-- ========================================================================== -->
+
+      <div class="cart-overlay">
+        <div class="cart">
+          
+
+          <span class="close-cart">
+            <i class="fas fa-window-close"></i>
+          </span>
+          <h2>CART</h2>
+          <div class="cart-content"></div>
+
+          <div class="cart-footer">
+            <h3>TOTAL: <span class="cart-total">0</span></h3>
+            <button class="clear-cart ">CLEAR</button>
+          </div>
+
+        </div>
+      </div>
+<!-- ========================================================================== -->
+
     </main>
     <footer>
       <div class="contact">
@@ -375,6 +201,5 @@
         </div>
       </div>
     </footer>
-    <script src="scripts/script_index.js"></script>
   </body>
 </html>
