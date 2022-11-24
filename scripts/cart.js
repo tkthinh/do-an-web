@@ -8,39 +8,32 @@ const cartTotal =document.querySelector(".cart-total")
 const cartContent =document.querySelector(".cart-content")
 const cartItems = document.querySelector(".cart-counter")
 
-const buttons =[...document.querySelectorAll(".buy-btn")];
-
 let cart=[];
-
 let buttonsDOM=[]
-
-
-    
-    buttonsDOM=buttons
+    getbuttons=(incart)=>{
+    const buttons =[...document.querySelectorAll(".buy-btn")]
+    buttonsDOM =buttons
     buttons.forEach(button => {
         let id = button.dataset.id;
-        let inCart =cart.find(item => item.id === id);
+        let inCart =incart.find(item => item.id == id);
         if(inCart){
             button.innerText ="Đã thêm vào giỏ";
             button.disabled = true;
         }
-        else{
             button.addEventListener("click",event =>{
-                event.target.innerText="Đã thêm vào giỏ";
-                event.target.disabled =true;
-                let cartItem = {...getProduct(id), amount:1}
-                cart=[...cart,cartItem]
-                saveCart(cart)
-                setCartValue(cart)
-                addCartItem(cartItem)
-                
-            })
-            
-        }
-
+                    event.target.innerText="Đã thêm vào giỏ";
+                    event.target.disabled =true;
+                    let cartItem = {...getProduct(id), amount:1}
+                    console.log(cart)
+                    incart.push(cartItem)
+                    // [...cart,cartItem]
+                    console.log(cart)
+                    saveCart(cart) // save vào local
+                    setCartValue(cart)
+                    addCartItem(cartItem)           
+            })  
     });
-    
-    
+}
     
      getProduct=(id)=>{
         let products =JSON.parse(window.localStorage.getItem('product')).book;
@@ -89,13 +82,102 @@ let buttonsDOM=[]
         return localStorage.getItem('cart')?JSON.parse(localStorage.getItem('cart')):[]
     }
     populate=(cart)=>{
-        cart.forEach(item => this.addCartItem(item))
+        cart.forEach(item => addCartItem(item))
     }
-
-    // setupAPP=()=>{
-    //     cart= getCart()
-    //     this.populate(cart)
+    setupAPP=(cart)=>{
+        cart.splice(0, cart.length );
+        cart.push(...getCart());
+        setCartValue(cart)
+        populate(cart)
         cartIcon.addEventListener('click',function(){showCart()})
         cartClose.addEventListener('click',function(){hideCart()})
-    // }
+        return cart
+    }
+    getSingleButton=(id)=>{
+        return buttonsDOM.find( button => button.dataset.id == id)
+    } 
+    removeItem=(id)=>{
+        cart.splice(0,cart.length)
+        setCartValue(cart)
+        saveCart(cart)
+        let button = getSingleButton(id)
+        button.disabled = false
+        button.innerHTML=`<i class="fas fa-shopping-cart" ></i>
+        Thêm vào giỏ hàng`
+        
+    } 
+       clearCart=(cart)=>{
+        let cartItems= cart.map(item => item.id)
+        console.log(cartItems)
+        cartItems.forEach(id => removeItem(id))
+        console.log(cartContent.children)
+        while(cartContent.children.length>0){
+            cartContent.removeChild(cartContent.children[0])
+        }
+        hideCart()
+    }
+    cartLogic=(cart)=>{
+        cartclear.addEventListener("click",()=>{
+            clearCart(cart)
+        })
+        cartContent.addEventListener("click",event=>{
+            if(event.target.classList.contains("remove-item")){
+                let removeItem = event.target
+                let id= removeItem.dataset.id
+                cartContent.removeChild(removeItem.parentElement.parentElement)
+                for (let i = cart.length - 1; i >= 0; --i)
+                    if (cart[i].id == id) cart.splice(i, 1);
+                console.log(cart);
+                setCartValue(cart)
+                saveCart(cart)
+                let button = getSingleButton(id)
+                button.disabled = false
+                button.innerHTML=`<i class="fas fa-shopping-cart" ></i>
+                Thêm vào giỏ hàng`
+            }
+            else if(event.target.classList.contains("fa-chevron-up")){
+                let addAmount =event.target
+                let id = addAmount.dataset.id
+                let tempItem= cart.find(item => item.id == id)
+                tempItem.amount = tempItem.amount +1
+                saveCart(cart)
+                setCartValue(cart)
+                addAmount.nextElementSibling.innerText=tempItem.amount
+            }
+            else if(event.target.classList.contains("fa-chevron-down")){
+                let lowerAmount =event.target
+                let id = lowerAmount.dataset.id
+                let tempItem= cart.find(item => item.id == id)
+                tempItem.amount = tempItem.amount -1
+                if(tempItem.amount>0){
+                    saveCart(cart)
+                    setCartValue(cart)
+                    lowerAmount.previousElementSibling.innerText=tempItem.amount
+                    console.log(tempItem.amount)
+                }else{
+                 
+                let removeItem = event.target
+                let id= removeItem.dataset.id
+                cartContent.removeChild(removeItem.parentElement.parentElement)
+                for (let i = cart.length - 1; i >= 0; --i)
+                    if (cart[i].id == id) cart.splice(i, 1);
+                console.log(cart);
+                setCartValue(cart)
+                saveCart(cart)
+                let button = getSingleButton(id)
+                button.disabled = false
+                button.innerHTML=`<i class="fas fa-shopping-cart" ></i>
+                Thêm vào giỏ hàng`
+                }
+            }
+        })
+    }
+      
+    document.addEventListener("DOMContentLoaded", ()=>{
+        cart=setupAPP(cart)
+        cartLogic(cart)
+        getbuttons(cart)
+    })
+
+   // xóa từng sản phẩm nhưng khi thêm sản phẩm lại thêm những sản phẩm đã có
    

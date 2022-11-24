@@ -262,7 +262,7 @@ main{
 }
 /* ========================================================= */
 :root {
-  --primaryColor:#00FFFF;
+  --primaryColor: black;
   --mainWhite: #fff;
   --mainBlack: #222;
   --mainGrey: #ececec;

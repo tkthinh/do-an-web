@@ -9,7 +9,8 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "title": "Tiểu Thuyết Chuyển Thể - Thanh Gươm Diệt Quỷ",
                 "author": "Koyoharu Gotouge",
                 "price": 51,
-                "type": ["All", "Tiểu thuyết", "Truyện tranh", "Trẻ em"]
+                "type": ["All", "Tiểu thuyết", "Truyện tranh", "Trẻ em"],
+                "description":"THE TEST HAS ENDED, I AM VICTORIOUS, I AM THE HERALD OF OBLIVION, I AM RHAASRT"
             },
             {
                 "id":2,
@@ -17,7 +18,8 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "title": "Lập Chiến Lược Kinh Doanh Tối Giản",
                 "author": "Vaughan Evans",
                 "price": 102,
-                "type": ["All", "Kinh tế"]
+                "type": ["All", "Kinh tế"],
+                "description":"THE TEST HAS ENDED, I AM VICTORIOUS, I AM THE HERALD OF OBLIVION, I AM RHAASRT"
             },
             {
                 "id":3,
@@ -25,7 +27,8 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "title": "Jujutsu Kaisen - limited",
                 "author": "Gege Akutami",
                 "price": 50,
-                "type": ["Truyện tranh", "All"]
+                "type": ["Truyện tranh", "All"],
+                "description":"THE TEST HAS ENDED, I AM VICTORIOUS, I AM THE HERALD OF OBLIVION, I AM RHAASRT"
             },
             {
                 "id":4,
@@ -33,7 +36,8 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "title": "Komi-san",
                 "author": "Tomohito Oda",
                 "price": 25,
-                "type": ["Truyện tranh", "Trẻ em", "All"]
+                "type": ["Truyện tranh", "Trẻ em", "All"],
+                "description":"THE TEST HAS ENDED, I AM VICTORIOUS, I AM THE HERALD OF OBLIVION, I AM RHAASRT"
             },
             {
                 "id":5,
@@ -41,7 +45,8 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "title": "Đô Thị Thông Minh, Tương Lai Xán Lạn",
                 "author": "Mike Barlow",
                 "price": 133,
-                "type": ["All", "Kinh tế"]
+                "type": ["All", "Kinh tế"],
+                "description":"THE TEST HAS ENDED, I AM VICTORIOUS, I AM THE HERALD OF OBLIVION, I AM RHAASRT"
             },
             {
                 "id":6,
@@ -49,7 +54,8 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "title": "Sword Art Online Progressive",
                 "author": "REKI KAWAHARA",
                 "price": 92,
-                "type": ["All", "Tiểu thuyết", "Truyện tranh", "Trẻ em"]
+                "type": ["All", "Tiểu thuyết", "Truyện tranh", "Trẻ em"],
+                "description":"THE TEST HAS ENDED, I AM VICTORIOUS, I AM THE HERALD OF OBLIVION, I AM RHAASRT"
             },
             {
                 "id":7,
@@ -57,7 +63,8 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "title": "Chainsaw man",
                 "author": "Tatsuki Fujimoto",
                 "price": 45,
-                "type": ["Truyện tranh", "Kinh dị", "All"]
+                "type": ["Truyện tranh", "Kinh dị", "All"],
+                "description":"THE TEST HAS ENDED, I AM VICTORIOUS, I AM THE HERALD OF OBLIVION, I AM RHAASRT"
             },
             {
                 "id":8,
@@ -65,7 +72,8 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "title": "Tỷ Phú Không Tiền",
                 "author": "Conor O Clery",
                 "price": 132,
-                "type": ["All", "Kinh tế"]
+                "type": ["All", "Kinh tế"],
+                "description":"THE TEST HAS ENDED, I AM VICTORIOUS, I AM THE HERALD OF OBLIVION, I AM RHAASRT"
             },
             {
                 "id":9,
@@ -73,7 +81,8 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "title": "Tâm Lý Học Thành Công",
                 "author": "Carol S Dweck",
                 "price": 153,
-                "type": ["Kỹ năng sống", "All"]
+                "type": ["Kỹ năng sống", "All"],
+                "description":"THE TEST HAS ENDED, I AM VICTORIOUS, I AM THE HERALD OF OBLIVION, I AM RHAASRT"
             },
             {
                 "id":10,
@@ -81,7 +90,8 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "title": "Little Stories",
                 "author": "Sracey Riches",
                 "price": 46,
-                "type": ["Best seller","Kỹ năng sống", "All", "Tiểu thuyết"]
+                "type": ["Best seller","Kỹ năng sống", "All", "Tiểu thuyết"],
+                "description":"THE TEST HAS ENDED, I AM VICTORIOUS, I AM THE HERALD OF OBLIVION, I AM RHAASRT"
             },
             {
                 "id":11,
@@ -89,7 +99,8 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "title": "Tinh Thần Chiến Đấu Rực Lửa",
                 "author": "Inamori Kazuo",
                 "price": 113,
-                "type": ["All", "Kinh tế"]
+                "type": ["All", "Kinh tế"],
+                "description":"THE TEST HAS ENDED, I AM VICTORIOUS, I AM THE HERALD OF OBLIVION, I AM RHAASRT"
             },
             {
                 "id":12,
@@ -97,7 +108,8 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "title": "Vị Tu Sĩ Bán Chiếc Ferrari",
                 "author": "Robin Sharma",
                 "price": 77,
-                "type": ["All", "Kinh tế"]
+                "type": ["All", "Kinh tế"],
+                "description":"THE TEST HAS ENDED, I AM VICTORIOUS, I AM THE HERALD OF OBLIVION, I AM RHAASRT"
             },
             {
                 "id":13,
@@ -105,7 +117,8 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "title": "Tryện Kinh Dị Việt Nam",
                 "author": "Thế Lữ",
                 "price": 99,
-                "type": ["Kinh dị", "All"]
+                "type": ["Kinh dị", "All"],
+                "description":"THE TEST HAS ENDED, I AM VICTORIOUS, I AM THE HERALD OF OBLIVION, I AM RHAASRT"
             },
             {
                 "id":14,
@@ -113,7 +126,8 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "title": "Tryện Kinh Dị Việt Nam",
                 "author": "Thế Lữ",
                 "price": 63,
-                "type": ["Kinh dị", "All"]
+                "type": ["Kinh dị", "All"],
+                "description":"THE TEST HAS ENDED, I AM VICTORIOUS, I AM THE HERALD OF OBLIVION, I AM RHAASRT"
             },
 
             {
@@ -122,7 +136,8 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "title": "Tôi Đã Kiếm 1 Triệu Đô Đầu Tiên",
                 "author": "Ewen Chia",
                 "price": 189,
-                "type": ["All", "Kinh tế"]
+                "type": ["All", "Kinh tế"],
+                "description":"THE TEST HAS ENDED, I AM VICTORIOUS, I AM THE HERALD OF OBLIVION, I AM RHAASRT"
             },
             {
                 "id":16,
@@ -130,7 +145,8 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "title": "Bất Động Sản Cho Thế Hệ Tương Lai",
                 "author": "Vicki Wusche",
                 "price": 67,
-                "type": ["All", "Kinh tế"]
+                "type": ["All", "Kinh tế"],
+                "description":"THE TEST HAS ENDED, I AM VICTORIOUS, I AM THE HERALD OF OBLIVION, I AM RHAASRT"
             },
             {
                 "id":17,
@@ -138,7 +154,8 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "title": "Think And Grow Rich",
                 "author": "Napoleon Hill",
                 "price": 104,
-                "type": ["All", "Kinh tế"]
+                "type": ["All", "Kinh tế"],
+                "description":"THE TEST HAS ENDED, I AM VICTORIOUS, I AM THE HERALD OF OBLIVION, I AM RHAASRT"
             },
             {
                 "id":18,
@@ -146,7 +163,8 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "title": "Bezonomics - Kinh Tế Học Bezos",
                 "author": "Brian Dumaine",
                 "price": 151,
-                "type": ["All", "Kinh tế", "Khoa học"]
+                "type": ["All", "Kinh tế", "Khoa học"],
+                "description":"THE TEST HAS ENDED, I AM VICTORIOUS, I AM THE HERALD OF OBLIVION, I AM RHAASRT"
             },
             {
                 "id":19,
@@ -154,7 +172,8 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "title": "The Leadership Triangle",
                 "author": "Kevin Ford",
                 "price": 76,
-                "type": ["Best seller","All", "Kinh tế", "Khoa học"]
+                "type": ["Best seller","All", "Kinh tế", "Khoa học"],
+                "description":"THE TEST HAS ENDED, I AM VICTORIOUS, I AM THE HERALD OF OBLIVION, I AM RHAASRT"
             },
             {
                 "id":20,
@@ -162,7 +181,8 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "title": "Xây Dựng Sự Độc Đáo",
                 "author": "Riccardo Pozzoll",
                 "price": 78,
-                "type": ["All", "Kinh tế"]
+                "type": ["All", "Kinh tế"],
+                "description":"THE TEST HAS ENDED, I AM VICTORIOUS, I AM THE HERALD OF OBLIVION, I AM RHAASRT"
             },
             {
                 "id":21,
@@ -170,7 +190,8 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "title": "Stage Designer",
                 "author": "Hoan Nguyễn",
                 "price": 111,
-                "type": ["All", "Kinh tế", "Khoa học"]
+                "type": ["All", "Kinh tế", "Khoa học"],
+                "description":"THE TEST HAS ENDED, I AM VICTORIOUS, I AM THE HERALD OF OBLIVION, I AM RHAASRT"
             },
             {
                 "id":22,
@@ -178,7 +199,8 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "title": "Masayoshi Son",
                 "author": "Onishi Takahiro",
                 "price": 114,
-                "type": ["All", "Kinh tế"]
+                "type": ["All", "Kinh tế"],
+                "description":"THE TEST HAS ENDED, I AM VICTORIOUS, I AM THE HERALD OF OBLIVION, I AM RHAASRT"
             },
 
             {
@@ -187,7 +209,8 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "title": "Bí Mật Tư Duy Triệu Phú (Tái Bản 2021)",
                 "author": "T Harv Eker",
                 "price": 87,
-                "type": ["All", "Kinh tế"]
+                "type": ["All", "Kinh tế"],
+                "description":"THE TEST HAS ENDED, I AM VICTORIOUS, I AM THE HERALD OF OBLIVION, I AM RHAASRT"
             },
             {
                 "id":24,
@@ -195,7 +218,8 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "title": "Từ Điển Tiếng “Em” - Tái Bản 2021",
                 "author": "Khotudien",
                 "price": 55,
-                "type": ["Best seller","All", "Tiểu thuyết"]
+                "type": ["Best seller","All", "Tiểu thuyết"],
+                "description":"THE TEST HAS ENDED, I AM VICTORIOUS, I AM THE HERALD OF OBLIVION, I AM RHAASRT"
             },
 
             {
@@ -204,7 +228,8 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "title": "Bước Chậm Lại Giữa Thế Gian Vội Vã",
                 "author": "Hae Min",
                 "price": 58,
-                "type": ["All", "Tiểu thuyết"]
+                "type": ["All", "Tiểu thuyết"],
+                "description":"THE TEST HAS ENDED, I AM VICTORIOUS, I AM THE HERALD OF OBLIVION, I AM RHAASRT"
             },
             {
                 "id":26,
@@ -212,7 +237,8 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "title": "Thiên tài bên trái, kẻ điên bên phải",
                 "author": "Cao Minh",
                 "price": 97,
-                "type": ["Best seller","Khoa học", "All", "Tiểu thuyết"]
+                "type": ["Best seller","Khoa học", "All", "Tiểu thuyết"],
+                "description":"THE TEST HAS ENDED, I AM VICTORIOUS, I AM THE HERALD OF OBLIVION, I AM RHAASRT"
             },
             {
                 "id":27,
@@ -220,7 +246,8 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "title": "Đắc Nhân Tâm",
                 "author": "Nguyễn Văn Phước",
                 "price": 70,
-                "type": ["Kỹ năng sống", "Khoa học", "All"]
+                "type": ["Kỹ năng sống", "Khoa học", "All"],
+                "description":"THE TEST HAS ENDED, I AM VICTORIOUS, I AM THE HERALD OF OBLIVION, I AM RHAASRT"
             },
             {
                 "id":28,
@@ -228,7 +255,8 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "title": "OSHO - Yêu - Being In Love",
                 "author": "OSHO",
                 "price": 119,
-                "type": ["All", "Tiểu thuyết", "Trẻ em"]
+                "type": ["All", "Tiểu thuyết", "Trẻ em"],
+                "description":"THE TEST HAS ENDED, I AM VICTORIOUS, I AM THE HERALD OF OBLIVION, I AM RHAASRT"
             },
             {
                 "id":29,
@@ -236,7 +264,8 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "title": "Bố Già (Đông A)",
                 "author": "Mario Puzo",
                 "price": 104,
-                "type": ["All", "Tiểu thuyết", "Kinh tế"]
+                "type": ["All", "Tiểu thuyết", "Kinh tế"],
+                "description":"THE TEST HAS ENDED, I AM VICTORIOUS, I AM THE HERALD OF OBLIVION, I AM RHAASRT"
             },
             {
                 "id":30,
@@ -244,7 +273,8 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "title": "Thế Giới Otome Game",
                 "author": "Mishima Yomu",
                 "price": 112,
-                "type": ["All","Best seller", "Tiểu thuyết", "Truyện tranh", "Trẻ em"]
+                "type": ["All","Best seller", "Tiểu thuyết", "Truyện tranh", "Trẻ em"],
+                "description":"THE TEST HAS ENDED, I AM VICTORIOUS, I AM THE HERALD OF OBLIVION, I AM RHAASRT"
             },
 
             {
@@ -253,7 +283,8 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "title": "Hai Số Phận",
                 "author": "Jeffrey Archer",
                 "price": 104,
-                "type": ["All", "Tiểu thuyết"]
+                "type": ["All", "Tiểu thuyết"],
+                "description":"THE TEST HAS ENDED, I AM VICTORIOUS, I AM THE HERALD OF OBLIVION, I AM RHAASRT"
             },
             {
                 "id":32,
@@ -261,7 +292,8 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "title": "Hai Vạn Dặm Dưới Đáy Biển ",
                 "author": "Jules Verne",
                 "price": 74,
-                "type": ["All", "Tiểu thuyết"]
+                "type": ["All", "Tiểu thuyết"],
+                "description":"THE TEST HAS ENDED, I AM VICTORIOUS, I AM THE HERALD OF OBLIVION, I AM RHAASRT"
             },
             {
                 "id":33,
@@ -269,7 +301,8 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "title": "Thay Đổi Cuộc Sống Với Nhân Số Học",
                 "author": "Lê Đỗ Quỳnh Hương",
                 "price": 177,
-                "type": ["Kỹ năng sống", "Khoa học", "All"]
+                "type": ["Kỹ năng sống", "Khoa học", "All"],
+                "description":"THE TEST HAS ENDED, I AM VICTORIOUS, I AM THE HERALD OF OBLIVION, I AM RHAASRT"
             },
             {
                 "id":34,
@@ -277,7 +310,8 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "title": "Đọc Vị Bất Kỳ Ai",
                 "author": "TS David J Lieberman",
                 "price": 54,
-                "type": ["Kỹ năng sống", "Khoa học", "All"]
+                "type": ["Kỹ năng sống", "Khoa học", "All"],
+                "description":"THE TEST HAS ENDED, I AM VICTORIOUS, I AM THE HERALD OF OBLIVION, I AM RHAASRT"
             },
             {
                 "id":35,
@@ -285,7 +319,8 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "title": "Hiểu Về Trái Tim",
                 "author": "Minh Niệm",
                 "price": 126,
-                "type": ["Kỹ năng sống", "Khoa học", "All", "Tiểu thuyết"]
+                "type": ["Kỹ năng sống", "Khoa học", "All", "Tiểu thuyết"],
+                "description":"THE TEST HAS ENDED, I AM VICTORIOUS, I AM THE HERALD OF OBLIVION, I AM RHAASRT"
             },
             {
                 "id":36,
@@ -293,7 +328,8 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "title": "Tâm Lý Học - Phác Họa Chân Dung Kẻ Phạm Tội",
                 "author": "Vũ",
                 "price": 108,
-                "type": ["Kỹ năng sống", "Khoa học", "All"]
+                "type": ["Kỹ năng sống", "Khoa học", "All"],
+                "description":"THE TEST HAS ENDED, I AM VICTORIOUS, I AM THE HERALD OF OBLIVION, I AM RHAASRT"
             },
             {
                 "id":37,
@@ -301,7 +337,8 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "title": "Tokyo Revengers - tập 6",
                 "author": "Ken Wakui",
                 "price": 115,
-                "type": ["Best seller","Truyện tranh", "All"]
+                "type": ["Best seller","Truyện tranh", "All"],
+                "description":"THE TEST HAS ENDED, I AM VICTORIOUS, I AM THE HERALD OF OBLIVION, I AM RHAASRT"
             },
             {
                 "id":38,
@@ -309,7 +346,8 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "title": "SPY x FAMILY",
                 "author": "Tatsuya Endo",
                 "price": 25,
-                "type": ["Truyện tranh", "Trẻ em", "All"]
+                "type": ["Truyện tranh", "Trẻ em", "All"],
+                "description":"THE TEST HAS ENDED, I AM VICTORIOUS, I AM THE HERALD OF OBLIVION, I AM RHAASRT"
             },
             {
                 "id":39,
@@ -317,7 +355,8 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "title": "Kimestu no Yaiba",
                 "author": "Koyoharu Gotouge",
                 "price": 25,
-                "type": ["Truyện tranh", "Trẻ em", "All"]
+                "type": ["Truyện tranh", "Trẻ em", "All"],
+                "description":"THE TEST HAS ENDED, I AM VICTORIOUS, I AM THE HERALD OF OBLIVION, I AM RHAASRT"
             },
             {
                 "id":40,
@@ -325,7 +364,8 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "title": "Đời Ngắn Đừng Ngủ Dài",
                 "author": "Robin Sharma",
                 "price": 55,
-                "type": ["Kỹ năng sống", "Khoa học", "All"]
+                "type": ["Kỹ năng sống", "Khoa học", "All"],
+                "description":"THE TEST HAS ENDED, I AM VICTORIOUS, I AM THE HERALD OF OBLIVION, I AM RHAASRT"
             },
             {
                 "id":41,
@@ -333,7 +373,8 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "title": "Rèn Luyện Tư Duy Phản Biện",
                 "author": "Albert Rutherford",
                 "price": 65,
-                "type": ["Kỹ năng sống", "Khoa học", "All"]
+                "type": ["Kỹ năng sống", "Khoa học", "All"],
+                "description":"THE TEST HAS ENDED, I AM VICTORIOUS, I AM THE HERALD OF OBLIVION, I AM RHAASRT"
             },
             {
                 "id":42,
@@ -341,7 +382,8 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "title": "Tuổi Trẻ Đáng Giá Bao Nhiêu",
                 "author": "Rossie",
                 "price": 63,
-                "type": ["Kỹ năng sống", "All"]
+                "type": ["Kỹ năng sống", "All"],
+                "description":"THE TEST HAS ENDED, I AM VICTORIOUS, I AM THE HERALD OF OBLIVION, I AM RHAASRT"
             },
             {
                 "id":43,
@@ -349,7 +391,8 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "title": "Sức Mạnh Tiềm Thức ",
                 "author": "Joseph Murphyc",
                 "price": 102,
-                "type": ["Kỹ năng sống", "Khoa học", "All"]
+                "type": ["Kỹ năng sống", "Khoa học", "All"],
+                "description":"THE TEST HAS ENDED, I AM VICTORIOUS, I AM THE HERALD OF OBLIVION, I AM RHAASRT"
             },
             {
                 "id":44,
@@ -357,7 +400,8 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "title": "Chủ Nghĩa Khắc Kỷ",
                 "author": "William B Irvine",
                 "price": 87,
-                "type": ["Kỹ năng sống", "All"]
+                "type": ["Kỹ năng sống", "All"],
+                "description":"THE TEST HAS ENDED, I AM VICTORIOUS, I AM THE HERALD OF OBLIVION, I AM RHAASRT"
             },
             {
                 "id":45,
@@ -365,7 +409,8 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "title": "Đừng Lựa Chọn An Nhàn Khi Còn Trẻ",
                 "author": "Cảnh Thiên",
                 "price": 87,
-                "type": ["Kỹ năng sống", "All"]
+                "type": ["Kỹ năng sống", "All"],
+                "description":"THE TEST HAS ENDED, I AM VICTORIOUS, I AM THE HERALD OF OBLIVION, I AM RHAASRT"
             },
             {
                 "id":46,
@@ -373,7 +418,8 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "title": "Cẩm Nang Cấu Trúc Tiếng Anh",
                 "author": "Trang",
                 "price": 72,
-                "type": ["Trẻ em", "Khoa học", "All"]
+                "type": ["Trẻ em", "Khoa học", "All"],
+                "description":"THE TEST HAS ENDED, I AM VICTORIOUS, I AM THE HERALD OF OBLIVION, I AM RHAASRT"
             },
             {
                 "id":47,
@@ -381,7 +427,8 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "title": "Ngữ Pháp Tiếng Anh ",
                 "author": "Mai Lan Hương",
                 "price": 50,
-                "type": ["Trẻ em", "Khoa học", "All"]
+                "type": ["Trẻ em", "Khoa học", "All"],
+                "description":"THE TEST HAS ENDED, I AM VICTORIOUS, I AM THE HERALD OF OBLIVION, I AM RHAASRT"
             },
             {
                 "id":48,
@@ -389,7 +436,8 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "title": "Tiếng Nhật Cho Mọi Người",
                 "author": "Minna no Nihongo",
                 "price": 71,
-                "type": ["Trẻ em", "Khoa học", "All"]
+                "type": ["Trẻ em", "Khoa học", "All"],
+                "description":"THE TEST HAS ENDED, I AM VICTORIOUS, I AM THE HERALD OF OBLIVION, I AM RHAASRT"
             },
             {
                 "id":49,
@@ -397,7 +445,8 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "title": "Sách Tự Học Hiragana Katakana",
                 "author": "AOTS",
                 "price": 64,
-                "type": ["Trẻ em", "Khoa học", "All"]
+                "type": ["Trẻ em", "Khoa học", "All"],
+                "description":"THE TEST HAS ENDED, I AM VICTORIOUS, I AM THE HERALD OF OBLIVION, I AM RHAASRT"
             },
             {
                 "id":50,
@@ -405,7 +454,8 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "title": "Khéo Ăn Nói Sẽ Có Được Thiên Hạ",
                 "author": "Trác Nhả",
                 "price": 76,
-                "type": ["Kỹ năng sống", "Khoa học", "All"]
+                "type": ["Kỹ năng sống", "Khoa học", "All"],
+                "description":"THE TEST HAS ENDED, I AM VICTORIOUS, I AM THE HERALD OF OBLIVION, I AM RHAASRT"
             },
             {
                 "id":51,
@@ -413,7 +463,8 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "title": "Người Giàu Có Nhất Thành Babylon",
                 "author": "George S Clason",
                 "price": 52,
-                "type": ["Kỹ năng sống", "Trẻ em", "All"]
+                "type": ["Kỹ năng sống", "Trẻ em", "All"],
+                "description":"THE TEST HAS ENDED, I AM VICTORIOUS, I AM THE HERALD OF OBLIVION, I AM RHAASRT"
             },
             {
                 "id":52,
@@ -421,7 +472,8 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "title": "Thần Số Học: Thấu Hiểu Nhân Tâm",
                 "author": "Tống Khánh Thượng",
                 "price": 76,
-                "type": ["Kỹ năng sống", "All"]
+                "type": ["Kỹ năng sống", "All"],
+                "description":"THE TEST HAS ENDED, I AM VICTORIOUS, I AM THE HERALD OF OBLIVION, I AM RHAASRT"
             },
             {
                 "id":53,
@@ -429,7 +481,8 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "title": "Một Đời Như Kẻ Tìm Đường",
                 "author": "Phan Văn Trường",
                 "price": 166,
-                "type": ["Kỹ năng sống", "All"]
+                "type": ["Kỹ năng sống", "All"],
+                "description":"THE TEST HAS ENDED, I AM VICTORIOUS, I AM THE HERALD OF OBLIVION, I AM RHAASRT"
             },
             {
                 "id":54,
@@ -437,7 +490,8 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "title": "Tư Duy Phản Biện",
                 "author": "Zoe McKey",
                 "price": 55,
-                "type": ["Kỹ năng sống", "Khoa học", "All"]
+                "type": ["Kỹ năng sống", "Khoa học", "All"],
+                "description":"THE TEST HAS ENDED, I AM VICTORIOUS, I AM THE HERALD OF OBLIVION, I AM RHAASRT"
             },
             {
                 "id":55,
@@ -445,7 +499,8 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "title": "Kiếp Nào Ta Cũng Tìm Thấy Nhau ",
                 "author": "Brian L Weiss",
                 "price": 69,
-                "type": ["Kỹ năng sống", "All", "Tiểu thuyết"]
+                "type": ["Kỹ năng sống", "All", "Tiểu thuyết"],
+                "description":"THE TEST HAS ENDED, I AM VICTORIOUS, I AM THE HERALD OF OBLIVION, I AM RHAASRT"
             },
 
             {
@@ -454,7 +509,8 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "title": "Cân Bằng CảM Xúc, Cả Lúc Bão Giông",
                 "author": "Richard Nicholls",
                 "price": 74,
-                "type": ["Kỹ năng sống", "Khoa học", "All"]
+                "type": ["Kỹ năng sống", "Khoa học", "All"],
+                "description":"THE TEST HAS ENDED, I AM VICTORIOUS, I AM THE HERALD OF OBLIVION, I AM RHAASRT"
             },
 
             {
@@ -463,7 +519,8 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "title": "Ngữ Pháp Tiếng Hàn Thông Dụng",
                 "author": "Ahn Jean Myung",
                 "price": 213,
-                "type": ["Trẻ em", "Khoa học", "All"]
+                "type": ["Trẻ em", "Khoa học", "All"],
+                "description":"THE TEST HAS ENDED, I AM VICTORIOUS, I AM THE HERALD OF OBLIVION, I AM RHAASRT"
             },
             {
                 "id":58,
@@ -471,7 +528,8 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "title": "Dị Chủng 2 - Tàn Thế",
                 "author": "Guillermo Del",
                 "price": 114,
-                "type": ["Kinh dị", "All", "Tiểu thuyết"]
+                "type": ["Kinh dị", "All", "Tiểu thuyết"],
+                "description":"THE TEST HAS ENDED, I AM VICTORIOUS, I AM THE HERALD OF OBLIVION, I AM RHAASRT"
             },
             {
                 "id":59,
@@ -479,7 +537,8 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "title": "Mùa Hạn Kinh Hoàng - The Dry",
                 "author": "Jane Harper",
                 "price": 70,
-                "type": ["Kinh dị", "All"]
+                "type": ["Kinh dị", "All"],
+                "description":"THE TEST HAS ENDED, I AM VICTORIOUS, I AM THE HERALD OF OBLIVION, I AM RHAASRT"
             },
             {
                 "id":60,
@@ -487,7 +546,8 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "title": "Di Sản Kinh Hoàng",
                 "author": "Lisa Gardner",
                 "price": 137,
-                "type": ["Best seller","Kinh dị", "All"]
+                "type": ["Best seller","Kinh dị", "All"],
+                "description":"THE TEST HAS ENDED, I AM VICTORIOUS, I AM THE HERALD OF OBLIVION, I AM RHAASRT"
             },
             {
                 "id":61,
@@ -495,7 +555,8 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "title": "Tryện Kinh Dị Việt Nam",
                 "author": "Thế Lữ",
                 "price": 59,
-                "type": ["Kinh dị", "All"]
+                "type": ["Kinh dị", "All"],
+                "description":"THE TEST HAS ENDED, I AM VICTORIOUS, I AM THE HERALD OF OBLIVION, I AM RHAASRT"
             },
 
             {
@@ -504,7 +565,8 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "title": "Tryện Kinh Dị Việt Nam",
                 "author": "Lan Khai",
                 "price": 87,
-                "type": ["Kinh dị", "All"]
+                "type": ["Kinh dị", "All"],
+                "description":"THE TEST HAS ENDED, I AM VICTORIOUS, I AM THE HERALD OF OBLIVION, I AM RHAASRT"
             },
             {
                 "id":63,
@@ -512,7 +574,8 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "title": "Tiếng Hàn Tổng Hợp",
                 "author": "Cho Hang Rok",
                 "price": 120,
-                "type": ["Khoa học", "All"]
+                "type": ["Khoa học", "All"],
+                "description":"THE TEST HAS ENDED, I AM VICTORIOUS, I AM THE HERALD OF OBLIVION, I AM RHAASRT"
             },
             {
                 "id":64,
@@ -520,7 +583,8 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "title": "Giáo Trình Hán Ngữ 1",
                 "author": "Chưa cập nhật",
                 "price": 71,
-                "type": ["Khoa học", "All"]
+                "type": ["Khoa học", "All"],
+                "description":"THE TEST HAS ENDED, I AM VICTORIOUS, I AM THE HERALD OF OBLIVION, I AM RHAASRT"
             },
             {
                 "id":65,
@@ -528,7 +592,8 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "title": "Keep It Up - Tập Viết Chữ Hán",
                 "author": "Jeyong",
                 "price": 56,
-                "type": ["All", "Trẻ em", "Khoa học"]
+                "type": ["All", "Trẻ em", "Khoa học"],
+                "description":"THE TEST HAS ENDED, I AM VICTORIOUS, I AM THE HERALD OF OBLIVION, I AM RHAASRT"
             },
             {
                 "id":66,
@@ -536,7 +601,8 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "title": "Vivre Card ",
                 "author": "Eiichiro Oda",
                 "price": 120,
-                "type": ["Truyện tranh", "Trẻ em", "All"]
+                "type": ["Truyện tranh", "Trẻ em", "All"],
+                "description":"THE TEST HAS ENDED, I AM VICTORIOUS, I AM THE HERALD OF OBLIVION, I AM RHAASRT"
             },
             {
                 "id":67,
@@ -544,7 +610,8 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "title": "Black Jack - tập 11 ",
                 "author": "Osamu Tezuka",
                 "price": 30,
-                "type": ["Truyện tranh", "Kinh dị", "All"]
+                "type": ["Truyện tranh", "Kinh dị", "All"],
+                "description":"THE TEST HAS ENDED, I AM VICTORIOUS, I AM THE HERALD OF OBLIVION, I AM RHAASRT"
             },
             {
                 "id":68,
@@ -552,7 +619,8 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "title": "BLEACH - tập 70 ",
                 "author": "Tite Kubo",
                 "price": 25,
-                "type": ["Truyện tranh", "All"]
+                "type": ["Truyện tranh", "All"],
+                "description":"THE TEST HAS ENDED, I AM VICTORIOUS, I AM THE HERALD OF OBLIVION, I AM RHAASRT"
             },
             {
                 "id":69,
@@ -560,7 +628,8 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "title": "Ranma 1/2 - tập 19 ",
                 "author": "Rumiko TAKAHASHI",
                 "price": 70,
-                "type": ["Truyện tranh", "All"]
+                "type": ["Truyện tranh", "All"],
+                "description":"THE TEST HAS ENDED, I AM VICTORIOUS, I AM THE HERALD OF OBLIVION, I AM RHAASRT"
             },
             {
                 "id":70,
@@ -568,7 +637,8 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "title": "CONAN - tập 98 ",
                 "author": "Gosho Aoyama",
                 "price": 20,
-                "type": ["Truyện tranh", "Khoa học", "Kinh dị", "All"]
+                "type": ["Truyện tranh", "Khoa học", "Kinh dị", "All"],
+                "description":"THE TEST HAS ENDED, I AM VICTORIOUS, I AM THE HERALD OF OBLIVION, I AM RHAASRT"
             },
             {
                 "id":71,
@@ -576,7 +646,8 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "title": "OVERLORD - tập 13 ",
                 "author": "Maruyama Kugane",
                 "price": 48,
-                "type": ["Truyện tranh", "Khoa học", "All"]
+                "type": ["Truyện tranh", "Khoa học", "All"],
+                "description":"THE TEST HAS ENDED, I AM VICTORIOUS, I AM THE HERALD OF OBLIVION, I AM RHAASRT"
             },
 
             {
@@ -585,7 +656,8 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "title": "30 Chủ đề từ vựng tiếng anh",
                 "author": "Trang Anh",
                 "price": 133,
-                "type": ["Best seller","Trẻ em", "Khoa học", "All"]
+                "type": ["Best seller","Trẻ em", "Khoa học", "All"],
+                "description":"THE TEST HAS ENDED, I AM VICTORIOUS, I AM THE HERALD OF OBLIVION, I AM RHAASRT"
             },
             {
                 "id":73,
@@ -593,7 +665,8 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "title": "Sổ tay hóa học",
                 "author": "Trần Thị Yến",
                 "price": 40,
-                "type": ["All", "Khoa học", "Trẻ em"]
+                "type": ["All", "Khoa học", "Trẻ em"],
+                "description":"THE TEST HAS ENDED, I AM VICTORIOUS, I AM THE HERALD OF OBLIVION, I AM RHAASRT"
             },
             {
                 "id":74,
@@ -601,7 +674,8 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "title": "Nhà giả kim",
                 "author": "Paulo Coelho",
                 "price": 65,
-                "type": ["All", "Tiểu thuyết", "Kỹ năng sống"]
+                "type": ["All", "Tiểu thuyết", "Kỹ năng sống"],
+                "description":"THE TEST HAS ENDED, I AM VICTORIOUS, I AM THE HERALD OF OBLIVION, I AM RHAASRT"
             },
             {
                 "id":75,
@@ -609,7 +683,8 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "title": "Đêm Vĩnh Hằng",
                 "author": "Guillermo Del Toro",
                 "price": 140,
-                "type": ["Kinh dị", "All", "Tiểu thuyết"]
+                "type": ["Kinh dị", "All", "Tiểu thuyết"],
+                "description":"THE TEST HAS ENDED, I AM VICTORIOUS, I AM THE HERALD OF OBLIVION, I AM RHAASRT"
             },
             {
                 "id":76,
@@ -617,7 +692,8 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "title": "English Grammar in Use Book w Ans",
                 "author": "Raymond Murphy",
                 "price": 170,
-                "type": ["Trẻ em", "Khoa học", "All"]
+                "type": ["Trẻ em", "Khoa học", "All"],
+                "description":"THE TEST HAS ENDED, I AM VICTORIOUS, I AM THE HERALD OF OBLIVION, I AM RHAASRT"
             },
             {
                 "id":77,
@@ -625,7 +701,8 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "title": "Kĩ năng sống",
                 "author": "PGS TS Huỳnh Văn Sơn",
                 "price": 30,
-                "type": ["Khoa học", "Kỹ năng sống", "All"]
+                "type": ["Khoa học", "Kỹ năng sống", "All"],
+                "description":"THE TEST HAS ENDED, I AM VICTORIOUS, I AM THE HERALD OF OBLIVION, I AM RHAASRT"
             },
             {
                 "id":78,
@@ -633,7 +710,8 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "title": "mahabharata",
                 "author": "DK",
                 "price": 520,
-                "type": ["All", "Tiểu thuyết", "Trẻ em", "All"]
+                "type": ["All", "Tiểu thuyết", "Trẻ em", "All"],
+                "description":"THE TEST HAS ENDED, I AM VICTORIOUS, I AM THE HERALD OF OBLIVION, I AM RHAASRT"
             }
         ],
         
