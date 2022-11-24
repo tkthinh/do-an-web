@@ -12,6 +12,7 @@
     <!-- <script src="/data/index_products.js" defer></script> -->
     <script src="/scripts/index.js" defer></script>
     <script src="/scripts/cart.js" defer></script>
+    <script src="/scripts/user.js" defer></script>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="styles/shared.css">
@@ -39,8 +40,12 @@
         <input type="text" id="search" class="search" placeholder="Tìm kiếm sản phẩm..." data-search  />
         <div class="box"></div>
         <div class="user-menu">
-          <a href="login.html" class="user-text">Đăng nhập/Đăng kí</a>
-          <a href="login.html"><i class="fa-solid fa-user user-icon"></i></a>
+          <div class="user">
+            <a href="login.html" class="user-text">Đăng nhập</a>
+            <div class="logout">
+                <p>Đăng xuất</p>
+            </div>
+          </div>
           <div class="fav">
             <a href="#"><i class="fa-regular fa-heart"></i></a>
             <p class="counter fav-counter">4</p>
