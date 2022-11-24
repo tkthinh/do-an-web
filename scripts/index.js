@@ -19,9 +19,31 @@ renderItem=(products)=>{
 }
     return output
 }
+// renderdetails=(products)=>{
+//     let output = "";
+//     for(i=0; i<8; i++){
+//     output += `
+//       <div class="detail-item">
+//          <a class="detail-item-img"><img src="`+products[i].image+`"/></a>
+//          <p class="detail-item-name">`+products[i].title+`</p> 
+//          <p class="detail-book-author">`+products[i].author+`</p> 
+//          <p class="detail-item-type">`+products[i].type+`</p>          
+//          <p class="detail-item-price">`+products[i].price+'.000đ'+`</p>
+//          <p class="description">`+products[i].description+`</p>
+//          <button  class="buy-btn" data-id="`+products[i].id+`" >
+//           <i class="fas fa-shopping-cart" ></i>
+//           Thêm vào giỏ hàng
+//           </button>
+//       </div>
+//       `;
+// }
+//     return output
+// }
 document.querySelector(".bestseller").innerHTML=renderItem(bestsell)
 document.querySelector(".sachmoi").innerHTML = renderItem(books)
 document.querySelector(".vpp").innerHTML=renderItem(vpps)
+
+//                            
 
 // let box = document.getElementsByClassName('box')[0]
 // let search =document.getElementById('search')
