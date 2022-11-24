@@ -6,7 +6,7 @@ renderItem=(products)=>{
     for(i=0; i<8; i++){
     output += `
       <div class="item">
-         <a class="item-img"><img src="`+products[i].image+`"/></a>
+         <a href="chi-tiet.html#`+products[i].id+`" class="item-img"><img src="`+products[i].image+`"/></a>
          <p class="item-name">`+products[i].title+`</p> 
          <p class="book-author">`+products[i].author+`</p>             
          <p class="item-price">`+products[i].price+'.000đ'+`</p>
@@ -19,26 +19,6 @@ renderItem=(products)=>{
 }
     return output
 }
-// renderdetails=(products)=>{
-//     let output = "";
-//     for(i=0; i<8; i++){
-//     output += `
-//       <div class="detail-item">
-//          <a class="detail-item-img"><img src="`+products[i].image+`"/></a>
-//          <p class="detail-item-name">`+products[i].title+`</p> 
-//          <p class="detail-book-author">`+products[i].author+`</p> 
-//          <p class="detail-item-type">`+products[i].type+`</p>          
-//          <p class="detail-item-price">`+products[i].price+'.000đ'+`</p>
-//          <p class="description">`+products[i].description+`</p>
-//          <button  class="buy-btn" data-id="`+products[i].id+`" >
-//           <i class="fas fa-shopping-cart" ></i>
-//           Thêm vào giỏ hàng
-//           </button>
-//       </div>
-//       `;
-// }
-//     return output
-// }
 document.querySelector(".bestseller").innerHTML=renderItem(bestsell)
 document.querySelector(".sachmoi").innerHTML = renderItem(books)
 document.querySelector(".vpp").innerHTML=renderItem(vpps)
