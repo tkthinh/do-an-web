@@ -7,6 +7,7 @@
         <title>Trang chủ</title>
         <script src="https://kit.fontawesome.com/d717109192.js"crossorigin="anonymous"
         ></script>
+<<<<<<< HEAD
         <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"defer></script>
         <script src="scripts/navbar.js" defer></script>
         <script src="data/index_products.js" defer></script>
@@ -15,6 +16,26 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
         <link rel="stylesheet" href="styles/shared.css">
         <link rel="stylesheet" href="styles/the-loai.css"/>
+=======
+        <script
+          src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"
+          defer
+        ></script>
+        <script src="/scripts/navbar.js" defer></script>
+        <script src="/data/index_products.js" defer></script>
+        <script src="/scripts/filter.js" defer ></script>
+        <script src="/scripts/user.js" defer></script>
+        <script src="/scripts/cart.js" defer></script>
+     
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+        />
+        <link rel="stylesheet" href="styles/shared.css">
+        <link rel="stylesheet" href="styles/cart.css">
+        <link rel="stylesheet" href="styles/the-loai.css" />
+        
+>>>>>>> 6c7e877fb5a0444ad36d34b6068fa6a58b13e41f
       </head>
 <body>
   <header>
@@ -36,6 +57,7 @@
         </ul>
       </div>
       <div class="search" data-dropdown-btn>
+<<<<<<< HEAD
         <input type="text" id="search_bar"  placeholder="Tìm kiếm sản phẩm..." data-search/>
         <div class="box"> 
           <!-- <a href="#"> 
@@ -46,6 +68,29 @@
             </div>
              </a>  -->
             </div>
+=======
+        <input type="text" id="search_bar" onkeyup="search_bar()" placeholder="Tìm kiếm sản phẩm..." data-search/>
+        <!-- <ul class="search-results">
+          <li class="result">
+            <a href="chi-tiet.html" class="result-img">
+              <img src="/img/book/ando.jpg">
+            </a>
+            <dt class="result-info">
+              <a href="chi-tiet.html" class="result-name">Lorem ipsum dolor sit.</a>
+              <span class="result-price">100.000đ</span>
+            </dt>
+          </li>
+          <li class="result">
+            <a href="chi-tiet.html" class="result-img">
+              <img src="/img/book/bleach.jpg">
+            </a>
+            <dt class="result-info">
+              <a href="chi-tiet.html" class="result-name">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum, magnam beatae.</a>
+              <span class="result-price">50.000đ</span>
+            </dt>
+          </li>
+        </ul> -->
+>>>>>>> 6c7e877fb5a0444ad36d34b6068fa6a58b13e41f
       </div>
       <div class="user-menu">
         <a href="login.html" class="user-text">Đăng nhập/Đăng kí</a>
@@ -54,10 +99,12 @@
           <a href="#"><i class="fa-regular fa-heart"></i></a>
           <p class="counter fav-counter">4</p>
         </div>
-        <div class="cart">
-          <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
-          <p class="counter cart-counter">2</p>
-        </div>
+        <div class="cart-icon">
+          <span class="nav-icon">
+            <i class="fas fa-cart-shopping"></i>
+          </span>
+          <p class="counter cart-counter">0</p>
+          </div>
       </div>
     </div>
   </header>
@@ -96,6 +143,25 @@
                 </div>
             </div>
         </div>
+ <!-- ====================================CART====================================== -->
+      <div class="cart-overlay">
+        <div class="cart">
+          
+
+          <span class="close-cart">
+            <i class="fas fa-window-close"></i>
+          </span>
+          <h2>CART</h2>
+          <div class="cart-content"></div>
+
+          <div class="cart-footer">
+            <h3>TOTAL: <span class="cart-total">0</span></h3>
+            <button class="clear-cart ">CLEAR</button>
+          </div>
+
+        </div>
+      </div>
+<!-- ========================================================================== -->
       </main>
       <footer>
         <div class="contact">

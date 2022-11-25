@@ -223,7 +223,7 @@ header{
 }
 
 /* I CHANGE HERE */
-.fav, .cart-icon{
+.fav, .cart, .cart-icon{
   position: relative;
   margin: 0 .5rem;
 }

@@ -5,6 +5,9 @@ let totalPage=0
 const limitPage=9
 let item_eachPage=[]
 let currentPage=1
+let type_choices= document.getElementsByClassName("type")
+let price_choices= document.getElementsByClassName("price")
+
 rendermainPage=(products,item_eachPage,currentPage)=>{
     totalPage = Math.ceil(products.length/limitPage)
         
@@ -18,7 +21,7 @@ rendermainPage=(products,item_eachPage,currentPage)=>{
             products.forEach(item => {
             output += `
               <div class="item">
-                 <a class="item-img"><img src="`+item.image+`"/></a>
+                 <a href="chi-tiet.html#`+item.id+`" class="item-img"><img src="`+item.image+`"/></a>
                  <p class="item-name">`+item.title+`</p> 
                  <p class="book-author">`+item.author+`</p>             
                  <p class="item-price">`+item.price+'.000đ'+`</p>
@@ -57,8 +60,7 @@ filter=()=>{
      currentPage=1
      totalPage=0
     let products=[]
-    let type_choices= document.getElementsByClassName("type")
-    let price_choices= document.getElementsByClassName("price")
+
     let savingtype_choices=[]
     let savingprice_choices=[]
  //===================lọc dk=================
@@ -71,7 +73,7 @@ filter=()=>{
         if(price_choices[i].checked == true) 
         savingprice_choices.push(price_choices[i].value)
     }
-    // if(!savingtype_choices.length){rendermainPage(sp,item_eachPage,currentPage)}
+
 //===================lọc dk=================
 //===================lọc sp theo dk================
  type_clear=(a)=>{
@@ -114,8 +116,8 @@ price_clear=(a)=>{
     rendermainPage(products,item_eachPage,currentPage)
 }
 //=========================filter box==============================================
-
 //=========================filter bar==============================================
+<<<<<<< HEAD
 let box = document.getElementsByClassName('box')[0]
 let search =document.getElementById('search_bar')
 window.addEventListener('load', ()=>{
@@ -138,16 +140,40 @@ search.addEventListener('keyup',()=>{
         let b =a[i].getElementsByClassName('content1')[0]
         let c =b.getElementsByTagName('h6')[0]
         let text =c.textContent || c.innerText
+=======
+// let box = document.getElementsByClassName('box')[0]
+// let search =document.getElementById('search_bar')
+// window.addEventListener('load', ()=>{
+//     sp.forEach(ele =>{
+//         const {image, title, price} = ele
+//         let card = document.createElement('a')
+//         card.innerHTML=`<img src="${image}">
+//                          <div class="content">
+//                             <h6>${title}</h6>           
+//                             <p>${price}.000đ</p>
+//                          </div>`;
+//         box.appendChild(card);
+//     })
+// })
+// search.addEventListener('keyup',()=>{
+//     let filter= search.value.toUpperCase();
+//     let a = box.getElementsByTagName('a')
+//     for (i = 0; i < a.length; i++) {
 
-        if(text.toUpperCase().indexOf(filter) > -1){
-            a[i].style.display = ''
-            box.style.visibility = "visible"
-            box.style.opacity = 1
-        }
-        else{ a[i].style.display = 'none'}
-        if(search.value == 0){
-            box.style.visibility = "hidden"
-            box.style.opacity = 0
-        } 
-    }
-})
+//         let b =a[i].getElementsByClassName('content')[0]
+//         let c =b.getElementsByTagName('h6')[0]
+//         let text =c.textContent || c.innerText
+>>>>>>> 6c7e877fb5a0444ad36d34b6068fa6a58b13e41f
+
+//         if(text.toUpperCase().indexOf(filter) > -1){
+//             a[i].style.display = ''
+//             box.style.visibility = "visible"
+//             box.style.opacity = 1
+//         }
+//         else{ a[i].style.display = 'none'}
+//         if(search.value == 0){
+//             box.style.visibility = "hidden"
+//             box.style.opacity = 0
+//         } 
+//     }
+// })

@@ -212,6 +212,7 @@ h3 {
   }
   
 }
+<<<<<<< HEAD
 
 header .top-menu .search {
   position: relative;
@@ -251,6 +252,10 @@ header .top-menu .search .box a img {
 header .top-menu .search .box a:hover {
    background: #87494b;
 }
+=======
+/* ================================================================= */
+
+>>>>>>> 6c7e877fb5a0444ad36d34b6068fa6a58b13e41f
 
 header .top-menu .search .box a .content1 {
   color: rgb(0, 0, 0);
