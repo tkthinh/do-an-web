@@ -123,7 +123,7 @@ window.addEventListener('load', ()=>{
         const {image, title, price} = ele
         let card = document.createElement('a')
         card.innerHTML=`<img src="${image}">
-                         <div class="content">
+                         <div class="content1">
                             <h6>${title}</h6>           
                             <p>${price}.000đ</p>
                          </div>`;
@@ -135,7 +135,7 @@ search.addEventListener('keyup',()=>{
     let a = box.getElementsByTagName('a')
     for (i = 0; i < a.length; i++) {
 
-        let b =a[i].getElementsByClassName('content')[0]
+        let b =a[i].getElementsByClassName('content1')[0]
         let c =b.getElementsByTagName('h6')[0]
         let text =c.textContent || c.innerText
 
