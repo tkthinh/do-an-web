@@ -47,7 +47,7 @@ document.querySelector('.main-info').innerHTML=`<div class="item-img-large">
                                                     <i class="fa-solid fa-circle-xmark het"></i>
                                                     <p class="het">Hết hàng</p>
                                                 </div>
-                                                <button class="btn add-cart">
+                                                <button class="btn add-cart buy-btn" data-id="`+DetailProduct.id+`">
                                                     <i class="fa-solid fa-cart-plus"></i>
                                                     Thêm vào Giỏ hàng
                                                 </button>
