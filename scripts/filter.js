@@ -117,7 +117,6 @@ price_clear=(a)=>{
 }
 //=========================filter box==============================================
 //=========================filter bar==============================================
-<<<<<<< HEAD
 let box = document.getElementsByClassName('box')[0]
 let search =document.getElementById('search_bar')
 window.addEventListener('load', ()=>{
@@ -140,40 +139,16 @@ search.addEventListener('keyup',()=>{
         let b =a[i].getElementsByClassName('content1')[0]
         let c =b.getElementsByTagName('h6')[0]
         let text =c.textContent || c.innerText
-=======
-// let box = document.getElementsByClassName('box')[0]
-// let search =document.getElementById('search_bar')
-// window.addEventListener('load', ()=>{
-//     sp.forEach(ele =>{
-//         const {image, title, price} = ele
-//         let card = document.createElement('a')
-//         card.innerHTML=`<img src="${image}">
-//                          <div class="content">
-//                             <h6>${title}</h6>           
-//                             <p>${price}.000đ</p>
-//                          </div>`;
-//         box.appendChild(card);
-//     })
-// })
-// search.addEventListener('keyup',()=>{
-//     let filter= search.value.toUpperCase();
-//     let a = box.getElementsByTagName('a')
-//     for (i = 0; i < a.length; i++) {
 
-//         let b =a[i].getElementsByClassName('content')[0]
-//         let c =b.getElementsByTagName('h6')[0]
-//         let text =c.textContent || c.innerText
->>>>>>> 6c7e877fb5a0444ad36d34b6068fa6a58b13e41f
-
-//         if(text.toUpperCase().indexOf(filter) > -1){
-//             a[i].style.display = ''
-//             box.style.visibility = "visible"
-//             box.style.opacity = 1
-//         }
-//         else{ a[i].style.display = 'none'}
-//         if(search.value == 0){
-//             box.style.visibility = "hidden"
-//             box.style.opacity = 0
-//         } 
-//     }
-// })
+        if(text.toUpperCase().indexOf(filter) > -1){
+            a[i].style.display = ''
+            box.style.visibility = "visible"
+            box.style.opacity = 1
+        }
+        else{ a[i].style.display = 'none'}
+        if(search.value == 0){
+            box.style.visibility = "hidden"
+            box.style.opacity = 0
+        } 
+    }
+})

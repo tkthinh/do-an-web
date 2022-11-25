@@ -179,5 +179,4 @@ let buttonsDOM=[]
         getbuttons(cart)
     })
 
-   // xóa từng sản phẩm nhưng khi thêm sản phẩm lại thêm những sản phẩm đã có
    
