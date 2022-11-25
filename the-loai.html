@@ -5,25 +5,16 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Trang chủ</title>
-        <script
-          src="https://kit.fontawesome.com/d717109192.js"
-          crossorigin="anonymous"
+        <script src="https://kit.fontawesome.com/d717109192.js"crossorigin="anonymous"
         ></script>
-        <script
-          src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"
-          defer
-        ></script>
-        <script src="/scripts/navbar.js" defer></script>
-        <script src="/data/index_products.js" defer></script>
-        <script src="/scripts/filter.js" defer ></script>
-        <script src="/scripts/user.js" defer></script>
-     
-        <link
-          rel="stylesheet"
-          href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
-        />
+        <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"defer></script>
+        <script src="scripts/navbar.js" defer></script>
+        <script src="data/index_products.js" defer></script>
+        <script src="scripts/filter.js" defer ></script>
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
         <link rel="stylesheet" href="styles/shared.css">
-        <link rel="stylesheet" href="styles/the-loai.css" />
+        <link rel="stylesheet" href="styles/the-loai.css"/>
       </head>
 <body>
   <header>
@@ -45,35 +36,20 @@
         </ul>
       </div>
       <div class="search" data-dropdown-btn>
-        <input type="text" id="search_bar" onkeyup="search_bar()" placeholder="Tìm kiếm sản phẩm..." data-search/>
-        <ul class="search-results">
-          <li class="result">
-            <a href="chi-tiet.html" class="result-img">
-              <img src="/img/book/ando.jpg">
-            </a>
-            <dt class="result-info">
-              <a href="chi-tiet.html" class="result-name">Lorem ipsum dolor sit.</a>
-              <span class="result-price">100.000đ</span>
-            </dt>
-          </li>
-          <li class="result">
-            <a href="chi-tiet.html" class="result-img">
-              <img src="/img/book/bleach.jpg">
-            </a>
-            <dt class="result-info">
-              <a href="chi-tiet.html" class="result-name">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum, magnam beatae.</a>
-              <span class="result-price">50.000đ</span>
-            </dt>
-          </li>
-        </ul>
+        <input type="text" id="search_bar"  placeholder="Tìm kiếm sản phẩm..." data-search/>
+        <div class="box"> 
+          <!-- <a href="#"> 
+            <img src="img/logo.png"/> 
+            <div class="content1"> 
+              <h6>Trình Ngu</h6>
+               <p>2003</p> 
+            </div>
+             </a>  -->
+            </div>
       </div>
       <div class="user-menu">
-        <div class="user">
-          <a href="login.html" class="user-text">Đăng nhập</a>
-          <div class="logout">
-              <p>Đăng xuất</p>
-          </div>
-        </div>
+        <a href="login.html" class="user-text">Đăng nhập/Đăng kí</a>
+        <a href="login.html"><i class="fa-solid fa-user user-icon"></i></a>
         <div class="fav">
           <a href="#"><i class="fa-regular fa-heart"></i></a>
           <p class="counter fav-counter">4</p>
@@ -110,7 +86,7 @@
                     <li><input class="btn btn-primary price" type="checkbox" onchange="filter()" value="4">Trên 500.000đ</li>
                 </div>
             </div>
-
+            <div class="box"></div>
             <div class="items">
                 <div class="item-container" id="list"></div>
                 <div class="page-counter" >
