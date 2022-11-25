@@ -8,15 +8,16 @@
     <script src="https://kit.fontawesome.com/d717109192.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js" defer></script>
     <script src="scripts/slideshow.js" defer></script>
-    <script src="/scripts/navbar.js" defer></script>
+    <script src="scripts/navbar.js" defer></script>
     <!-- <script src="/data/index_products.js" defer></script> -->
-    <script src="/scripts/index.js" defer></script>
-    <script src="/scripts/cart.js" defer></script>
-    <script src="/scripts/user.js" defer></script>
-
+    <script src="scripts/index.js" defer></script>
+    <script src="scripts/cart.js" defer></script>
+    <script src="scripts/user.js" defer></script>
+    <script src="scripts/filter.js" defer></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="styles/shared.css">
+    <link rel="stylesheet" href="styles/shared.css"/>
     <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/the-loai.css" />
   </head>
   <body>
     <header>
@@ -37,8 +38,19 @@
             <li><a href="/the-loai.html">Văn phòng phẩm</a></li>
           </ul>
         </div>
-        <input type="text" id="search" class="search" placeholder="Tìm kiếm sản phẩm..." data-search  />
-        <div class="box"></div>
+        <div class="search" data-dropdown-btn>
+          <input type="text" id="search_bar"  placeholder="Tìm kiếm sản phẩm..." data-search/>
+          <div class="box"> 
+            <!-- <a href="#"> 
+              <img src="img/logo.png"/> 
+              <div class="content1"> 
+                <h6>Trình Ngu</h6>
+                 <p>2003</p> 
+              </div>
+               </a>  -->
+              </div>
+        </div>
+
         <div class="user-menu">
           <div class="user">
             <a href="login.html" class="user-text">Đăng nhập</a>
@@ -57,7 +69,6 @@
           </span>
           <p class="counter cart-counter">0</p>
           </div>
-
         </div>
       </div>
     </header>
@@ -68,7 +79,7 @@
           ><img src="img/banner/small-banner-1.jpg"
         /></a>
         <a class="small-banner" href="#"
-          ><img src="img/banner/small-banner-2.jpg"
+          ><img src="img/banner/banner-small.gif"
         /></a>
       </section>
       <section class="section-1">
