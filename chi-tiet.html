@@ -19,8 +19,11 @@
           href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
         />
         <link rel="stylesheet" href="styles/shared.css">
+        <link rel="stylesheet" href="styles/cart.css">
         <link rel="stylesheet" href="styles/chi-tiet.css" />
         <script src="/scripts/user.js" defer></script>
+        <script src="/scripts/detail.js" defer></script>
+        <script src="/scripts/cart.js" defer></script>
       </head>
 <body>
   <header>
@@ -43,26 +46,7 @@
       </div>
       <div class="search" data-dropdown-btn>
         <input type="text" id="search_bar" onkeyup="search_bar()" placeholder="Tìm kiếm sản phẩm..." data-search/>
-        <ul class="search-results">
-          <li class="result">
-            <a href="chi-tiet.html" class="result-img">
-              <img src="/img/book/ando.jpg">
-            </a>
-            <dt class="result-info">
-              <a href="chi-tiet.html" class="result-name">Lorem ipsum dolor sit.</a>
-              <span class="result-price">100.000đ</span>
-            </dt>
-          </li>
-          <li class="result">
-            <a href="chi-tiet.html" class="result-img">
-              <img src="/img/book/bleach.jpg">
-            </a>
-            <dt class="result-info">
-              <a href="chi-tiet.html" class="result-name">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum, magnam beatae.</a>
-              <span class="result-price">50.000đ</span>
-            </dt>
-          </li>
-        </ul>
+
       </div>
       <div class="user-menu">
         <div class="user">
@@ -75,10 +59,12 @@
           <a href="#"><i class="fa-regular fa-heart"></i></a>
           <p class="counter fav-counter">4</p>
         </div>
-        <div class="cart">
-          <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
-          <p class="counter cart-counter">2</p>
-        </div>
+        <div class="cart-icon">
+          <span class="nav-icon">
+            <i class="fas fa-cart-shopping"></i>
+          </span>
+          <p class="counter cart-counter">0</p>
+          </div>
       </div>
     </div>
   </header>
@@ -87,40 +73,28 @@
           <span>Trang chủ ></span>
           <span class="type-name">Thể loại</span>
         </section>
-        <section class="main-info">
-          <div class="item-img-large">
-            <img src="/img/book/dac-nhan-tamjpg.jpg">
+        <section class="main-info"></section>
+<!-- ====================================CART====================================== -->
+
+      <div class="cart-overlay">
+        <div class="cart">
+          
+
+          <span class="close-cart">
+            <i class="fas fa-window-close"></i>
+          </span>
+          <h2>CART</h2>
+          <div class="cart-content"></div>
+
+          <div class="cart-footer">
+            <h3>TOTAL: <span class="cart-total">0</span></h3>
+            <button class="clear-cart ">CLEAR</button>
           </div>
-          <div class="item-info">
-            <h2 class="item-name-large">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, qui.</h2>
-            <div class="author">
-              <span class="by">Tác giả: </span>
-              <a href="#" class="author-name">Dale Carnegie</a>
-            </div>
-            <h3 class="price">69.000đ</h3>
-            <div class="condition">
-              <i class="fa-solid fa-circle-check con"></i>
-              <p class="con">Còn hàng</p>
-            </div>
-            <div class="condition">
-              <i class="fa-solid fa-circle-xmark het"></i>
-              <p class="het">Hết hàng</p>
-            </div>
-            <button class="btn add-cart">
-              <i class="fa-solid fa-cart-plus"></i>
-              Thêm vào Giỏ hàng
-            </button>
-            <button class="btn wishlist">
-              <i class="fa-regular fa-heart"></i>
-              Thêm vào Ưa thích
-            </button>
-          </div>
-        </section>
-        <section class="overview">
-          <h3>Tổng quan</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati veniam, omnis sint soluta fugiat aperiam assumenda illum minus provident voluptate.</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ad nam fuga, earum sed at eveniet eligendi, blanditiis tempora perferendis eius maiores, possimus amet cupiditate! Minima laborum illo ipsum perferendis impedit sit quam sequi recusandae aut, commodi eaque corrupti maiores soluta fugit. Nisi possimus perferendis rerum exercitationem aliquid cum dolor?</p>
-        </section>
+
+        </div>
+      </div>
+<!-- ========================================================================== -->
+
         <div class="recommend">
           <h3>Có thể bạn sẽ thích</h3>
           <div class="swiper mySwiper">
