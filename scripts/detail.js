@@ -1,6 +1,7 @@
 let hash = window.location.hash
 let hasg = Number(hash.slice(1,hash.length))
 const moreb =JSON.parse(window.localStorage.product).book;
+
 console.log(typeof(hasg));
 getProduct=(id)=>{
     let products =JSON.parse(window.localStorage.getItem('product')).book;
@@ -43,10 +44,6 @@ document.querySelector('.main-info').innerHTML=`<div class="item-img-large">
                                                     <i class="fa-solid fa-circle-check con"></i>
                                                     <p class="con">Còn hàng</p>
                                                 </div>
-                                                <div class="condition">
-                                                    <i class="fa-solid fa-circle-xmark het"></i>
-                                                    <p class="het">Hết hàng</p>
-                                                </div>
                                                 <button class="btn add-cart buy-btn" data-id="`+DetailProduct.id+`">
                                                     <i class="fa-solid fa-cart-plus"></i>
                                                     Thêm vào Giỏ hàng
@@ -56,7 +53,8 @@ document.querySelector('.main-info').innerHTML=`<div class="item-img-large">
                                                     Thêm vào Ưa thích
                                                 </button>
                                                 </div>
-                                                </section>
-                                                <section class="overview">
-                                                <h3>Tổng quan</h3>`+DetailProduct.description+`.`
+                                                </section>`
+document.querySelector('.overview p').innerHTML = DetailProduct.description
 
+var itemName = document.querySelector('title')
+itemName.innerHTML = DetailProduct.title

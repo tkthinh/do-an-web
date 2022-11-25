@@ -19,6 +19,9 @@ main section{
 
 .item-img-large {
   flex-basis: 30%;
+  max-height: 40rem;
+  background-color: #fff;
+  padding: 2px 1px;
 }
 
 .item-img-large img {
@@ -126,13 +129,16 @@ h3 {
 
 .item-img {
   background-color: #fff;
+  padding: 2px 1px;
 }
 
 .item-img img {
   display: block;
   margin: 0 auto;
-  width: 80%;
-  object-fit: cover;
+  width: calc(25rem + 10%);
+  height: calc(25rem + 10%);
+  max-height: 28rem;
+  object-fit: contain;
   background-position: center;
 }
 
@@ -197,7 +203,7 @@ h3 {
 /* responsive */
 @media( max-width: 900px){
   .main-info{
-    flex-direction: column;
+    display: block;
     max-height: fit-content;
   }
 
@@ -216,9 +222,19 @@ h3 {
     text-align: center;
     width: 90%;
   }
+
+  .item-img img{
+    width: calc(20rem + 10%);
+    height: calc(20rem + 10%);
+  }
 }
 
 @media( max-width: 650px){
+  .item-img img{
+    width: calc(15rem + 10%);
+    height: calc(15rem + 10%);
+  }
+
   .swiper-button-next{
     right: 0;
   }

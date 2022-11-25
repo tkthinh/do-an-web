@@ -21,8 +21,8 @@
         <link rel="stylesheet" href="styles/shared.css">
         <link rel="stylesheet" href="styles/cart.css">
         <link rel="stylesheet" href="styles/chi-tiet.css" />
-        <script src="/scripts/user.js" defer></script>
         <script src="/scripts/detail.js" defer></script>
+        <script src="/scripts/user.js" defer></script>
         <script src="/scripts/cart.js" defer></script>
       </head>
 <body>
@@ -74,6 +74,10 @@
           <span class="type-name">Thể loại</span>
         </section>
         <section class="main-info"></section>
+        <section class="overview">
+          <h3>Tổng quan</h3>
+          <p></p>
+        </section>
 <!-- ====================================CART====================================== -->
 
       <div class="cart-overlay">
@@ -205,7 +209,7 @@
     <!-- Initialize Swiper -->
     <script>
       var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 2,
+        slidesPerView: 1.5,
         spaceBetween: 30,
         loopFillGroupWithBlank: true,
         breakpoints: {
@@ -213,6 +217,9 @@
             slidesPerView: 3,
           },
           900: {
+            slidesPerView: 3,
+          },
+          1000: {
             slidesPerView: 4,
           },
         },
