@@ -158,6 +158,9 @@ h3 {
     padding: 1rem;
     margin: 0 3rem;
 }
+.page-counter.current{
+  background-color: var(--blue);
+}
 
 #pagination-numbers{
   display: flex;
@@ -169,14 +172,16 @@ h3 {
     margin: 0 1rem;
 }
 
-#pagination-numbers div:active{
-    background-color: var(--navy);
-    color: white;
+#pagination-numbers #div.active{
+    background-color: white;
+    color: var(--navy);
 }
 
 #pagination-numbers div:hover{
-    text-decoration: underline;
+  background-color: var(--navy);
+  color: white;
 }
+
 
 /* responsive */
 @media(max-width: 900px){
