@@ -1,8 +1,7 @@
 let hash = window.location.hash
 let hasg = Number(hash.slice(1,hash.length))
 const moreb =JSON.parse(window.localStorage.product).book;
-
-console.log(typeof(hasg));
+let sp=JSON.parse(window.localStorage.product).book;
 getProduct=(id)=>{
     let products =JSON.parse(window.localStorage.getItem('product')).book;
     return products.find(ele=>{return ele.id ==id})
@@ -58,3 +57,38 @@ document.querySelector('.overview p').innerHTML = DetailProduct.description
 
 var itemName = document.querySelector('title')
 itemName.innerHTML = DetailProduct.title
+let box = document.getElementsByClassName('box')[0]
+let search =document.getElementById('search_bar')
+window.addEventListener('load', ()=>{
+    sp.forEach(ele =>{
+        const {image, title, price} = ele
+        let card = document.createElement('a')
+        card.innerHTML=`<img src="${image}">
+                         <div class="content1">
+                            <h6>${title}</h6>           
+                            <p>${price}.000đ</p>
+                         </div>`;
+        box.appendChild(card);
+    })
+})
+search.addEventListener('keyup',()=>{
+    let filter= search.value.toUpperCase();
+    let a = box.getElementsByTagName('a')
+    for (i = 0; i < a.length; i++) {
+
+        let b =a[i].getElementsByClassName('content1')[0]
+        let c =b.getElementsByTagName('h6')[0]
+        let text =c.textContent || c.innerText
+
+        if(text.toUpperCase().indexOf(filter) > -1){
+            a[i].style.display = ''
+            box.style.visibility = "visible"
+            box.style.opacity = 1
+        }
+        else{ a[i].style.display = 'none'}
+        if(search.value == 0){
+            box.style.visibility = "hidden"
+            box.style.opacity = 0
+        } 
+    }
+})
