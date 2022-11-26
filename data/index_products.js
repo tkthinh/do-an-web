@@ -87,10 +87,10 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
             {
                 "id":10,
                 "image": "img/book/KN18.jpg",
-                "title": "Little Stories",
-                "author": "Sracey Riches",
-                "price": 46,
-                "type": ["Best seller","Kỹ năng sống", "All", "Tiểu thuyết"],
+                "title": "Thao túng tâm lý",
+                "author": "Shannon Thomas",
+                "price": 43,
+                "type": ["Best seller","Kỹ năng sống", "All"],
                 "description":"THE TEST HAS ENDED, I AM VICTORIOUS, I AM THE HERALD OF OBLIVION, I AM RHAASRT"
             },
             {

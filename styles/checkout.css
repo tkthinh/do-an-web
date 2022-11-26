@@ -78,3 +78,29 @@ h2{
     color: #a31023;
     font-size: 2.5rem;
 }
+
+.order-form{
+    width: 90%;
+    margin: 2rem auto;
+}
+
+.order-form input{
+    display: block;
+    width: 60vw;
+    padding: .5rem;
+    margin: .5rem 0;
+    word-spacing: 1px;
+    font-size: 1.8rem;
+}
+
+.order-form label{
+    font-size: 1.8rem;
+}
+
+.order-btn{
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    background-color: var(--navy);
+    color: #fff;
+    font-size: 1.8rem;
+}

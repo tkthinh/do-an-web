@@ -18,5 +18,6 @@ buyBtns.forEach(buyBtn => {
     buyBtn.addEventListener('click', function(){
         if(!isLoggedIn)
         window.alert('Vui lòng đăng nhập để mua hàng!')
+        return
     })
 });
