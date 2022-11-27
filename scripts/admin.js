@@ -20,14 +20,6 @@ var productTable = document.querySelector('.content .products');
 /**@type { NodeListOf <HTMLButtonElement> } */
 var product_btns = document.querySelectorAll('.product_btn');
 
-//Nút content đơn hàng
-/**@type { NodeListOf <HTMLButtonElement> } */
-var order_btns = document.querySelectorAll('.order_btn');
-
-//Nút content khách
-/**@type { NodeListOf <HTMLButtonElement> } */
-var user_btns = document.querySelectorAll('.user_btn');
-
 /**@type { HTMLDivElement? } */
 //Bảng thêm sản phẩm
 var adding_table = document.querySelector('.adding_table');
@@ -68,54 +60,17 @@ window.onload = start;
 //=============================Lựa chọn in nội dung nào===================================//
 /**@type {HTMLDivElement?} */
 var productContent = document.querySelector('.content.product_content');
-/**@type {HTMLDivElement?} */
-var orderContent = document.querySelector('.content.order_content');
-/**@type {HTMLDivElement?} */
-var userContent = document.querySelector('.content.user_content');
 
 
 product_btns.forEach(ele => {
     ele.addEventListener('click', () => {
-        if (orderContent !== null) {
-            orderContent.classList.remove('active');
-        }
-        if (userContent !== null) {
-            userContent.classList.remove('active');
-        }
         if (!productContent?.classList.contains('active') && !adding_table?.classList.contains('active')) {
             productContent?.classList.add('active');
             adding_table?.classList.add('active');
         }
     })
 })
-order_btns.forEach(ele => {
-    ele.addEventListener('click', () => {
-        if (productContent !== null && adding_table !== null) {
-            productContent.classList.remove('active');
-            adding_table.classList.remove('active');
-        }
-        if (userContent !== null) {
-            userContent.classList.remove('active');
-        }
-        if (!orderContent?.classList.contains('active')) {
-            orderContent?.classList.add('active');
-        }
-    })
-})
-user_btns.forEach(ele => {
-    ele.addEventListener('click', () => {
-        if (productContent !== null && adding_table !== null) {
-            productContent.classList.remove('active');
-            adding_table.classList.remove('active');
-        }
-        if (orderContent !== null) {
-            orderContent.classList.remove('active');
-        }
-        if (!userContent?.classList.contains('active')) {
-            userContent?.classList.add('active');
-        }
-    })
-})
+
 //===============================Tùy chọn loại sản phẩm in ra=================================//
 function productList() {
     /** @type { product[] } */
@@ -178,13 +133,13 @@ function displayProducts(list, wrapper, ppp, curr_page) {
     //Dùng vòng lặp in từng sản phẩm
     for (var i = 0; i < curr_page_items.length; i++) {
         output += `<tr>
-         <td>${curr_page_items[i].id}</td>
-         <td><img src="${curr_page_items[i].image}"/></td>
-         <td><h3>${curr_page_items[i].title}</h3><br/>
-         <td>${curr_page_items[i].price}</td>
-         <td><button class="detail_btn" value="${curr_page_items[i].id}" onclick="openDetailTable(${curr_page_items[i].id})">Xem</button></td>
-         <td><button class="del_btn" value="${curr_page_items[i].id}" onclick="delItem(this)">Xóa</button> </td>
-         </tr>`
+          <td>${curr_page_items[i].id}</td>
+          <td><img src="${curr_page_items[i].image}"/></td>
+          <td><h3>${curr_page_items[i].title}</h3><br/>
+          <td>${curr_page_items[i].price}</td>
+          <td><button class="detail_btn" value="${curr_page_items[i].id}" onclick="openDetailTable(${curr_page_items[i].id})">Xem</button></td>
+          <td><button class="del_btn" value="${curr_page_items[i].id}" onclick="delItem(this)">Xóa</button> </td>
+          </tr>`
         wrapper.innerHTML = output;
     }
 }
@@ -339,7 +294,6 @@ var img;                      //Ảnh mới
 var bookTypes = [];
 /**@type {product} */
 var newItem;                  //SP mới
-var resultAddImg;
 
 //=======================================================================================//
 //Thêm ảnh
@@ -358,7 +312,6 @@ add_img_input?.addEventListener('change', (event) => {
         img = showAddImg(eT.files[0]);
     }
 })
-
 /**
  * @param {File} file
  */
@@ -370,7 +323,6 @@ function showAddImg(file) {
         fr.readAsDataURL(file);
         fr.addEventListener("load", () => {
             file_img_add.innerHTML = `<img src=\"${fr.result}\">`;
-            resultAddImg = fr.result;
         })
     }
     else {
@@ -419,7 +371,7 @@ function validateBookTypeInput() {
 }
 //Kiểm tra ảnh
 function validateImgInput() {
-    if (img === undefined) {
+    if (file_img_add.innerHTML == '') {
         add_error_messages[0].innerText = 'Chưa chọn ảnh';
     }
     else {
@@ -446,7 +398,7 @@ function handleAdding() {
     if (product_type?.value == 'themsach') {
         newItem = {
             id: max_id + 1,
-            image: `${resultAddImg}`,
+            image: `img/book/${img}`,
             title: `${add_product_inputs[0].value}`,
             author: `${add_product_inputs[2].value}`,
             price: Number(add_product_inputs[1].value),
@@ -461,7 +413,7 @@ function handleAdding() {
     else if (product_type?.value == 'themvpp') {
         newItem = {
             id: max_id + 1,
-            image: `${resultAddImg}`,
+            image: `img/book/${img}`,
             title: `${add_product_inputs[0].value}`,
             author: `${add_product_inputs[2].value}`,
             price: Number(add_product_inputs[1].value),
@@ -526,10 +478,13 @@ function openDetailTable(id) {
     detail_table?.classList.add('active');
     renderToEdit(id);
 }
+console.log(edit_img_btn);
 
 detail_close_btn?.addEventListener('click', () => {
+
     if (!edit_img_btn.hasAttribute('disabled')) {
         edit_img_btn.setAttribute('disabled', 'true');
+        edit_img_input.setAttribute("disabled", "true");
         edit_product_inputs.forEach(ele => {
             ele.setAttribute('disabled', 'true');
         })
@@ -537,11 +492,12 @@ detail_close_btn?.addEventListener('click', () => {
             ele.setAttribute('disabled', 'true');
         })
         editing_btn.setAttribute('disabled', 'true');
-        if (temp[1] == 'sach') {
-            edit_type_inputs.forEach(ele => {
-                ele.setAttribute('disabled', 'true');
-            })
-        }
+        edit_type_inputs.forEach(ele => {
+            if (ele.checked) {
+                ele.checked = false;
+            }
+            ele.setAttribute('disabled', 'true');
+        })
     }
     document.querySelector('.detail_wrapper')?.classList.remove('active');
     document.querySelector('.detail_table')?.classList.remove('active');
@@ -561,8 +517,6 @@ var editImg;
 var resultEditImg;
 function activeImgInput() {
     edit_img_input.click();
-    console.log(edit_img_input);
-    console.log(edit_img_btn);
 }
 //Show ảnh
 edit_img_input?.addEventListener('change', (event) => {
@@ -587,7 +541,6 @@ function showEditImg(file) {
         fr.readAsDataURL(file);
         fr.addEventListener("load", () => {
             file_img_edit.innerHTML = `<img src=\"${fr.result}\">`;
-            resultEditImg = fr.result;
         })
     }
     else {
@@ -633,9 +586,10 @@ function checkItemToRenderToEdit(temp, id) {
 function renderTypeToEdit() {
     var typeArr = temp[0].type;
     edit_type_inputs.forEach(ele => {
+        ele.checked = false;
         typeArr.forEach(value => {
-            if (value == ele.name) {
-                ele.setAttribute('checked', 'true');
+            if (ele.name == value) {
+                ele.checked = true;
             }
         })
     })
@@ -650,10 +604,15 @@ function renderToEdit(id) {
     file_img_edit.innerHTML = `<img src=\"${temp[0].image}\">`;
     editImg = `${temp[0].image}`;
     //Thể loại nếu là sách
+    console.log(temp[1]);
     if (temp[1] == 'sach') {
         renderTypeToEdit();
     }
-
+    if (temp[1] == 'vpp') {
+        edit_type_inputs.forEach(ele => {
+            ele.checked = false;
+        })
+    }
     //Thông tin còn lại
     edit_product_inputs[0].value = temp[0].title;
     edit_product_inputs[1].value = temp[0].price;
@@ -681,7 +640,6 @@ edit_detail_img.addEventListener('click', () => {
 })
 
 function validateImgEdit() {
-    console.log(editImg);
     if (editImg === undefined) {
         edit_error_messages[0].innerText = 'Chưa chọn ảnh';
     }
@@ -708,6 +666,14 @@ function validateInfoEdit() {
  */
 function handelEditing(mode, index) {
     var editType = ['All'];
+    var image = '';
+    if (editImg == temp[0].image) {
+        console.log(editImg);
+        image = temp[0].image;
+    }
+    else {
+        image = `img/book/${editImg}`;
+    }
     if (mode == 1) {
         edit_type_inputs.forEach(ele => {
             if (ele.checked)
@@ -715,7 +681,7 @@ function handelEditing(mode, index) {
         })
         var editedItem = {
             id: temp[0].id,
-            image: `${resultEditImg}`,
+            image: `/${image}`,
             title: `${edit_product_inputs[0].value}`,
             author: `${edit_product_inputs[2].value}`,
             price: Number(edit_product_inputs[1].value),
@@ -729,7 +695,7 @@ function handelEditing(mode, index) {
     else if (mode == 2) {
         var editedItem = {
             id: temp[0].id,
-            image: `${resultEditImg}`,
+            image: `${image}`,
             title: `${edit_product_inputs[0].value}`,
             author: `${edit_product_inputs[2].value}`,
             price: Number(edit_product_inputs[1].value),
@@ -747,14 +713,10 @@ function confirmEditItem() {
         validateInfoEdit();
         if (temp[1] == 'sach') {
             handelEditing(1, temp[2]);
-            console.log(products);
         }
         else if (temp[1] == 'vpp') {
             handelEditing(2, temp[2]);
-            console.log(products);
         }
-        console.log(file_img_edit);
-        console.log(file_img_edit);
     }
     else {
         console.log('Không thay đổi');
@@ -816,4 +778,4 @@ function toggleMenu() {
     leftmenu?.classList.toggle('active');
     main?.classList.toggle('active');
 }
- //=====================================================================================================================//
+  //=====================================================================================================================//
