@@ -9,7 +9,9 @@
         src="https://kit.fontawesome.com/d717109192.js"
         crossorigin="anonymous"
     ></script>
-    <script src="/scripts/user.js"></script>
+    <script src="/scripts/user.js" defer></script>
+    <!-- <script src="/scripts/cart.js" defer></script> -->
+    <script src="/scripts/checkout.js" defer></script>
     <link rel="stylesheet" href="styles/shared.css">
     <link rel="stylesheet" href="styles/checkout.css">
 </head>
@@ -59,51 +61,10 @@
                     <th>Số lượng</th>
                     <th>Tạm tính</th>
                 </tr>
-                <tr>
-                    <td>
-                        <div class="item-info">
-                            <img src="img/book/dac-nhan-tamjpg.jpg">
-                            <div>
-                                <p class="name">lorem ipsum</p>
-                                <button type="button"><i class="fa-solid fa-trash-can"></i>Xoá</button>
-                            </div>
-                        </div>
-                    </td>
-                    <td><input type="number" value="1" min="1"></td>
-                    <td class="price">50.000đ</td>
-                </tr>
-                <tr>
-                    <td>
-                        <div class="item-info">
-                            <img src="img/book/dac-nhan-tamjpg.jpg">
-                            <div>
-                                <p class="name">lorem ipsum</p>
-                                <button type="button"><i class="fa-solid fa-trash-can"></i>Xoá</button>
-                            </div>
-                        </div>
-                    </td>
-                    <td><input type="number" value="1" min="1"></td>
-                    <td class="price">50.000đ</td>
-                </tr>
-                <tr>
-                    <td>
-                        <div class="item-info">
-                            <img src="img/book/dac-nhan-tamjpg.jpg">
-                            <div>
-                                <p class="name">lorem ipsum</p>
-                                <button type="button"><i class="fa-solid fa-trash-can"></i>Xoá</button>
-                            </div>
-                        </div>
-                    </td>
-                    <td><input type="number" value="1" min="1"></td>
-                    <td class="price">50.000đ</td>
-                </tr>
             </table>
-            <h2>Tổng cộng: 
-                <span class="total">100.000đ</span>
-            </h2>
+            <h2></h2>
         </div>
-          <form action="POST" class="order-form">
+          <form action="/" class="order-form">
             <label for="name">Họ và tên</label>
             <input type="text" name="name" class="customer-name" placeholder="Nhập họ và tên...">
             <label for="phone">Số điện thoại</label>
