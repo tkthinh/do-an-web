@@ -206,19 +206,30 @@ header{
   position: relative;
 }
 
-.logout{
-  display: none;
-  position: absolute;
-  top: calc(100%+2rem);
-  background-color: #fff;
-  box-shadow: .1rem .1rem .1rem rgba(0, 0, 0, 0.3);
-  border-radius: 10px;
-  padding: 1rem;
-  cursor: pointer;
-  font-size: 2rem;
+.user-text{
+  border-bottom: 2px solid black;
+  cursor: default;
 }
 
-.user.logged:hover > .logout{
+.state{
+  width: 200px;
+  display: none;
+  position: absolute;
+  top: calc(100%+3rem);
+  left: -20px;
+  background-color: #fff;
+  box-shadow: .2rem .2rem .2rem rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.state p{
+  font-size: 2rem;
+  padding: 1rem;
+  margin-bottom: .5rem;
+}
+
+.state.logged{
   display: block;
 }
 
@@ -315,21 +326,19 @@ footer h3 {
     padding-top: 15rem;
   }
 
-  .user-text {
-    display: none;
-  }
-
   .user-icon {
     display: inline-block;
   }
-
-
 
   .logo {
     position: absolute;
     top: 10px;
     left: 50%;
     transform: translateX(-50%);
+  }
+
+  .top-menu{
+    margin-top: 40px;
   }
 
   .search {
