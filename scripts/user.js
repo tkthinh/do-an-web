@@ -1,23 +1,40 @@
 const isLoggedIn = sessionStorage.getItem('isloggedin')
-const userState = document.querySelector('.user')
-const userWelcome = document.querySelector('.user-text')
-const logOut = document.querySelector('.logout')
+const userLink = document.querySelector('.user')
+
 if(isLoggedIn){
-    userState.classList.add('logged')
+    userLink.innerHTML = '<i class="fa-solid fa-user-check"></i>' +
+                         '<div class="state">' +
+                            '<p class="user-text"></p>'  +
+                            '<p class="logout"><i class="fa-solid fa-right-from-bracket"></i> Đăng xuất</p>' +
+                         '</div>'
+    
+    const userWelcome = document.querySelector('.user-text')
+    const userState = document.querySelector('.state')
+    const logOut = document.querySelector('.logout')                     
     userWelcome.innerHTML = 'Xin chào, ' + isLoggedIn + '!'
-    userWelcome.href = ''
+    userLink.addEventListener('click', function(){
+        userState.classList.toggle('logged')
+    })
     logOut.addEventListener('click', function logOut(){
         sessionStorage.clear()
         window.location.reload()
 })
 }
 
-const buyBtns = document.querySelectorAll('.buy-btn')
+//navbar
+window.addEventListener("scroll", function(){
+    var header = document.querySelector("header");
+    var topElement = document.querySelectorAll(".top-menu div a")
+    header.classList.toggle("sticky", window.scrollY > 50);
+    // topElement.classList.toggle("sticky", window.scrollY > 0);
+})
 
-buyBtns.forEach(buyBtn => {
-    buyBtn.addEventListener('click', function(){
-        if(!isLoggedIn)
-        window.alert('Vui lòng đăng nhập để mua hàng!')
-        return
-    })
-});
+const menuBtn = document.querySelector('.dropdown');
+
+menuBtn.addEventListener("click", () => {
+    menuBtn.classList.toggle('drop');
+})
+
+window.onbeforeunload = function () {
+    if(window.scrollTo) window.scrollTo(0,0);
+};
