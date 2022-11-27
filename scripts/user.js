@@ -1,4 +1,4 @@
-const isLoggedIn = sessionStorage.getItem('isloggedin')
+const isLoggedIn = localStorage.getItem('isloggedin')
 const userLink = document.querySelector('.user')
 
 if(isLoggedIn){
@@ -16,7 +16,7 @@ if(isLoggedIn){
         userState.classList.toggle('logged')
     })
     logOut.addEventListener('click', function logOut(){
-        sessionStorage.clear()
+        localStorage.removeItem('isloggedin')
         window.location.reload()
 })
 }
