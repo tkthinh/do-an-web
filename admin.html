@@ -8,18 +8,13 @@
         rel="stylesheet">
         <title>Danh sách sản phẩm</title>      
         <link rel="stylesheet" href="styles/admin.css" />
+        <script src="scripts/admin.js" defer></script>
     </head>
     <body>
         <div id="container">
             <!-- Header -->
             <div class="leftmenu">
                 <ul>
-                    <!-- <li> -->
-                        <!-- <button class="content_btn home_btn"> -->
-                        <!-- <img src="img/admin/homepage.png" class="navlogo"/> -->
-                        <!-- <span class="title">Trang chủ</span>  -->
-                        <!-- </button> -->
-                    <!-- </li> --> 
                     <li>
                         <button class="content_btn product_btn">
                             <img src="img/admin/books.png" class="navlogo"/>
@@ -49,20 +44,71 @@
             <!-- Topbar -->
             <div class="topbar">
                 <div class="toggle" onclick="toggleMenu()"></div>
-                <a href="/index.html" id="logo"><img src="img/logo.png"/></a>
+                <div id="logo"><img src="img/logo.png"/></div>
                 <div class="admin-info">
-                    <a href="#" class="admin-cart"><img src="img/admin/shopping-cart.png"/></a>
                     <div class="admin_name">[Admin's name]</div>
                 </div>
             </div>
             <!-- Main -->
+
+            <!-- Bảng chi tiết -->
+            <!--  -->
+            <div class="detail_wrapper">
+                <div class="detail_table">
+                    <div class="detail_table_header">
+                        <h2>Thông tin sản phẩm</h2>
+                        <img src="img/admin/edit.png" id="edit_detail_img">
+                        <img src="img/admin/close.png" id="close_detail_img">
+                    </div>
+                    <div class="editing_block">
+                        <label for="">Ảnh:</label>
+                        <button class="edit_img_btn" onclick="activeImgInput()" disabled>Chọn file</button>
+                        <input type="file" name="ảnh cần thay" class="edit_img_input" accept="image/png, image/jpeg, image/png" disabled />
+                        <div class="file_img_edit"></div>
+                    </div>
+                    <div class="edit_error_message"></div>
+                    <div class="editing_block">
+                        <label for="">Tên:</label>
+                        <input type="text" name="tên" class="edit_product_input edit_name_input" disabled/>
+                    </div>
+                    <div class="edit_error_message"></div>
+                    <div class="editing_block">
+                        <label for="">Giá:</label>
+                        <input type="number" name="giá" class="edit_product_input edit_price_input" disabled/>
+                    </div>
+                    <div class="edit_error_message"></div>
+                    <div class="editing_block">
+                        <label for="">Tác giả/Nhà sản xuất:</label>
+                        <input type="text" name="tác giả hoặc nhà sản xuất" class="edit_product_input edit_author_input" disabled/>
+                    </div>
+                    <div class="edit_error_message"></div>
+                    <div class="editing_block">
+                        <label for="">Mô tả:</label>
+                        <textarea name="mô tả" class="edit_product_input edit_descr_input" cols="120" rows="3" disabled></textarea>
+                    </div>
+                    <div class="edit_error_message"></div>
+                    <div class="editing_block edit_booktype_block">
+                        <label for="type">Thể loại:</label>
+                        <input type="checkbox" name="Kinh tế"       class="edit_type_input" value="kinh_te"      disabled/>Kinh tế
+                        <input type="checkbox" name="Tiểu thuyết"   class="edit_type_input" value="tieu_thuyet"  disabled/>Tiểu thuyết
+                        <input type="checkbox" name="Kỹ năng sống " class="edit_type_input" value="ky_nang_song" disabled/>Kỹ năng sống 
+                        <input type="checkbox" name="Kinh dị"       class="edit_type_input" value="kinh_di"      disabled/>Kinh dị
+                        <input type="checkbox" name="Khoa học"      class="edit_type_input" value="khoa_hoc"     disabled/>Khoa học
+                        <input type="checkbox" name="Trẻ em"        class="edit_type_input" value="tre_em"       disabled/>Trẻ em
+                        <input type="checkbox" name="Truyện tranh"  class="edit_type_input" value="truyen_tranh" disabled/>Truyện tranh
+                    </div>
+                    <div class="edit_error_message"></div>
+                    <div class="editing_block">
+                        <button type="submit" class="submit_btn editing_btn" onclick="confirmEditItem()" disabled>Xác nhận</button>
+                    </div>
+                </div>
+            </div> 
+            <!--  -->
+
+            <!-- Content -->
             <div class="main">
                 <!-- Card box (khi màn hình thu nhỏ, bỏ leftmenu thay bằng card box) -->
                 <div class="card-box">
-                    <!-- <button class="card home_btn"> -->
-                        <!-- <div>Trang chủ</div> -->
-                        <!-- <img src="img/admin/homepage.png" class="card-logo"/> -->
-                    <!-- </button> -->
                     <button class="card product_btn">
                         <div>Sản phẩm</div>
                         <img src="img/admin/books.png" class="card-logo"/>
@@ -83,6 +129,7 @@
                 <!--  -->      
                 <!-- Sản phẩm -->
                 <div class="content product_content active">
+                    <!--  -->
                     <div class=page-title>DANH MỤC SẢN PHẨM</div>
                     <div class="options">
                         <div>
@@ -101,6 +148,7 @@
                                 <th>Ảnh</th>
                                 <th>Thông tin</th>
                                 <th>Giá</th>
+                                <th>Chi tiết</th>
                                 <th>Xóa</th>
                             </tr>
                         </thead>
@@ -209,44 +257,44 @@
                     </div>
                     <div class="adding_block">
                         <label for="">Ảnh:</label>
-                        <button id="add_img_btn">Chọn file</button>
-                        <input type="file" name="ảnh" id="add_img_input" accept="image/png, image/jpeg, image/png" />
-                        <div class="file_img"></div>
+                        <button class="add_img_btn" >Chọn file</button>
+                        <input type="file" name="ảnh" class="add_img_input" accept="image/png, image/jpeg, image/png" />
+                        <div class="file_img_add"></div>
                     </div>
-                    <div class="error_message"></div>
+                    <div class="add_error_message"></div>
                     <div class="adding_block">
                         <label for="">Tên:</label>
-                        <input type="text" name="tên" class="input_product add_name_input"/>
+                        <input type="text" name="tên" class="add_product_input add_name_input"/>
                     </div>
-                    <div class="error_message"></div>
+                    <div class="add_error_message"></div>
                     <div class="adding_block">
                         <label for="">Giá:</label>
-                        <input type="number" name="giá" class="input_product add_price_input" />
+                        <input type="number" name="giá" class="add_product_input add_price_input" />
                     </div>
-                    <div class="error_message"></div>
-                    <div class="adding_block" id="tacgia_nsx">
+                    <div class="add_error_message"></div>
+                    <div class="adding_block">
                         <label for="">Tác giả/Nhà sản xuất:</label>
-                        <input type="text" name="tác giả hoặc nhà sản xuất" class="input_product add_descr_input" />
+                        <input type="text" name="tác giả hoặc nhà sản xuất" class="add_product_input add_author_input" />
                     </div>
-                    <div class="error_message"></div>
+                    <div class="add_error_message"></div>
                     <div class="adding_block">
                         <label for="">Mô tả:</label>
-                        <input type="text" name="mô tả" class="input_product" id="add_descr_input" />
+                        <textarea name="mô tả" class="add_product_input add_descr_input" cols="100" rows="3"></textarea>
                     </div>
-                    <div class="error_message"></div>
-                    <div class="adding_block" id="add_booktype_block">
+                    <div class="add_error_message"></div>
+                    <div class="adding_block add_booktype_block">
                         <label for="type">Thể loại:</label>
-                        <input type="checkbox" name="Kinh tế" class="add_type_input" value="kinh_te"/>Kinh tế
-                        <input type="checkbox" name="Tiểu thuyết" class="add_type_input" value="tieu_thuyet"/>Tiểu thuyết
+                        <input type="checkbox" name="Kinh tế"       class="add_type_input" value="kinh_te"/>Kinh tế
+                        <input type="checkbox" name="Tiểu thuyết"   class="add_type_input" value="tieu_thuyet"/>Tiểu thuyết
                         <input type="checkbox" name="Kỹ năng sống " class="add_type_input" value="ky_nang_song"/>Kỹ năng sống 
-                        <input type="checkbox" name="Kinh dị" class="add_type_input" value="kinh_di"/>Kinh dị
-                        <input type="checkbox" name="Khoa học" class="add_type_input" value="khoa_hoc"/>Khoa học
-                        <input type="checkbox" name="Trẻ em" class="add_type_input" value="tre_em"/>Trẻ em
-                        <input type="checkbox" name="Truyện tranh" class="add_type_input" value="truyen_tranh"/>Truyện tranh
+                        <input type="checkbox" name="Kinh dị"       class="add_type_input" value="kinh_di"/>Kinh dị
+                        <input type="checkbox" name="Khoa học"      class="add_type_input" value="khoa_hoc"/>Khoa học
+                        <input type="checkbox" name="Trẻ em"        class="add_type_input" value="tre_em"/>Trẻ em
+                        <input type="checkbox" name="Truyện tranh"  class="add_type_input" value="truyen_tranh"/>Truyện tranh
                     </div>
-                    <div class="error_message"></div>
+                    <div class="add_error_message"></div>
                     <div class="adding_block">
-                        <button type="submit" id="submit_btn" onclick="addItem()">Thêm</button>
+                        <button type="submit" class="submit_btn adding_btn" onclick="addItem()">Thêm</button>
                     </div>
                 </div>
                 <div class="footer">
@@ -292,5 +340,4 @@
             </div>
         </div>
     </body>
-    <script src="scripts/admin.js"></script>
 </html>
