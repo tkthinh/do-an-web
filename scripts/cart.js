@@ -9,32 +9,34 @@ const cartItems = document.querySelector(".cart-counter");
 
 let cart = [];
 let buttonsDOM = [];
-getbuttons = (incart) => {
-  const buttons = [...document.querySelectorAll(".buy-btn")];
-  buttonsDOM = buttons;
-  console.log(buttonsDOM);
-  
-  buttons.forEach((button) => {
-    let id = button.dataset.id;
-    let inCart = incart.find((item) => item.id == id);
-    if (inCart) {
-      button.innerText = "Đã thêm vào giỏ";
-      button.disabled = true;
-    }
-    button.addEventListener("click", (event) => {
-      event.target.innerText = "Đã thêm vào giỏ";
-      event.target.disabled = true;
-      let cartItem = { ...getProduct(id), amount: 1 };
-
-      incart.push(cartItem);
-
-
-      saveCart(cart); // save vào local
-      setCartValue(cart);
-      addCartItem(cartItem);
+  getbuttons = (incart) => {
+    const buttons = [...document.querySelectorAll(".buy-btn")];
+    buttonsDOM = buttons;
+    buttons.forEach((button) => {
+      let id = button.dataset.id;
+      let inCart = incart.find((item) => item.id == id);
+      if (inCart) {
+        button.innerText = "Đã thêm vào giỏ";
+        button.disabled = true;
+      }
+      button.addEventListener("click", (event) => {
+        if(isLoggedIn){
+          event.target.innerText = "Đã thêm vào giỏ";
+          event.target.disabled = true;
+          let cartItem = { ...getProduct(id), amount: 1 };
+          console.log(cart);
+          incart.push(cartItem);
+          // [...cart,cartItem]
+          console.log(cart);
+          saveCart(cart); // save vào local
+          setCartValue(cart);
+          addCartItem(cartItem);
+        }
+        else
+          alert('Vui lòng đăng nhập để mua hàng')
+      });
     });
-  });
-};
+  };
 
 getProduct = (id) => {
   let products=[]
@@ -105,7 +107,10 @@ setupAPP = (cart) => {
   setCartValue(cart);
   populate(cart);
   cartIcon.addEventListener("click", function () {
-    showCart();
+    if (isLoggedIn)
+      showCart();
+    else
+      alert("Đăng nhập để xem giỏ hàng!");
   });
   cartClose.addEventListener("click", function () {
     hideCart();
@@ -176,7 +181,6 @@ cartLogic = (cart) => {
     }
   });
 };
-
 document.addEventListener("DOMContentLoaded", () => {
 
   cart = setupAPP(cart);
