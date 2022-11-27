@@ -55,8 +55,10 @@ setCartValue = (cart) => {
     itemsTotal += item.amount;
   });
   cartTotal.innerHTML = parseFloat(tempTotal.toFixed(2)) + ".000đ";
-  cartItems.innerHTML = itemsTotal;
-  console.log(cartTotal, cartItems);
+  if(isLoggedIn){
+    cartItems.innerHTML = itemsTotal;
+    console.log(cartTotal, cartItems);
+  } else cartItems.innerHTML = '0'
 };
 addCartItem = (item) => {
   const div = document.createElement("div");
