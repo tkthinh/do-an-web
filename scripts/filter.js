@@ -7,7 +7,7 @@ let item_eachPage=[]
 let currentPage=1
 let type_choices= document.getElementsByClassName("type")
 let price_choices= document.getElementsByClassName("price")
-
+let getbtnss=[]
 rendermainPage=(products,item_eachPage,currentPage)=>{
     totalPage = Math.ceil(products.length/limitPage)
         
@@ -34,26 +34,49 @@ rendermainPage=(products,item_eachPage,currentPage)=>{
         })
         document.querySelector(".item-container").innerHTML = output
         }
+//=========================thêm number dựa theo số sp=====================
         renderPage=(products)=>{
             totalPage =Math.ceil(products.length/limitPage)
             let output = "";
             for(let i=1; i<= totalPage; i++)
-            { output += `<div onclick="handlePageNumber(${i})">${i}</div>`}
+            { output += `<div onclick="handlePageNumber(${i})" class="movepage">${i}</div>`
+            getbtnss+=[...document.querySelectorAll(".buy-btn")]}
+            
+
             document.getElementById("pagination-numbers").innerHTML=output
+//==========================btn-color-change======================
+            let buttons =document.querySelectorAll(".movepage")
+            document.addEventListener("click", function(evt){
+                if(evt.target.classList.contains("movepage")){
+                  buttons.forEach(function(button){
+                    button.classList.remove("active");
+                  });
+                  evt.target.classList.add("active");           
+                }
+              });
+
+
         }
-        renderPage(products)
+//=================================================
+        
         renderItem(item_eachPage)
+        renderPage(products)
         
         handlePageNumber=(num)=>{
         currentPage = num
+
         item_eachPage = products.slice(
             (currentPage-1)*limitPage,
             (currentPage-1)*limitPage + limitPage,
         )
         renderItem(item_eachPage)
         }
+
+        // let right =document.getElementsByClassName("forward")
+        // let left =document.getElementsByClassName("back")
+        // right.addEventListener("click",handlePageNumber())
+
 }
-rendermainPage(sp,item_eachPage,currentPage)   
 
 filter=()=>{
      item_eachPage=[]
@@ -74,7 +97,7 @@ filter=()=>{
         savingprice_choices.push(price_choices[i].value)
     }
 
-//===================lọc dk=================
+
 //===================lọc sp theo dk================
  type_clear=(a)=>{
     let temp1=[]
@@ -103,7 +126,7 @@ price_clear=(a)=>{
        }
        return temp1
     }
-//===================lọc sp theo dk================
+
 //===================các Th lọc====================
     if(savingtype_choices.length !=0 &&  savingprice_choices.length ==0){products=type_clear(main)}
     else if(savingtype_choices.length ==0 &&  savingprice_choices.length !=0){products=price_clear(main)}
@@ -111,23 +134,35 @@ price_clear=(a)=>{
         products=type_clear(main)
         products=price_clear(products)}
     else{rendermainPage(sp,item_eachPage,currentPage); return}
-//===================các Th lọc====================
+
 
     rendermainPage(products,item_eachPage,currentPage)
 }
-//=========================filter box==============================================
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    rendermainPage(sp,item_eachPage,currentPage)   
+  });
+  
+
+
+
+
+
+
 //=========================filter bar==============================================
-let box = document.getElementsByClassName('box')[0]
+let box = document.getElementsByClassName('box')[0]                                 
 let search =document.getElementById('search_bar')
 window.addEventListener('load', ()=>{
     sp.forEach(ele =>{
-        const {image, title, price} = ele
+        const {id, image, title, price} = ele
         let card = document.createElement('a')
         card.innerHTML=`<img src="${image}">
                          <div class="content1">
                             <h6>${title}</h6>           
                             <p>${price}.000đ</p>
                          </div>`;
+        card.href = 'chi-tiet.html' + '#' + id
         box.appendChild(card);
     })
 })
@@ -152,3 +187,4 @@ search.addEventListener('keyup',()=>{
         } 
     }
 })
+//=========================filter bar==============================================

@@ -2,14 +2,22 @@ let hash = window.location.hash
 let hasg = Number(hash.slice(1,hash.length))
 const moreb =JSON.parse(window.localStorage.product).book;
 let sp=JSON.parse(window.localStorage.product).book;
-getProduct=(id)=>{
-    let products =JSON.parse(window.localStorage.getItem('product')).book;
-    return products.find(ele=>{return ele.id ==id})
-};
+getProduct = (id) => {
+    let products=[]
+  
+    if(id>=500)
+    {products = JSON.parse(window.localStorage.getItem("product")).vpp;}
+    else{products = JSON.parse(window.localStorage.getItem("product")).book;}
+  
+    return products.find((ele) => {
+      return ele.id == id;
+    });
+  };
  ranNum=(min, max)=>{
     return Math.floor(Math.random() * (max - min)) + min;
 }
 let DetailProduct = getProduct(hasg)
+
 rendersItem=(products)=>{
     let output = ""
     let min=0
@@ -57,17 +65,20 @@ document.querySelector('.overview p').innerHTML = DetailProduct.description
 
 var itemName = document.querySelector('title')
 itemName.innerHTML = DetailProduct.title
+// searchbar==========================================================================
 let box = document.getElementsByClassName('box')[0]
 let search =document.getElementById('search_bar')
 window.addEventListener('load', ()=>{
     sp.forEach(ele =>{
-        const {image, title, price} = ele
+        const {id,image, title, price} = ele
         let card = document.createElement('a')
         card.innerHTML=`<img src="${image}">
                          <div class="content1">
                             <h6>${title}</h6>           
                             <p>${price}.000đ</p>
                          </div>`;
+        card.href = 'chi-tiet.html' + '#' + id
+        card.target="_blank"
         box.appendChild(card);
     })
 })

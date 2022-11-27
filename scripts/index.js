@@ -22,20 +22,20 @@ renderItem=(products)=>{
 document.querySelector(".bestseller").innerHTML=renderItem(bestsell)
 document.querySelector(".sachmoi").innerHTML = renderItem(books)
 document.querySelector(".vpp").innerHTML=renderItem(vpps)
-
+// ====================================================searchbar==============
 let sp=books                           
-
 let box = document.getElementsByClassName('box')[0]
 let search =document.getElementById('search_bar')
 window.addEventListener('load', ()=>{
     sp.forEach(ele =>{
-        const {image, title, price} = ele
+        const {id, image, title, price} = ele
         let card = document.createElement('a')
         card.innerHTML=`<img src="${image}">
                          <div class="content1">
                             <h6>${title}</h6>           
                             <p>${price}.000đ</p>
                          </div>`;
+        card.href = 'chi-tiet.html' + '#' + id
         box.appendChild(card);
     })
 })

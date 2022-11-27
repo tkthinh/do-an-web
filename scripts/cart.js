@@ -12,6 +12,8 @@ let buttonsDOM = [];
 getbuttons = (incart) => {
   const buttons = [...document.querySelectorAll(".buy-btn")];
   buttonsDOM = buttons;
+  console.log(buttonsDOM);
+  
   buttons.forEach((button) => {
     let id = button.dataset.id;
     let inCart = incart.find((item) => item.id == id);
@@ -23,10 +25,10 @@ getbuttons = (incart) => {
       event.target.innerText = "Đã thêm vào giỏ";
       event.target.disabled = true;
       let cartItem = { ...getProduct(id), amount: 1 };
-      console.log(cart);
+
       incart.push(cartItem);
-      // [...cart,cartItem]
-      console.log(cart);
+
+
       saveCart(cart); // save vào local
       setCartValue(cart);
       addCartItem(cartItem);
@@ -35,7 +37,12 @@ getbuttons = (incart) => {
 };
 
 getProduct = (id) => {
-  let products = JSON.parse(window.localStorage.getItem("product")).book;
+  let products=[]
+
+  if(id>=500)
+  {products = JSON.parse(window.localStorage.getItem("product")).vpp;}
+  else{products = JSON.parse(window.localStorage.getItem("product")).book;}
+
   return products.find((ele) => {
     return ele.id == id;
   });
@@ -50,9 +57,14 @@ setCartValue = (cart) => {
     tempTotal += item.price * item.amount;
     itemsTotal += item.amount;
   });
-  cartTotal.innerHTML = parseFloat(tempTotal.toFixed(2)) + '.000đ';
+  if(tempTotal<1000)
+  {cartTotal.innerHTML = parseFloat(tempTotal) + '.000đ';}
+  else{
+    tempTotal/=1000
+    cartTotal.innerHTML = parseFloat(tempTotal) + '.000đ'
+  }
   cartItems.innerHTML = itemsTotal;
-  console.log(cartTotal, cartItems);
+
 };
 addCartItem = (item) => {
   const div = document.createElement("div");
@@ -100,9 +112,11 @@ setupAPP = (cart) => {
   });
   return cart;
 };
+
 getSingleButton = (id) => {
   return buttonsDOM.find((button) => button.dataset.id == id);
 };
+
 removeItem = (id) => {
   cart.splice(0, cart.length);
   setCartValue(cart);
@@ -120,7 +134,7 @@ cartLogic = (cart) => {
       cartContent.removeChild(removeItem.parentElement.parentElement);
       for (let i = cart.length - 1; i >= 0; --i)
         if (cart[i].id == id) cart.splice(i, 1);
-      console.log(cart);
+
       setCartValue(cart);
       saveCart(cart);
       let button = getSingleButton(id);
@@ -164,7 +178,9 @@ cartLogic = (cart) => {
 };
 
 document.addEventListener("DOMContentLoaded", () => {
+  
   cart = setupAPP(cart);
   cartLogic(cart);
   getbuttons(cart);
+
 });

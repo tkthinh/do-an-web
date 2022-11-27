@@ -717,56 +717,56 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
         
         vpp: [
             {
-                "id":79,
+                "id":500,
                 "image": "img/book/but.jpg",
                 "title": "Hộp 20 bút bi 0.5mm",
                 "author": "Thiên Long",
                 "price": 69
             },
             {
-                "id":80,
+                "id":501,
                 "image": "img/book/tap.jpg",
                 "title": "Tập Sinh Viên 4 Ô Ly",
                 "author": "Elephant",
                 "price": 17
             },
             {
-                "id":81,
+                "id":502,
                 "image": "img/book/balo.jpg",
                 "title": "Cặp Đa Năng Simplex 06",
                 "author": "STARGO",
                 "price": 462
             },
             {
-                "id":82,
+                "id":503,
                 "image": "img/book/chi.jpg",
                 "title": "Ruột Chì Ngòi Lớn 2B",
                 "author": "Uyên Loan",
                 "price": 4
             },
             {
-                "id":83,
+                "id":504,
                 "image": "img/book/bothuchanh.jpg",
                 "title": "Bộ 2 Hộp Thực Hành Toán Lớp 2",
                 "author": "Việt Nam",
                 "price": 188
             },
             {
-                "id":84,
+                "id":505,
                 "image": "img/book/puzzle.jpg",
                 "title": "Bộ Xếp Hình Puzzle",
                 "author": "Castorland",
                 "price": 649
             },
             {
-                "id":85,
+                "id":506,
                 "image": "img/book/cal.jpg",
                 "title": "Máy Tính Vinacal 570 ES Plus II ",
                 "author": "Vinacal",
                 "price": 540
             },
             {
-                "id":86,
+                "id":507,
                 "image": "img/book/butdaquang.jpg",
                 "title": "Bút dạ quang",
                 "author": "Schner",
