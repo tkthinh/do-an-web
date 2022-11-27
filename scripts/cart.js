@@ -178,7 +178,7 @@ cartLogic = (cart) => {
 };
 
 document.addEventListener("DOMContentLoaded", () => {
-  
+
   cart = setupAPP(cart);
   cartLogic(cart);
   getbuttons(cart);

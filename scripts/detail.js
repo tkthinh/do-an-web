@@ -27,7 +27,7 @@ rendersItem=(products)=>{
     output += `
     <div class="item swiper-slide">
     <a class="item-img" href="chi-tiet.html#`+products[num].id+`" target="_blank" ><img src="`+products[num].image+`"/></a>
-    <a class="item-name" href="chi-tiet.html#`+products[num].id+`">`+products[num].title+`</a>
+    <a class="item-name" href="chi-tiet.html#`+products[num].id+`" target="_blank">`+products[num].title+`</a>
     <a class="book-author">`+products[num].author+`</a>
     <span class="item-price">`+products[num].price+`.000đ</span>
   </div>

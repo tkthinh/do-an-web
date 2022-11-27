@@ -8,7 +8,9 @@ let currentPage=1
 let type_choices= document.getElementsByClassName("type")
 let price_choices= document.getElementsByClassName("price")
 let getbtnss=[]
+
 rendermainPage=(products,item_eachPage,currentPage)=>{
+
     totalPage = Math.ceil(products.length/limitPage)
         
         item_eachPage = products.slice(
@@ -39,10 +41,7 @@ rendermainPage=(products,item_eachPage,currentPage)=>{
             totalPage =Math.ceil(products.length/limitPage)
             let output = "";
             for(let i=1; i<= totalPage; i++)
-            { output += `<div onclick="handlePageNumber(${i})" class="movepage">${i}</div>`
-            getbtnss+=[...document.querySelectorAll(".buy-btn")]}
-            
-
+            { output += `<div onclick="handlePageNumber(${i})" class="movepage">${i}</div>` }
             document.getElementById("pagination-numbers").innerHTML=output
 //==========================btn-color-change======================
             let buttons =document.querySelectorAll(".movepage")
@@ -57,24 +56,22 @@ rendermainPage=(products,item_eachPage,currentPage)=>{
 
 
         }
+        handlePageNumber=(num)=>{
+            currentPage = num
+    
+            item_eachPage = products.slice(
+                (currentPage-1)*limitPage,
+                (currentPage-1)*limitPage + limitPage,
+            )
+            renderItem(item_eachPage) 
+            getbtnss=[...document.querySelectorAll(".buy-btn")] 
+            console.log(getbtnss)
+            }
+            
 //=================================================
-        
+
         renderItem(item_eachPage)
         renderPage(products)
-        
-        handlePageNumber=(num)=>{
-        currentPage = num
-
-        item_eachPage = products.slice(
-            (currentPage-1)*limitPage,
-            (currentPage-1)*limitPage + limitPage,
-        )
-        renderItem(item_eachPage)
-        }
-
-        // let right =document.getElementsByClassName("forward")
-        // let left =document.getElementsByClassName("back")
-        // right.addEventListener("click",handlePageNumber())
 
 }
 
@@ -137,12 +134,25 @@ price_clear=(a)=>{
 
 
     rendermainPage(products,item_eachPage,currentPage)
+    getbtnss=[...document.querySelectorAll(".buy-btn")]
+    console.log(getbtnss);
 }
 
 
 document.addEventListener("DOMContentLoaded", () => {
-    rendermainPage(sp,item_eachPage,currentPage)   
+    rendermainPage(sp,item_eachPage,currentPage)
+  
   });
+
+
+
+
+
+
+
+  
+
+  
   
 
 
