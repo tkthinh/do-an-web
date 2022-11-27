@@ -516,7 +516,7 @@ table td h2{
     }
     .card-box {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
     .detail_table_header h2{
         font-size: 12pt;
@@ -540,7 +540,7 @@ table td h2{
     .card-box {
         width: 100%;
         display: grid;
-        grid-template-columns: repeat(2, 180px);
+        grid-template-columns: repeat(2, 1fr);
         justify-content: center;
     }
     .del_btn{
