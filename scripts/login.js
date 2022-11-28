@@ -10,6 +10,8 @@ sign_in_btn.addEventListener("click", () => {
   container.classList.remove("sign-up-mode");
 });
 
+var users = JSON.parse(localStorage.getItem('user'))
+
 function signin(e){
   event.preventDefault();
 
@@ -23,8 +25,10 @@ function signin(e){
   password : password
   }
 
-  var json = JSON.stringify(user);
-  localStorage.setItem(username, json);
+  var storedUser = JSON.parse(localStorage.getItem('user'))
+  users.push(user)
+  localStorage.setItem('user', JSON.stringify(users));
+
   window.alert('Đã tạo tài khoản')
 }
 
@@ -35,16 +39,17 @@ function login(e){
   var password = document.querySelector('.log_password').value;
   var result = document.querySelector('.result');
 
-  var user = localStorage.getItem(username);
-  var data = JSON.parse(user);
-  console.log(data);
-
-  if((username != data.username || password != data.password)){
-    result.innerHTML = "Sai tài khoản hoặc mật khẩu !"
-  }
-  else if(username == data.username && password == data.password){
-    result.innerHTML = 'Đăng nhập thành công'
-    sessionStorage.setItem('isloggedin',username)
-    window.location.href = '/index.html'
+  for(savedUser of users){
+    if(username == savedUser.username && password == savedUser.password){
+        result.innerHTML = 'Đăng nhập thành công'
+        localStorage.setItem('isloggedin',username)
+        window.location.href = '/index.html'
+      }
+      else if(username == 'admin' && password == 'admin'){
+        window.location.href = '/admin.html'
+      }
+      else if((username != savedUser.username || password != savedUser.password)){
+        result.innerHTML = "Sai tài khoản hoặc mật khẩu !"
+      }
   }
 }

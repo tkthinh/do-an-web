@@ -65,8 +65,10 @@ setCartValue = (cart) => {
     tempTotal/=1000
     cartTotal.innerHTML = parseFloat(tempTotal) + '.000đ'
   }
-  cartItems.innerHTML = itemsTotal;
-
+  if(isLoggedIn){
+    cartItems.innerHTML = itemsTotal;
+    console.log(cartTotal, cartItems);
+  } else cartItems.innerHTML = '0'
 };
 addCartItem = (item) => {
   const div = document.createElement("div");

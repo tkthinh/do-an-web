@@ -1,4 +1,4 @@
-// @ts-check
+// @ts-nocheck
 /**
  * @typedef {{ id: Number,  image: String,  title: String,  author: String, price: Number,  type?: String[],   description: String }} product
  * @typedef {{ book: product[], vpp: product[] }} Products
@@ -19,14 +19,6 @@ var productTable = document.querySelector('.content .products');
 //Nút content sản phẩm
 /**@type { NodeListOf <HTMLButtonElement> } */
 var product_btns = document.querySelectorAll('.product_btn');
-
-//Nút content đơn hàng
-/**@type { NodeListOf <HTMLButtonElement> } */
-var order_btns = document.querySelectorAll('.order_btn');
-
-//Nút content khách
-/**@type { NodeListOf <HTMLButtonElement> } */
-var user_btns = document.querySelectorAll('.user_btn');
 
 /**@type { HTMLDivElement? } */
 //Bảng thêm sản phẩm
@@ -65,65 +57,25 @@ function start() {
     renderProducts();
 }
 window.onload = start;
-//================================================================//
-
+//=============================Lựa chọn in nội dung nào===================================//
 /**@type {HTMLDivElement?} */
 var productContent = document.querySelector('.content.product_content');
-/**@type {HTMLDivElement?} */
-var orderContent = document.querySelector('.content.order_content');
-/**@type {HTMLDivElement?} */
-var userContent = document.querySelector('.content.user_content');
 
-//Lựa chọn in nội dung nào
+
 product_btns.forEach(ele => {
     ele.addEventListener('click', () => {
-        if (orderContent !== null) {
-            orderContent.classList.remove('active');
-        }
-        if (userContent !== null) {
-            userContent.classList.remove('active');
-        }
         if (!productContent?.classList.contains('active') && !adding_table?.classList.contains('active')) {
             productContent?.classList.add('active');
             adding_table?.classList.add('active');
         }
     })
 })
-order_btns.forEach(ele => {
-    ele.addEventListener('click', () => {
-        if (productContent !== null && adding_table!== null) {
-            productContent.classList.remove('active');
-            adding_table.classList.remove('active');
-        }
-        if (userContent !== null) {
-            userContent.classList.remove('active');
-        }
-        if (!orderContent?.classList.contains('active')) {
-            orderContent?.classList.add('active');
-        }
-    })
-})
-user_btns.forEach(ele => {
-    ele.addEventListener('click', () => {
-        if (productContent !== null && adding_table!== null) {
-            productContent.classList.remove('active');
-            adding_table.classList.remove('active');
-        }
-        if (orderContent !== null) {
-            orderContent.classList.remove('active');
-        }
-        if (!userContent?.classList.contains('active')) {
-            userContent?.classList.add('active');
-        }
-    })
-})
-//================================================================//
 
-//Tùy chọn loại sản phẩm in ra
+//===============================Tùy chọn loại sản phẩm in ra=================================//
 function productList() {
     /** @type { product[] } */
     var product_list = [];
-    
+
     var choice = procuct_choice?.value;
     if (choice == 'books') {
         maxPage = Math.ceil(products.book.length / products_per_page);
@@ -143,8 +95,7 @@ function productList() {
     return product_list;
 }
 
-//================================================================//
-//Cập nhật id để tạo sản phẩm mới
+//==============================Cập nhật id để tạo sản phẩm mới==================================//
 function updateMaxId() {
     if (products.book.length == 0 && products.vpp.length == 0) {
         max_id = 0;
@@ -160,9 +111,7 @@ function updateMaxId() {
     }
 }
 
-//================================================================//
-
-//Tạo bảng sản phẩm
+//==============================Tạo bảng sản phẩm==================================//
 /**
  * @param {product[]} list
  * @param {HTMLTableSectionElement | null} wrapper
@@ -183,36 +132,18 @@ function displayProducts(list, wrapper, ppp, curr_page) {
     var output = '';
     //Dùng vòng lặp in từng sản phẩm
     for (var i = 0; i < curr_page_items.length; i++) {
-        //Sản phẩm là sách 
-        if (curr_page_items[i].type === undefined) {
-            output += `<tr>
-                    <td>${curr_page_items[i].id}</td>
-                    <td><img src="${curr_page_items[i].image}"/></td>
-                    <td><h3>${curr_page_items[i].title}</h3><br/>
-                        <p><b>Mô tả: </b> ${curr_page_items[i].description}</p><br/>
-                        <p><b>Tác giả/Nhà sản xuất: </b>${curr_page_items[i].author}</p></td>
-                    <td>${curr_page_items[i].price}</td>
-                    <td><button class="del_btn" value="${curr_page_items[i].id}" onclick="delItem(this)">Xóa</button> </td>
-                    </tr>`
-        }
-        //Sản phẩm là vpp 
-        else {
-            output += `<tr>
-                        <td>${curr_page_items[i].id}</td>
-                        <td><img src="${curr_page_items[i].image}"/></td>
-                        <td><h3>${curr_page_items[i].title}</h3><br/>
-                        <p><b>Thể loại: </b> ${curr_page_items[i].type?.join(', ')}</p><br/>
-                        <p><b>Mô tả: </b> ${curr_page_items[i].description}</p><br/>
-                        <b>Tác giả/Nhà sản xuất: </b>${curr_page_items[i].author}</p></td>
-                        <td>${curr_page_items[i].price}</td>
-                        <td><button class="del_btn" value="${curr_page_items[i].id}" onclick="delItem(this)">Xóa</button> </td>
-                        </tr>`
-        }
-        //@ts-expect-error
+        output += `<tr>
+          <td>${curr_page_items[i].id}</td>
+          <td><img src="${curr_page_items[i].image}"/></td>
+          <td><h3>${curr_page_items[i].title}</h3><br/>
+          <td>${curr_page_items[i].price}</td>
+          <td><button class="detail_btn" value="${curr_page_items[i].id}" onclick="openDetailTable(${curr_page_items[i].id})">Xem</button></td>
+          <td><button class="del_btn" value="${curr_page_items[i].id}" onclick="delItem(this)">Xóa</button> </td>
+          </tr>`
         wrapper.innerHTML = output;
     }
 }
-//Tải sản phẩm và phân trang lên trang
+//==============================Tải sản phẩm và phân trang lên trang==================================//
 function renderProducts() {
     var list = productList();
     //Kiểm tra mảng sản phẩm rỗng
@@ -240,8 +171,8 @@ function renderProducts() {
     }
 }
 
-//================================================================//
-//Tạo phân trang
+//==============================Tạo phân trang==================================//
+
 /**
  * @param {product[]} list
  * @param {HTMLTableSectionElement | null} content_wrapper
@@ -343,57 +274,55 @@ next_button?.addEventListener('click', () => {
 
     displayProducts(productList(), productTable, products_per_page, current_page);
 })
-//================================================================//
 
 
-//=====================================================================================================================//
-//                                           Chức năng
-//===================================================================================//
-//Thêm sản phẩm
+//====================================================================================Chức năng========================================================================================//
+
+//===================================================================================Thêm=========================================================================================//
+
 /**@type {HTMLSelectElement?} */
 var product_type = document.querySelector('#product_type');         //Bảng thêm sản phẩm 
 /**@type {HTMLButtonElement?} */
-var add_img_btn = document.querySelector('#add_img_btn');           //Nút thêm ảnh
+var add_img_btn = document.querySelector('.add_img_btn');           //Nút thêm ảnh
 /**@type {HTMLInputElement?} */
-var add_img_input = document.querySelector('#add_img_input');       //Input ảnh vào
-/**@type {HTMLButtonElement?} */
-var submit_btn = document.querySelector('#submit_btn');             //Nút xác nhận thêm sản phẩm
+var add_img_input = document.querySelector('.add_img_input');       //Input ảnh vào
 /**@type {HTMLDivElement?} */
-var tacgia_nsx = document.querySelector('#tacgia_nsx');
+var file_img_add = document.querySelector('.file_img_add');
 
 var img;                      //Ảnh mới
-
 /**@type {string[]} */
 var bookTypes = [];
 /**@type {product} */
 var newItem;                  //SP mới
 
+//=======================================================================================//
 //Thêm ảnh
 add_img_btn?.addEventListener('click', () => {
     add_img_input?.click();
 })
+
 //Show ảnh
 add_img_input?.addEventListener('change', (event) => {
     /**@type { HTMLInputElement }*/
-    //@ts-expect-error
     var eT = event.target;
-    //@ts-expect-error
-    img = showFileImg(eT.files[0]);
+    if (eT == undefined) {
+        console.log('Không chọn ảnh');
+    }
+    else {
+        img = showAddImg(eT.files[0]);
+    }
 })
 /**
  * @param {File} file
  */
-function showFileImg(file) {
+function showAddImg(file) {
     var fileType = file.type;
     var checkFileType = ['image/png', 'image/jpeg', 'image/png'];
     if (checkFileType.includes(fileType)) {
-        /**@type {HTMLDivElement} */
-        //@ts-expect-error
-        var file_img = document.querySelector('.file_img');
         const fr = new FileReader();
         fr.readAsDataURL(file);
         fr.addEventListener("load", () => {
-            file_img.innerHTML = `<img src=\"${fr.result}\">`;
+            file_img_add.innerHTML = `<img src=\"${fr.result}\">`;
         })
     }
     else {
@@ -403,81 +332,78 @@ function showFileImg(file) {
 }
 //Kiểm tra giá trị input
 /**@type { NodeListOf <HTMLInputElement> } */
-var product_inputs = document.querySelectorAll('.input_product');   //Input các giá trị
+var add_product_inputs = document.querySelectorAll('.add_product_input');   //Input các giá trị
 /**@type { NodeListOf <HTMLInputElement> } */
-var error_messages = document.querySelectorAll('.error_message');   //Báo lỗi chưa điền thông tin
+var add_error_messages = document.querySelectorAll('.add_error_message');   //Báo lỗi chưa điền thông tin
 /**@type {NodeListOf <HTMLInputElement>} */
 var add_type_input = document.querySelectorAll('.add_type_input');
 
-
 //Kiểm tra vô hiệu hóa thanh thể loại
-function checkProductTypeWhenAdd(){
-    if(product_type?.value == 'themvpp'){
+function checkProductTypeWhenAdd() {
+    if (product_type?.value == 'themvpp') {
         add_type_input.forEach(ele => {
             ele.setAttribute('disabled', 'true');
         })
     }
-    else if(product_type?.value == 'themsach'){
+    else if (product_type?.value == 'themsach') {
         add_type_input.forEach(ele => {
             ele.removeAttribute('disabled');
         })
     }
 }
 //Kiểm tra thể loại
-function validateBookTypeInput(){
+function validateBookTypeInput() {
     bookTypes = ['All'];
-
     /**@type {boolean} */
     var chk = false;
     add_type_input.forEach(ele => {
-        if(ele.checked){
+        if (ele.checked) {
             chk = true;
             bookTypes.push(ele.name);
         }
     })
-    if(chk === false){
-        error_messages[error_messages.length-1].innerText = 'Chưa chọn thể loại';
+    if (chk === false) {
+        add_error_messages[add_error_messages.length - 1].innerText = 'Chưa chọn thể loại';
     }
-    else if(chk === true){
-        error_messages[error_messages.length-1].innerText = ''; 
+    else if (chk === true) {
+        add_error_messages[add_error_messages.length - 1].innerText = '';
     }
 }
 //Kiểm tra ảnh
-function validateImgInput(){
-    if (img === undefined) {
-        error_messages[0].innerText = 'Chưa chọn ảnh';
+function validateImgInput() {
+    if (file_img_add.innerHTML == '') {
+        add_error_messages[0].innerText = 'Chưa chọn ảnh';
     }
     else {
-        error_messages[0].innerText = '';
+        add_error_messages[0].innerText = '';
     }
 }
 function validateInput() {
     validateImgInput();
-    for (var i = 1; i < error_messages.length-1; i++) {
-        if (product_inputs[i - 1].value == '') {
-            error_messages[i].innerText = `Chưa nhập ${product_inputs[i - 1].name}`;
+    for (var i = 1; i < add_error_messages.length - 1; i++) {
+        if (add_product_inputs[i - 1].value == '') {
+            add_error_messages[i].innerText = `Chưa nhập ${add_product_inputs[i - 1].name}`;
         }
         else {
-            error_messages[i].innerText = ``;
+            add_error_messages[i].innerText = ``;
         }
     }
-    if(product_type?.value == 'themsach'){
+    if (product_type?.value == 'themsach') {
         validateBookTypeInput();
     }
 }
-
 //Thêm vào localstorage
 function handleAdding() {
     updateMaxId();
     if (product_type?.value == 'themsach') {
         newItem = {
             id: max_id + 1,
-            image: `/img/sanPhamMoi/${img}`,
-            title: `${product_inputs[0].value}`,
-            author: `${product_inputs[2].value}`,
-            price: Number(product_inputs[1].value),
+            image: `img/book/${img}`,
+            title: `${add_product_inputs[0].value}`,
+            author: `${add_product_inputs[2].value}`,
+            price: Number(add_product_inputs[1].value),
             type: bookTypes,
-            description: `${product_inputs[3].value}`
+            description: `${add_product_inputs[3].value}`
         };
         products.book.push(newItem);
         localStorage.setItem('product', JSON.stringify(products));
@@ -487,11 +413,11 @@ function handleAdding() {
     else if (product_type?.value == 'themvpp') {
         newItem = {
             id: max_id + 1,
-            image: `/img/sanPhamMoi/${img}`,
-            title: `${product_inputs[0].value}`,
-            author: `${product_inputs[2].value}`,
-            price: Number(product_inputs[1].value),
-            description: `${product_inputs[3].value}`
+            image: `img/book/${img}`,
+            title: `${add_product_inputs[0].value}`,
+            author: `${add_product_inputs[2].value}`,
+            price: Number(add_product_inputs[1].value),
+            description: `${add_product_inputs[3].value}`
         };
         products.vpp.push(newItem);
         localStorage.setItem('product', JSON.stringify(products));
@@ -503,23 +429,302 @@ function handleAdding() {
 function addItem() {
     validateInput();
     var arrError = [];
-    for (var i = 0; i < error_messages.length; i++) {
-        arrError.push(error_messages[i].innerText);
+    for (var i = 0; i < add_error_messages.length; i++) {
+        arrError.push(add_error_messages[i].innerText);
     }
     /**@type {boolean} */
     var check = arrError.every(ele => ele == '');
 
     if (check) {
         handleAdding();
+        add_product_inputs.forEach(ele => {
+            ele.value = '';
+        })
+        if (file_img_add !== null) {
+            file_img_add.innerHTML = '';
+        }
+        add_type_input.forEach(ele => {
+            if (ele.checked) {
+                ele.removeAttribute('checked');
+            }
+        })
+        confirm('Thêm thành công');
     }
     else {
         console.warn('Nhập thiếu!');
     }
 }
-//=======================================================================================//
+//===================================================================================CHỈNH SỬA=========================================================================================//
 
-//=======================================================================================//
-//Xóa sản phẩm
+//Đóng, mở bảng chi tiết
+/**@type {HTMLImageElement?} */
+var detail_close_btn = document.querySelector('#close_detail_img');
+/**@type {HTMLDivElement?} */
+var detail_wrapper = document.querySelector('.detail_wrapper');
+/**@type {HTMLDivElement?} */
+var detail_table = document.querySelector('.detail_table');
+//Nút chỉnh sửa
+/**@type {HTMLImageElement?} */
+var edit_detail_img = document.querySelector('#edit_detail_img');
+//xác định là sách hay vpp và là cái nào
+/**@type {product & string} */
+var temp = [];
+/**
+ * 
+ * @param {number | string} id 
+ */
+function openDetailTable(id) {
+    detail_wrapper?.classList.add('active');
+    detail_table?.classList.add('active');
+    renderToEdit(id);
+}
+console.log(edit_img_btn);
+
+detail_close_btn?.addEventListener('click', () => {
+
+    if (!edit_img_btn.hasAttribute('disabled')) {
+        edit_img_btn.setAttribute('disabled', 'true');
+        edit_img_input.setAttribute("disabled", "true");
+        edit_product_inputs.forEach(ele => {
+            ele.setAttribute('disabled', 'true');
+        })
+        edit_error_messages.forEach(ele => {
+            ele.setAttribute('disabled', 'true');
+        })
+        editing_btn.setAttribute('disabled', 'true');
+        edit_type_inputs.forEach(ele => {
+            if (ele.checked) {
+                ele.checked = false;
+            }
+            ele.setAttribute('disabled', 'true');
+        })
+    }
+    document.querySelector('.detail_wrapper')?.classList.remove('active');
+    document.querySelector('.detail_table')?.classList.remove('active');
+})
+
+//=====================================Bảng chỉ tiết==================================//
+
+/**@type {HTMLButtonElement?} */
+var edit_img_btn = document.querySelector('.edit_img_btn');           //Nút thay đổi
+/**@type {HTMLInputElement?} */
+var edit_img_input = document.querySelector('.edit_img_input');       //Input ảnh thay đổi
+/**@type {HTMLDivElement?} */
+var file_img_edit = document.querySelector('.file_img_edit');
+//console.log(edit_img_btn);
+//console.log(edit_img_input);
+var editImg;
+var resultEditImg;
+function activeImgInput() {
+    edit_img_input.click();
+}
+//Show ảnh
+edit_img_input?.addEventListener('change', (event) => {
+    /**@type { HTMLInputElement }*/
+    var eT = event.target;
+
+    if (eT == undefined) {
+        console.log('Không chọn ảnh');
+    }
+    else {
+        editImg = showEditImg(eT.files[0]);
+    }
+})
+/**
+ * @param {File} file
+ */
+function showEditImg(file) {
+    var fileType = file.type;
+    var checkFileType = ['image/png', 'image/jpeg', 'image/png'];
+    if (checkFileType.includes(fileType)) {
+        const fr = new FileReader();
+        fr.readAsDataURL(file);
+        fr.addEventListener("load", () => {
+            file_img_edit.innerHTML = `<img src=\"${fr.result}\">`;
+        })
+    }
+    else {
+        alert('Không phải file ảnh!');
+    }
+    return file.name;
+}
+
+//Kiểm tra giá trị input
+/**@type { NodeListOf <HTMLInputElement> } */
+var edit_product_inputs = document.querySelectorAll('.edit_product_input');   //Input các giá trị
+/**@type { NodeListOf <HTMLInputElement> } */
+var edit_error_messages = document.querySelectorAll('.edit_error_message');   //Báo lỗi chưa điền thông tin
+/**@type {NodeListOf <HTMLInputElement>} */
+var edit_type_inputs = document.querySelectorAll('.edit_type_input');
+/**@type {HTMLButtonElement?} */
+var editing_btn = document.querySelector('.submit_btn.editing_btn');
+
+//console.log(edit_type_inputs);
+
+
+/**
+ * @param {string | number} id 
+ */
+function checkItemToRenderToEdit(temp, id) {
+    var len1 = products.book.length;
+    var len2 = products.vpp.length;
+    for (var i = 0; i < len1; i++) {
+        if (products.book[i].id == id) {
+            temp[0] = products.book[i];
+            temp[1] = "sach";
+            temp[2] = i;
+        }
+    }
+    for (var i = 0; i < len2; i++) {
+        if (products.vpp[i].id == id) {
+            temp[0] = products.vpp[i];
+            temp[1] = "vpp";
+            temp[2] = i;
+        }
+    }
+}
+function renderTypeToEdit() {
+    var typeArr = temp[0].type;
+    edit_type_inputs.forEach(ele => {
+        ele.checked = false;
+        typeArr.forEach(value => {
+            if (ele.name == value) {
+                ele.checked = true;
+            }
+        })
+    })
+}
+/**
+ * 
+ * @param {number | string} id 
+ */
+function renderToEdit(id) {
+    checkItemToRenderToEdit(temp, id);
+    //Ảnh
+    file_img_edit.innerHTML = `<img src=\"${temp[0].image}\">`;
+    editImg = `${temp[0].image}`;
+    //Thể loại nếu là sách
+    console.log(temp[1]);
+    if (temp[1] == 'sach') {
+        renderTypeToEdit();
+    }
+    if (temp[1] == 'vpp') {
+        edit_type_inputs.forEach(ele => {
+            ele.checked = false;
+        })
+    }
+    //Thông tin còn lại
+    edit_product_inputs[0].value = temp[0].title;
+    edit_product_inputs[1].value = temp[0].price;
+    edit_product_inputs[2].value = temp[0].author;
+    edit_product_inputs[3].value = temp[0].description;
+}
+
+
+//=====================================Thay đổi chỉ tiết==================================//
+edit_detail_img.addEventListener('click', () => {
+    edit_img_btn.toggleAttribute("disabled");
+    edit_img_input.toggleAttribute("disabled");
+    edit_product_inputs.forEach(ele => {
+        ele.toggleAttribute("disabled");
+    })
+    edit_error_messages.forEach(ele => {
+        ele.toggleAttribute("disabled");
+    })
+    editing_btn.toggleAttribute("disabled");
+    if (temp[1] == 'sach') {
+        edit_type_inputs.forEach(ele => {
+            ele.toggleAttribute("disabled");
+        })
+    }
+})
+
+function validateImgEdit() {
+    if (editImg === undefined) {
+        edit_error_messages[0].innerText = 'Chưa chọn ảnh';
+    }
+    else {
+        edit_error_messages[0].innerText = '';
+    }
+}
+
+function validateInfoEdit() {
+    validateImgEdit();
+    for (var i = 1; i < edit_error_messages.length - 1; i++) {
+        if (edit_product_inputs[i - 1].value == '') {
+            edit_error_messages[i].innerText = `Chưa nhập ${edit_product_inputs[i - 1].name}`;
+        }
+        else {
+            edit_error_messages[i].innerText = ``;
+        }
+    }
+}
+/**
+ * @param {number} mode 
+ * @param {number | string} index 
+ * @param {string} imgPath
+ */
+function handelEditing(mode, index) {
+    var editType = ['All'];
+    var image = '';
+    if (editImg == temp[0].image) {
+        console.log(editImg);
+        image = temp[0].image;
+    }
+    else {
+        image = `img/book/${editImg}`;
+    }
+    if (mode == 1) {
+        edit_type_inputs.forEach(ele => {
+            if (ele.checked)
+                editType.push(ele.name);
+        })
+        var editedItem = {
+            id: temp[0].id,
+            image: `/${image}`,
+            title: `${edit_product_inputs[0].value}`,
+            author: `${edit_product_inputs[2].value}`,
+            price: Number(edit_product_inputs[1].value),
+            type: editType,
+            description: `${edit_product_inputs[3].value}`
+        };
+        products.book.splice(index, 1, editedItem);
+        localStorage.setItem('product', JSON.stringify(products));
+        renderProducts();
+    }
+    else if (mode == 2) {
+        var editedItem = {
+            id: temp[0].id,
+            image: `${image}`,
+            title: `${edit_product_inputs[0].value}`,
+            author: `${edit_product_inputs[2].value}`,
+            price: Number(edit_product_inputs[1].value),
+            description: `${edit_product_inputs[3].value}`
+        };
+        products.vpp.splice(index, 1, editedItem);
+        localStorage.setItem('product', products);
+        renderProducts();
+    }
+}
+
+function confirmEditItem() {
+    var ck = confirm('Xác nhận thay đổi ?');
+    if (ck == true) {
+        validateInfoEdit();
+        if (temp[1] == 'sach') {
+            handelEditing(1, temp[2]);
+        }
+        else if (temp[1] == 'vpp') {
+            handelEditing(2, temp[2]);
+        }
+    }
+    else {
+        console.log('Không thay đổi');
+    }
+}
+
+//=================================================================================== XÓA =========================================================================================//
+
 /**
  * @param {{value: string}} obj
  */
@@ -532,7 +737,7 @@ function delItem(obj) {
 
         localStorage.setItem('product', JSON.stringify(products));
         renderProducts();
-        console.log('xóa!');
+        console.log('Đã xóa!');
     }
     else {
         console.log('Không xóa!');
@@ -560,10 +765,10 @@ function handleDeletingProduct(product_list, length, id) {
         }
     }
 }
-//=====================================================================================================================//
+//============================================================================================================================================================================//
 
 
-//=====================================================================================================================//
+//==============================================================Leftmenu=======================================================//
 //Chuyển đổi thanh left menu
 function toggleMenu() {
     /** @type {HTMLDivElement?} */
@@ -573,4 +778,4 @@ function toggleMenu() {
     leftmenu?.classList.toggle('active');
     main?.classList.toggle('active');
 }
-//=====================================================================================================================//
+  //=====================================================================================================================//
