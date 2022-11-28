@@ -9,9 +9,15 @@ sign_up_btn.addEventListener("click", () => {
 sign_in_btn.addEventListener("click", () => {
   container.classList.remove("sign-up-mode");
 });
+function resetAdminStatus(){
+  var upateAdminStat = [false, ''];
+  localStorage.setItem('adminStatus', JSON.stringify(upateAdminStat));
+}
+window.onload = resetAdminStatus();
 
-var users = JSON.parse(localStorage.getItem('user'))
+var users = localStorage.getItem('user') ? JSON.parse(localStorage.user) : [];
 
+var adminAccount = JSON.parse(localStorage.adminAcc);
 function signin(e){
   event.preventDefault();
 
@@ -25,7 +31,6 @@ function signin(e){
   password : password
   }
 
-  var storedUser = JSON.parse(localStorage.getItem('user'))
   users.push(user)
   localStorage.setItem('user', JSON.stringify(users));
 
@@ -38,15 +43,19 @@ function login(e){
   var username = document.querySelector('.log_username').value;
   var password = document.querySelector('.log_password').value;
   var result = document.querySelector('.result');
-
+  
+  for (adminAcc of adminAccount) {
+    if (username == adminAcc.username && password == adminAcc.password) {
+      var upateAdminStat = [true, adminAcc.name];
+      localStorage.setItem('adminStatus', JSON.stringify(upateAdminStat));
+      window.location.href = '/admin.html';
+    }
+  }
   for(savedUser of users){
     if(username == savedUser.username && password == savedUser.password){
         result.innerHTML = 'Đăng nhập thành công'
         localStorage.setItem('isloggedin',username)
         window.location.href = '/index.html'
-      }
-      else if(username == 'admin' && password == 'admin'){
-        window.location.href = '/admin.html'
       }
       else if((username != savedUser.username || password != savedUser.password)){
         result.innerHTML = "Sai tài khoản hoặc mật khẩu !"
