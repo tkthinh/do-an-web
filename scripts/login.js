@@ -10,7 +10,7 @@ sign_in_btn.addEventListener("click", () => {
   container.classList.remove("sign-up-mode");
 });
 
-var users = JSON.parse(localStorage.getItem('user'))
+var users = window.localStorage.getItem('user') ? JSON.parse(window.localStorage.user) :[]
 
 function signin(e){
   event.preventDefault();
@@ -25,7 +25,7 @@ function signin(e){
   password : password
   }
 
-  var storedUser = JSON.parse(localStorage.getItem('user'))
+  
   users.push(user)
   localStorage.setItem('user', JSON.stringify(users));
 
