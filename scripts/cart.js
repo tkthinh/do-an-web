@@ -39,7 +39,12 @@ let buttonsDOM = [];
   };
 
 getProduct = (id) => {
-  let products = JSON.parse(window.localStorage.getItem("product")).book;
+  let products=[]
+
+  if(id>=500)
+  {products = JSON.parse(window.localStorage.getItem("product")).vpp;}
+  else{products = JSON.parse(window.localStorage.getItem("product")).book;}
+
   return products.find((ele) => {
     return ele.id == id;
   });
@@ -54,7 +59,12 @@ setCartValue = (cart) => {
     tempTotal += item.price * item.amount;
     itemsTotal += item.amount;
   });
-  cartTotal.innerHTML = parseFloat(tempTotal.toFixed(2)) + ".000đ";
+  if(tempTotal<1000)
+  {cartTotal.innerHTML = parseFloat(tempTotal) + '.000đ';}
+  else{
+    tempTotal/=1000
+    cartTotal.innerHTML = parseFloat(tempTotal) + '.000đ'
+  }
   if(isLoggedIn){
     cartItems.innerHTML = itemsTotal;
     console.log(cartTotal, cartItems);
@@ -109,9 +119,11 @@ setupAPP = (cart) => {
   });
   return cart;
 };
+
 getSingleButton = (id) => {
   return buttonsDOM.find((button) => button.dataset.id == id);
 };
+
 removeItem = (id) => {
   cart.splice(0, cart.length);
   setCartValue(cart);
@@ -129,7 +141,7 @@ cartLogic = (cart) => {
       cartContent.removeChild(removeItem.parentElement.parentElement);
       for (let i = cart.length - 1; i >= 0; --i)
         if (cart[i].id == id) cart.splice(i, 1);
-      console.log(cart);
+
       setCartValue(cart);
       saveCart(cart);
       let button = getSingleButton(id);
@@ -172,7 +184,9 @@ cartLogic = (cart) => {
   });
 };
 document.addEventListener("DOMContentLoaded", () => {
+
   cart = setupAPP(cart);
   cartLogic(cart);
   getbuttons(cart);
+
 });

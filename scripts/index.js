@@ -22,9 +22,8 @@ renderItem=(products)=>{
 document.querySelector(".bestseller").innerHTML=renderItem(bestsell)
 document.querySelector(".sachmoi").innerHTML = renderItem(books)
 document.querySelector(".vpp").innerHTML=renderItem(vpps)
-
+// ====================================================searchbar==============
 let sp=books                           
-
 let box = document.getElementsByClassName('box')[0]
 let search =document.getElementById('search_bar')
 window.addEventListener('load', ()=>{
