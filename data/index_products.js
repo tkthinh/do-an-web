@@ -1,5 +1,5 @@
 const pstatus = true;
-if (window.localStorage.status != pstatus || !window.localStorage.product) {
+if (window.localStorage.status =='false' || !window.localStorage.product) {
     window.localStorage.status = pstatus;
     window.localStorage.product = JSON.stringify({
         book: [
@@ -311,7 +311,7 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "author": "TS David J Lieberman",
                 "price": 54,
                 "type": ["Kỹ năng sống", "Khoa học", "All"],
-                "description":"THE TEST HAS ENDED, I AM VICTORIOUS, I AM THE HERALD OF OBLIVION, I AM RHAASRT"
+                "description":"Hãy chiếm thế thượng phong trong việc chủ động nhận biết điều cần tìm kiếm - ở bất kỳ ai bằng cách “thâm nhập vào suy nghĩ” của người khác. ĐỌC VỊ BẤT KỲ AI là cẩm nang dạy bạn cách thâm nhập vào tâm trí của người khác để biết điều người ta đang nghĩ. Cuốn sách này sẽ không giúp bạn rút ra các kết luận chung về một ai đó dựa vào cảm tính hay sự võ đoán. Những nguyên tắc được chia sẻ trong cuốn sách này không đơn thuần là những lý thuyết hay mẹo vặt chỉ đúng trong một số trường hợp hoặc với những đối tượng nhất định. Các kết quả nghiên cứu trong cuốn sách này được đưa ra dựa trên phương pháp S.N.A.P - cách thức phân tích và tìm hiểu tính cách một cách bài bản trong phạm vi cho phép mà không làm mếch lòng đối tượng được phân tích. Phương pháp này dựa trên những phân tích về tâm lý, chứ không chỉ đơn thuần dựa trên ngôn ngữ cử chỉ, trực giác hay võ đoán."
             },
             {
                 "id":35,
@@ -320,7 +320,7 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "author": "Minh Niệm",
                 "price": 126,
                 "type": ["Kỹ năng sống", "Khoa học", "All", "Tiểu thuyết"],
-                "description":"THE TEST HAS ENDED, I AM VICTORIOUS, I AM THE HERALD OF OBLIVION, I AM RHAASRT"
+                "description":"Hiểu Về Trái Tim – Cuốn Sách Mở Cửa Thề Giới Cảm Xúc Của Mỗi Người"
             },
             {
                 "id":36,
@@ -329,7 +329,7 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "author": "Vũ",
                 "price": 108,
                 "type": ["Kỹ năng sống", "Khoa học", "All"],
-                "description":"THE TEST HAS ENDED, I AM VICTORIOUS, I AM THE HERALD OF OBLIVION, I AM RHAASRT"
+                "description":"Bằng giọng văn sắc bén, “Tâm lý học tội phạm - phác họa chân dung kẻ phạm tội” hứa hẹn dẫn dắt người đọc đi qua các cung bậc cảm xúc từ tò mò, ngạc nhiên đến sợ hãi, hoang mang tận cùng. Chúng ta sẽ lần tìm về quá khứ để từng bước gỡ những nút thắt chưa được giải, khiến ta 'ngạt thở' đọc tới tận trang cuối cùng."
             },
             {
                 "id":37,
@@ -338,7 +338,7 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "author": "Ken Wakui",
                 "price": 115,
                 "type": ["Best seller","Truyện tranh", "All"],
-                "description":"THE TEST HAS ENDED, I AM VICTORIOUS, I AM THE HERALD OF OBLIVION, I AM RHAASRT"
+                "description":"Trận chiến Giáng sinh đã bắt đầu, gióng lên hồi chuông căng thẳng!"
             },
             {
                 "id":38,
@@ -347,7 +347,7 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "author": "Tatsuya Endo",
                 "price": 25,
                 "type": ["Truyện tranh", "Trẻ em", "All"],
-                "description":"THE TEST HAS ENDED, I AM VICTORIOUS, I AM THE HERALD OF OBLIVION, I AM RHAASRT"
+                "description":"Nhằm ngăn chặn âm mưu gây chiến, giữ vững nền hòa bình Đông - Tây, điệp viên hàng đầu của Westalis, Twilight phải xây dựng một gia đình và cho con theo học tại học viện danh giá nhất Ostania hòng tiếp cận yếu nhân cầm đầu phe chủ chiến của đất nước này: Desmon Donavan! Và thật tình cờ, đứa trẻ mà Twilight nhận làm 'con' ở cô nhi viện, Anya, lại có khả năng đọc suy nghĩ của người khác. Chưa kể 'người vợ' anh buộc phải chọn lựa trong lúc vội vàng, Yor, lại là một… sát thủ...!!"
             },
             {
                 "id":39,
@@ -356,7 +356,7 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "author": "Koyoharu Gotouge",
                 "price": 25,
                 "type": ["Truyện tranh", "Trẻ em", "All"],
-                "description":"THE TEST HAS ENDED, I AM VICTORIOUS, I AM THE HERALD OF OBLIVION, I AM RHAASRT"
+                "description":"Thanh gươm diệt quỷ, hay còn được biết tới với tên gốc Kimetsu no Yaiba là một bộ manga Nhật Bản do Gotōge Koyoharu sáng tác và minh hoạ. Truyện kể về hành trình trở thành kiếm sĩ diệt quỷ của thiếu niên Kamado Tanjirō sau khi gia đình cậu bị quỷ sát hại và em gái Nezuko của cậu bị biến thành quỷ."
             },
             {
                 "id":40,
@@ -365,7 +365,7 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "author": "Robin Sharma",
                 "price": 55,
                 "type": ["Kỹ năng sống", "Khoa học", "All"],
-                "description":"THE TEST HAS ENDED, I AM VICTORIOUS, I AM THE HERALD OF OBLIVION, I AM RHAASRT"
+                "description":"Mọi lựa chọn đều giá trị. Mọi bước đi đều quan trọng. Cuộc sống vẫn diễn ra theo cách của nó, không phải theo cách của ta. Hãy kiên nhẫn. Tin tưởng. Hãy giống như người thợ cắt đá, đều đặn từng nhịp, ngày qua ngày. Cuối cùng, một nhát cắt duy nhất sẽ phá vỡ tảng đá và lộ ra viên kim cương. Người tràn đầy nhiệt huyết và tận tâm với việc mình làm không bao giờ bị chối bỏ. Sự thật là thế."
             },
             {
                 "id":41,
@@ -374,7 +374,7 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "author": "Albert Rutherford",
                 "price": 65,
                 "type": ["Kỹ năng sống", "Khoa học", "All"],
-                "description":"THE TEST HAS ENDED, I AM VICTORIOUS, I AM THE HERALD OF OBLIVION, I AM RHAASRT"
+                "description":"Là một tác phẩm về tư duy phản biện, cuốn sách Rèn Luyện Tư Duy Phản Biện được trình bày rất logic, mạch lạc với nhiều dẫn chứng chi tiết. Sách giúp chúng ta hiểu rằng việc học vẹt hay nhồi nhét kiến thức sẽ chẳng có lợi ích gì cho sự phát triển của tư duy. Không quan trọng chúng ta nạp vào cái gì, mà là ta hiểu nó thế nào, sắp xếp ra sao và cách những kiến thức ấy được vận dụng trong đời sống."
             },
             {
                 "id":42,
@@ -383,7 +383,7 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "author": "Rossie",
                 "price": 63,
                 "type": ["Kỹ năng sống", "All"],
-                "description":"THE TEST HAS ENDED, I AM VICTORIOUS, I AM THE HERALD OF OBLIVION, I AM RHAASRT"
+                "description":"Nếu tôi còn ở tuổi đôi mươi, hẳn là tôi sẽ đọc Tuổi trẻ đáng giá bao nhiêu? nhiều hơn một lần"
             },
             {
                 "id":43,
@@ -392,7 +392,7 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "author": "Joseph Murphyc",
                 "price": 102,
                 "type": ["Kỹ năng sống", "Khoa học", "All"],
-                "description":"THE TEST HAS ENDED, I AM VICTORIOUS, I AM THE HERALD OF OBLIVION, I AM RHAASRT"
+                "description":"Sức Mạnh Tiềm Thức giới thiệu và giải thích các phương pháp tập trung tâm thức nhằm xoá bỏ những rào cản tiềm thức đã ngăn chúng ta đạt được những điều mình mong muốn."
             },
             {
                 "id":44,
@@ -401,7 +401,7 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "author": "William B Irvine",
                 "price": 87,
                 "type": ["Kỹ năng sống", "All"],
-                "description":"THE TEST HAS ENDED, I AM VICTORIOUS, I AM THE HERALD OF OBLIVION, I AM RHAASRT"
+                "description":"Trời ơi dài quá không dám paste vô luôn đó"
             },
             {
                 "id":45,
@@ -410,7 +410,7 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "author": "Cảnh Thiên",
                 "price": 87,
                 "type": ["Kỹ năng sống", "All"],
-                "description":"THE TEST HAS ENDED, I AM VICTORIOUS, I AM THE HERALD OF OBLIVION, I AM RHAASRT"
+                "description":"Nếu bạn lựa chọn an nhàn trong 10 năm, tương lai sẽ buộc bạn phải vất vả trong 50 năm để bù đắp lại. Nếu bạn bươn chải vất vả trong 10 năm, thứ mà bạn chắc chắn có được là 50 năm hạnh phúc. Điều quý giá nhất không phải là tiền mà là tiền bạc. Thế nên, bạn à, đừng lựa chọn an nhàn khi còn trẻ."
             },
             {
                 "id":46,
@@ -419,7 +419,7 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "author": "Trang",
                 "price": 72,
                 "type": ["Trẻ em", "Khoa học", "All"],
-                "description":"THE TEST HAS ENDED, I AM VICTORIOUS, I AM THE HERALD OF OBLIVION, I AM RHAASRT"
+                "description":"Cuốn sách CẨM NANG CẤU TRÚC TIẾNG ANH gồm 25 phần, mỗi phần là một phạm trù kiến thức trong tiếng Anh được trình bày một cách ngắn gọn, đơn giản, cô đọng và hệ thống hoá dưới dạng sơ đồ, bảng biểu nhằm phát triển khả năng tư duy của người học và từ đó giúp người học nhớ kiến thức nhanh hơn và sâu hơn. Sau hầu hết các phần lí thuyết đều có 20-30 câu bài tập áp dụng để kiểm tra cũng như khắc sâu kiến thức cho người học. Tuy dày chưa đến 250 trang nhưng cuốn sách lại có thể bao trọn toàn bộ kiến thức từ đơn giản đến phức tạp cộng với cách tận dụng tối đa và áp dụng triệt để cách học tiếng Anh bằng sơ đồ tư duy."
             },
             {
                 "id":47,
@@ -428,7 +428,7 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "author": "Mai Lan Hương",
                 "price": 50,
                 "type": ["Trẻ em", "Khoa học", "All"],
-                "description":"THE TEST HAS ENDED, I AM VICTORIOUS, I AM THE HERALD OF OBLIVION, I AM RHAASRT"
+                "description":"Giải thích Ngữ pháp Tiếng Anh là cuốn sách đã được phát hành và tái bản rất nhiều lần trong nhiều năm qua. Với lần tái bản năm 2021 này, cuốn sách đã được nâng cao chất lượng giúp người học trau dồi, củng cố và nâng cao kiến thức ngữ pháp tiếng Anh."
             },
             {
                 "id":48,
@@ -437,7 +437,7 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "author": "Minna no Nihongo",
                 "price": 71,
                 "type": ["Trẻ em", "Khoa học", "All"],
-                "description":"THE TEST HAS ENDED, I AM VICTORIOUS, I AM THE HERALD OF OBLIVION, I AM RHAASRT"
+                "description":"“Minna no Nihongo” là bộ giáo trình sơ cấp dành cho những ai muốn tìm hiểu về tiếng Nhật rất thông dụng tại Châu Á và Việt Nam.Sách gồm 2 tập với 50 bài học, mỗi bài bao gồm phần Mẫu câu, Ví dụ, Hội thoại, Luyện tập và các câu hỏi đặt ra để trả lời."
             },
             {
                 "id":49,
@@ -446,7 +446,7 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "author": "AOTS",
                 "price": 64,
                 "type": ["Trẻ em", "Khoa học", "All"],
-                "description":"THE TEST HAS ENDED, I AM VICTORIOUS, I AM THE HERALD OF OBLIVION, I AM RHAASRT"
+                "description":"Sách tự học bảng chữ cái Nhật Bản (Hiragana và Katakana). Hướng dẫn cách viết các chữ cái Nhật, có kèm các câu ví dụ và bản dịch tiếng Việt dành cho những người muốn tự học."
             },
             {
                 "id":50,
@@ -455,7 +455,7 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "author": "Trác Nhả",
                 "price": 76,
                 "type": ["Kỹ năng sống", "Khoa học", "All"],
-                "description":"THE TEST HAS ENDED, I AM VICTORIOUS, I AM THE HERALD OF OBLIVION, I AM RHAASRT"
+                "description":"Dài quá dài rùi..."
             },
             {
                 "id":51,
@@ -464,7 +464,7 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "author": "George S Clason",
                 "price": 52,
                 "type": ["Kỹ năng sống", "Trẻ em", "All"],
-                "description":"THE TEST HAS ENDED, I AM VICTORIOUS, I AM THE HERALD OF OBLIVION, I AM RHAASRT"
+                "description":"Người giàu có nhất thành Babylon (tiếng Anh: The Richest Man in Babylon) được xem là một trong những tác phẩm truyền cảm hứng lớn nhất về chủ đề tiết kiệm, kế hoạch tài chính và sự giàu có cá nhân. Tác phẩm được viết bởi doanh nhân, nhà văn Mỹ George Samuel Clason vào năm 1926, kể về cách tiết kiệm, buôn bán và làm giàu của người dân ở thành Babylon cổ xưa."
             },
             {
                 "id":52,
@@ -473,16 +473,16 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "author": "Tống Khánh Thượng",
                 "price": 76,
                 "type": ["Kỹ năng sống", "All"],
-                "description":"THE TEST HAS ENDED, I AM VICTORIOUS, I AM THE HERALD OF OBLIVION, I AM RHAASRT"
+                "description":"“Thần số học – Thấu hiểu nhân tâm” được viết dựa trên những nghiên cứu và chiêm nghiệm của bản thân tác giả Tống Khánh Thượng cùng với rất nhiều chia sẻ của học viên và khách hàng của anh. Tác giả thuộc típ người tư duy theo lô-gic, bản chất, cho nên thường quan sát và chiêm nghiệm thực tế những gì nghe được, đọc được và suy tưởng được."
             },
             {
                 "id":53,
                 "image": "img/book/KN14.jpg",
                 "title": "Một Đời Như Kẻ Tìm Đường",
                 "author": "Phan Văn Trường",
-                "price": 166,
+                "price": 320,
                 "type": ["Kỹ năng sống", "All"],
-                "description":"THE TEST HAS ENDED, I AM VICTORIOUS, I AM THE HERALD OF OBLIVION, I AM RHAASRT"
+                "description":"ến với cuốn sách này, tác giả lại muốn dành một khoảng không gian riêng để có thể phản ảnh những cảm nhận cá nhân về cuộc sống, với góc nhìn từ những năm tháng tuổi trẻ cho đến độ tuổi xế chiều này.Khoảnh khắc khó chịu nhất có lẽ là khi mình đã lỡ chọn một hướng đi, nhưng ngộ được rằng con đường này nhiều chông gai, lắm rào cản và lại còn không phù hợp."
             },
             {
                 "id":54,
@@ -491,26 +491,26 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "author": "Zoe McKey",
                 "price": 55,
                 "type": ["Kỹ năng sống", "Khoa học", "All"],
-                "description":"THE TEST HAS ENDED, I AM VICTORIOUS, I AM THE HERALD OF OBLIVION, I AM RHAASRT"
+                "description":"Tư duy phản biện không phải là chỉ biết vài thứ, và chắc chắn không phải việc xác nhận những điều bạn đã biết. Thay vào đó, nó xoay quanh việc tìm kiếm sự thật – và biến chúng trở thành thứ bạn biết"
             },
             {
                 "id":55,
                 "image": "img/book/KN16.jpg",
                 "title": "Kiếp Nào Ta Cũng Tìm Thấy Nhau ",
                 "author": "Brian L Weiss",
-                "price": 69,
+                "price": 450,
                 "type": ["Kỹ năng sống", "All", "Tiểu thuyết"],
-                "description":"THE TEST HAS ENDED, I AM VICTORIOUS, I AM THE HERALD OF OBLIVION, I AM RHAASRT"
+                "description":"Kiếp nào ta cũng tìm thấy nhau nói về những linh hồn tri kỷ, những người có mối liên kết vĩnh viễn với nhau bằng tình yêu thương, luôn gặp lại nhau hết lần này đến lần khác, qua hết kiếp này tới kiếp khác. Chúng ta sẽ tìm thấy và nhận ra tri kỷ của mình như thế nào, rồi đưa ra những quyết định làm thay đổi cuộc sống của chính mình ra sao là những khoảnh khắc quan trọng và xúc động nhất trong c"
             },
 
             {
                 "id":56,
                 "image": "img/book/KN19.jpg",
-                "title": "Cân Bằng CảM Xúc, Cả Lúc Bão Giông",
+                "title": "Cân Bằng Cảm Xúc, Cả Lúc Bão Giông",
                 "author": "Richard Nicholls",
                 "price": 74,
                 "type": ["Kỹ năng sống", "Khoa học", "All"],
-                "description":"THE TEST HAS ENDED, I AM VICTORIOUS, I AM THE HERALD OF OBLIVION, I AM RHAASRT"
+                "description":"Học được cách cân bằng cảm xúc cũng chính là học được cách làm chủ cuộc đời mình thông minh, sáng suốt và đúng hướng. Cân bằng cảm xúc, cả lúc bão giông” khác biệt hoàn toàn so với những cuốn sách về cảm xúc thông thường khác khác"
             },
 
             {
@@ -520,7 +520,7 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "author": "Ahn Jean Myung",
                 "price": 213,
                 "type": ["Trẻ em", "Khoa học", "All"],
-                "description":"THE TEST HAS ENDED, I AM VICTORIOUS, I AM THE HERALD OF OBLIVION, I AM RHAASRT"
+                "description":"Hy vọng rằng với cuốn sách này, các bạn học sinh gặp nhiều khó khăn khi học tiếng Hàn Quốc sẽ có một cách tiếp cận mới dễ dàng và thú vị hơn. Đồng thời, các bạn có thể sử dụng tiếng Hàn thành thạo ở mức cơ bản, phục vụ cho việc học tập của các bạn. Sở hữu cuốn sách càng sớm, bạn càng nhanh chóng rút gọn được quá trình chinh phục ngữ pháp tiếng Hàn."
             },
             {
                 "id":58,
@@ -529,7 +529,7 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "author": "Guillermo Del",
                 "price": 114,
                 "type": ["Kinh dị", "All", "Tiểu thuyết"],
-                "description":"THE TEST HAS ENDED, I AM VICTORIOUS, I AM THE HERALD OF OBLIVION, I AM RHAASRT"
+                "description":"Một câu chuyện kinh dị hấp dẫn sẽ khiến bạn dựng tóc gáy. Dị Chủng là sự kết hợp giữa Bram Stocker với Stephen King và Michael Crichton. Khó có thể xuất sắc hơn được nữa"
             },
             {
                 "id":59,
@@ -538,7 +538,7 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "author": "Jane Harper",
                 "price": 70,
                 "type": ["Kinh dị", "All"],
-                "description":"THE TEST HAS ENDED, I AM VICTORIOUS, I AM THE HERALD OF OBLIVION, I AM RHAASRT"
+                "description":"Tại hiện trường, dưới cái nóng, lũ nhặng vẫn bu lấy nhung nhúc trong sự thỏa mãn, bởi máu tràn ra, tưới thẫm nền nhà và thảm trải sàn. Bên ngoài, đồ giặt giũ vẫn còn nguyên trên dây phơi, khô cong, cứng đờ dưới nắng. Một chiếc xe trượt của trẻ con nằm bơ vơ trên con đường lát đá. Trong vòng bán kính một cây số xung quanh nông trại đó, chỉ có một con người duy nhất mà trái tim còn đang đập"
             },
             {
                 "id":60,
@@ -547,26 +547,26 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "author": "Lisa Gardner",
                 "price": 137,
                 "type": ["Best seller","Kinh dị", "All"],
-                "description":"THE TEST HAS ENDED, I AM VICTORIOUS, I AM THE HERALD OF OBLIVION, I AM RHAASRT"
+                "description":"Tiểu thuyết trinh thám lôi cuốn bậc nhất của nhà văn bestseller theo New York Times"
             },
             {
                 "id":61,
                 "image": "img/book/KD4.jpg",
-                "title": "Tryện Kinh Dị Việt Nam",
+                "title": "Truyện Kinh Dị Việt Nam",
                 "author": "Thế Lữ",
-                "price": 59,
+                "price": 406,
                 "type": ["Kinh dị", "All"],
-                "description":"THE TEST HAS ENDED, I AM VICTORIOUS, I AM THE HERALD OF OBLIVION, I AM RHAASRT"
+                "description":"TRUYỆN SỢ VÃI LINH HỒN"
             },
 
             {
                 "id":62,
                 "image": "img/book/KD7.jpg",
-                "title": "Tryện Kinh Dị Việt Nam",
+                "title": "Truyện Kinh Dị Việt Nam",
                 "author": "Lan Khai",
                 "price": 87,
                 "type": ["Kinh dị", "All"],
-                "description":"THE TEST HAS ENDED, I AM VICTORIOUS, I AM THE HERALD OF OBLIVION, I AM RHAASRT"
+                "description":"TRUYỆN SỢ VÃI LINH HỒN"
             },
             {
                 "id":63,
@@ -575,7 +575,7 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "author": "Cho Hang Rok",
                 "price": 120,
                 "type": ["Khoa học", "All"],
-                "description":"THE TEST HAS ENDED, I AM VICTORIOUS, I AM THE HERALD OF OBLIVION, I AM RHAASRT"
+                "description":"a nhon a xê yo, sa kwa di khrap "
             },
             {
                 "id":64,
@@ -584,7 +584,7 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "author": "Chưa cập nhật",
                 "price": 71,
                 "type": ["Khoa học", "All"],
-                "description":"THE TEST HAS ENDED, I AM VICTORIOUS, I AM THE HERALD OF OBLIVION, I AM RHAASRT"
+                "description":"wo shi tung kua rian"
             },
             {
                 "id":65,
@@ -593,7 +593,7 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "author": "Jeyong",
                 "price": 56,
                 "type": ["All", "Trẻ em", "Khoa học"],
-                "description":"THE TEST HAS ENDED, I AM VICTORIOUS, I AM THE HERALD OF OBLIVION, I AM RHAASRT"
+                "description":"ABCDEFG"
             },
             {
                 "id":66,
@@ -602,7 +602,7 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "author": "Eiichiro Oda",
                 "price": 120,
                 "type": ["Truyện tranh", "Trẻ em", "All"],
-                "description":"THE TEST HAS ENDED, I AM VICTORIOUS, I AM THE HERALD OF OBLIVION, I AM RHAASRT"
+                "description":"Bộ sưu tập thẻ dữ liệu nhân vật có một không hai tại Việt Nam dành cho các fan của bộ truyện tranh nổi tiếng ONE PIECE!!"
             },
             {
                 "id":67,
@@ -611,7 +611,7 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "author": "Osamu Tezuka",
                 "price": 30,
                 "type": ["Truyện tranh", "Kinh dị", "All"],
-                "description":"THE TEST HAS ENDED, I AM VICTORIOUS, I AM THE HERALD OF OBLIVION, I AM RHAASRT"
+                "description":"Đen năm trịu"
             },
             {
                 "id":68,
@@ -620,7 +620,7 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "author": "Tite Kubo",
                 "price": 25,
                 "type": ["Truyện tranh", "All"],
-                "description":"THE TEST HAS ENDED, I AM VICTORIOUS, I AM THE HERALD OF OBLIVION, I AM RHAASRT"
+                "description":"Jugo và Bazz đã thề sẽ cùng nhau mạnh lên sau khi mất đi quê hươ Song tương lai của đôi bạn đã rẽ theo 2 hướng khác nhau kể từ ngày Yhwach xuất hiện, để rồi hôm nay họ đối đầu như kẻ thù. Chỉ còn lại kí ức xưa cũ, mối liên kết giữa 2 người bắt đầu tan vỡ"
             },
             {
                 "id":69,
@@ -629,7 +629,7 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "author": "Rumiko TAKAHASHI",
                 "price": 70,
                 "type": ["Truyện tranh", "All"],
-                "description":"THE TEST HAS ENDED, I AM VICTORIOUS, I AM THE HERALD OF OBLIVION, I AM RHAASRT"
+                "description":"Ranma từ nhỏ đã theo cha đến Trung Quốc để luyện tập võ công. Vô tình cậu chàng bị rơi vào con suối khi tập võ và dính phải lời nguyền, biến thành con gái nếu bị tạt nước lạnh, và chỉ trở lại nguyên hình nếu bị tạt nước nóng.Đến năm 16 tuổi, cậu theo cha về Nhật cùng với một lời hứa hôn của cha thuở xưa. Bắt đầu từ đây là chuỗi ngày dở khóc dở cười bởi lời nguyền mà cậu đang mang trên người. Liệu cuối cùng Ranma có thoát được lời nguyền để đường đường chính chính đến với vị 'hôn thê' dữ như cọp của mình hay không?"
             },
             {
                 "id":70,
@@ -638,7 +638,7 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "author": "Gosho Aoyama",
                 "price": 20,
                 "type": ["Truyện tranh", "Khoa học", "Kinh dị", "All"],
-                "description":"THE TEST HAS ENDED, I AM VICTORIOUS, I AM THE HERALD OF OBLIVION, I AM RHAASRT"
+                "description":"NOTHING TO DESCRIPTION"
             },
             {
                 "id":71,
@@ -647,7 +647,7 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "author": "Maruyama Kugane",
                 "price": 48,
                 "type": ["Truyện tranh", "Khoa học", "All"],
-                "description":"THE TEST HAS ENDED, I AM VICTORIOUS, I AM THE HERALD OF OBLIVION, I AM RHAASRT"
+                "description":"Cuộc xung đột tại vương đô dần đi đến hồi kết, với đỉnh điểm là trận chiến giữa ác quỷ Jaldabaoth và Dark Hero Momon."
             },
 
             {
@@ -655,9 +655,9 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "image": "img/book/tienganh.jpg",
                 "title": "30 Chủ đề từ vựng tiếng anh",
                 "author": "Trang Anh",
-                "price": 133,
+                "price": 308,
                 "type": ["Best seller","Trẻ em", "Khoa học", "All"],
-                "description":"THE TEST HAS ENDED, I AM VICTORIOUS, I AM THE HERALD OF OBLIVION, I AM RHAASRT"
+                "description":"Với khoảng hơn 4000 từ vựng cấu trúc và trên 2000 câu trắc nghiệm kèm đáp án có giải thích chi tiết, chắc chắn bộ sách sẽ là công cụ tự học hữu hiệu, giúp người học trau dồi vốn từ vựng một cách hiệu quả nhất."
             },
             {
                 "id":73,
@@ -666,7 +666,7 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "author": "Trần Thị Yến",
                 "price": 40,
                 "type": ["All", "Khoa học", "Trẻ em"],
-                "description":"THE TEST HAS ENDED, I AM VICTORIOUS, I AM THE HERALD OF OBLIVION, I AM RHAASRT"
+                "description":"Không phải hóa học, mà là chemistry"
             },
             {
                 "id":74,
@@ -675,7 +675,7 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "author": "Paulo Coelho",
                 "price": 65,
                 "type": ["All", "Tiểu thuyết", "Kỹ năng sống"],
-                "description":"THE TEST HAS ENDED, I AM VICTORIOUS, I AM THE HERALD OF OBLIVION, I AM RHAASRT"
+                "description":"Tiểu thuyết Nhà giả kim của Paulo Coelho như một câu chuyện cổ tích giản dị, nhân ái, giàu chất thơ, thấm đẫm những minh triết huyền bí của phương Đông. Trong lần xuất bản đầu tiên tại Brazil vào năm 1988, sách chỉ bán được 900 bản. Nhưng, với số phận đặc biệt của cuốn sách dành cho toàn nhân loại, vượt ra ngoài biên giới quốc gia, Nhà giả kim đã làm rung động hàng triệu tâm hồn, trở thành một trong những cuốn sách bán chạy nhất mọi thời đại, và có thể làm thay đổi cuộc đời người đọc."
             },
             {
                 "id":75,
@@ -684,7 +684,7 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "author": "Guillermo Del Toro",
                 "price": 140,
                 "type": ["Kinh dị", "All", "Tiểu thuyết"],
-                "description":"THE TEST HAS ENDED, I AM VICTORIOUS, I AM THE HERALD OF OBLIVION, I AM RHAASRT"
+                "description":"ĐÀM ZĨNH HƯNG"
             },
             {
                 "id":76,
@@ -693,7 +693,7 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "author": "Raymond Murphy",
                 "price": 170,
                 "type": ["Trẻ em", "Khoa học", "All"],
-                "description":"THE TEST HAS ENDED, I AM VICTORIOUS, I AM THE HERALD OF OBLIVION, I AM RHAASRT"
+                "description":"The world's best-selling grammar series for learners of English. English Grammar in Use Fourth edition is an updated version of the world's best-selling grammar title. It has a fresh, appealing new design and clear layout, with revised and updated examples, but retains all the key features of clarity and accessibility that have made the book popular with millions of learners and teachers around the world. This 'with answers' version is ideal for self-study. An online version, book without answers, and book with answers and CD-ROM are available separately."
             },
             {
                 "id":77,
@@ -702,7 +702,7 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "author": "PGS TS Huỳnh Văn Sơn",
                 "price": 30,
                 "type": ["Khoa học", "Kỹ năng sống", "All"],
-                "description":"THE TEST HAS ENDED, I AM VICTORIOUS, I AM THE HERALD OF OBLIVION, I AM RHAASRT"
+                "description":"Các bậc phụ huynh chắc hẳn đều mong con mình có lòng quan tâm đến người khác, biết báo đáp cha mẹ. Nhưng dạy trẻ cách suy nghĩ cho người khác, quan tâm đến người khác không phải chuyện dễ dàng."
             },
             {
                 "id":78,
@@ -711,7 +711,7 @@ if (window.localStorage.status != pstatus || !window.localStorage.product) {
                 "author": "DK",
                 "price": 520,
                 "type": ["All", "Tiểu thuyết", "Trẻ em", "All"],
-                "description":"THE TEST HAS ENDED, I AM VICTORIOUS, I AM THE HERALD OF OBLIVION, I AM RHAASRT"
+                "description":"Nội dung cơ bản của bộ sử thi Mahabharata nói về cuộc chiến tranh khốc liệt giữa hai dòng họ Kaurava và Pandava, cả hai đều là dòng dõi vua Bharata vào khoảng thế kỷ 11 TCN đến thế kỷ 10 TCN. Do đó tên Mahabharata có nghĩa là 'các truyện vĩ đại của triều đại nhà Bharata'"
             }
         ],
         
