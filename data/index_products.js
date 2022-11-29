@@ -1,5 +1,5 @@
 const pstatus = true;
-if (window.localStorage.status =='false' || !window.localStorage.product) {
+if (window.localStorage.status != pstatus || !window.localStorage.product) {
     window.localStorage.status = pstatus;
     window.localStorage.product = JSON.stringify({
         book: [
