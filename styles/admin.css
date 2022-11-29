@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Fira Sans';
 }
 a {
     text-decoration: none;
@@ -178,14 +177,36 @@ h3 {
 .options{
     position: relative;
     display: flex;
-    width: 90%;
+    width: 80%;
+    height: 30px;
     margin: 0 auto;
     margin-bottom: 25px;
-
+    justify-content: space-between;
 }
 .options label{
     color: brown;
     font-weight: 600;
+    font-size: 11pt;
+}
+.del_one_page_wrapper{
+    display: flex;
+    width: max-content;
+    height: 100%;
+}
+.del_one_page_btn{
+    color: brown;
+    width: 30%;
+    height: 100%;
+    border-radius: 5px;
+    font-weight: 530;
+    border: none;
+    cursor: pointer;
+}
+.del_one_page_btn{
+    background: rgba(255, 50, 73, 0.8);
+}
+.del_one_page_btn:hover{
+    background: rgba(252, 5, 38, 0.9);
 }
 /*                                          Bảng chi tiết                               */
 .detail_wrapper{
@@ -543,11 +564,15 @@ table td h2{
         grid-template-columns: repeat(2, 1fr);
         justify-content: center;
     }
-    .del_btn{
+    .del_btn,
+    .detail_btn{
         width: fit-content;
     }
     .add_booktype_block{
         font-size: xx-small;
+    }
+    .del_one_page_btn{
+        width: fit-content;
     }
 }
 .information-admin td {
