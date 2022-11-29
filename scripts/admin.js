@@ -3,7 +3,7 @@
  * @typedef {{ id: Number,  image: String,  title: String,  author: String, price: Number,  type?: String[],   description: String }} product
  * @typedef {{ book: product[], vpp: product[] }} Products
  */
-
+//localStorage.status = 'false'
 //Lấy sản phẩm
 /**
  * @type { Products }
@@ -56,7 +56,6 @@ var curr_page_ids=[];
 
 var logout_btn = document.querySelector('.logout_btn');
 
-//window.onbeforeunload = closing();
 //================================================================//
 window.onload = start;
 
@@ -744,7 +743,7 @@ function handelEditing(mode, index) {
             description: `${edit_product_inputs[3].value}`
         };
         products.vpp.splice(index, 1, editedItem);
-        localStorage.setItem('product', products);
+        localStorage.setItem('product', JSON.stringify(products));
         renderProducts();
     }
 }
@@ -818,7 +817,6 @@ function handleDeletingProduct(product_list, length, id) {
         }
     }
 }
-//localStorage.status = 'false'
 //Xóa 1 trang
 function delOnePage(){
     var ck = confirm('Xác nhận xóa toàn bộ sản phẩm ở trang này!');
@@ -836,7 +834,6 @@ function delOnePage(){
         console.warn('Không xóa sản phẩm trang này');
     }
 }
-//localStorage.status = 'false'
 //============================================================================================================================================================================//
 //==============================================================Leftmenu=======================================================//
 //Chuyển đổi thanh left menu
