@@ -15,7 +15,7 @@ function resetAdminStatus(){
 }
 window.onload = resetAdminStatus();
 
-var users = localStorage.getItem('user') ? JSON.parse(localStorage.user) : [];
+var users = window.localStorage.getItem('user') ? JSON.parse(window.localStorage.user) :[]
 
 var adminAccount = JSON.parse(localStorage.adminAcc);
 function signin(e){
