@@ -185,8 +185,9 @@ cartLogic = (cart) => {
   });
 };
 document.addEventListener("DOMContentLoaded", () => {
+  if(isLoggedIn){
   cart = setupAPP(cart);
   cartLogic(cart);
+  }
   getbuttons(cart)
-
 });
