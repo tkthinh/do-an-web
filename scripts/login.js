@@ -49,6 +49,7 @@ function login(e){
       var upateAdminStat = [true, adminAcc.name];
       localStorage.setItem('adminStatus', JSON.stringify(upateAdminStat));
       window.location.href = '/admin.html';
+      return;
     }
   }
   for(savedUser of users){
