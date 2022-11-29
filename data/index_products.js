@@ -721,56 +721,64 @@ if (window.localStorage.status =='false' || !window.localStorage.product) {
                 "image": "img/book/but.jpg",
                 "title": "Hộp 20 bút bi 0.5mm",
                 "author": "Thiên Long",
-                "price": 69
+                "price": 69,
+                "description": "Đây là một trong những cây bút đang được học sinh sử dụng nhiều nhất tại Việt Nam. Bút có thiết kế tối giản, nhưng tinh tế và ấn tượng. Toàn bộ thân bút làm từ nhựa trong, phối hợp hoàn hảo với màu ruột bút bên trong."
             },
             {
                 "id":501,
                 "image": "img/book/tap.jpg",
                 "title": "Tập Sinh Viên 4 Ô Ly",
                 "author": "Elephant",
-                "price": 17
+                "price": 17,
+                "description": "Tập Sinh Viên 4 Ô Ly Ngang 120 Trang 80gsm Truewrite White - Elephant FI618445 Tập với mặt giấy láng mịn, viết êm tay, tạo nét chữ đẹp. Giấy viết không bị lem,không nhòe, không thấm mực ra trang sau, độ trắng không làm hại mắt, ăn mực hầu hết các loại bút. Quyển tập có đường kẻ ô ly rõ ràng, đều đặn giúp các em học sinh viết chữ đẹp hơn, nắn nót hơn. Bìa tập trang trí hình ảnh dễ thương, màu sắc nổi bật, tạo cảm hứng cho các em trong quá trình học tập. Sản phẩm sẽ là người bạn đồng hành giúp các bạn học tốt hơn."
             },
             {
                 "id":502,
                 "image": "img/book/balo.jpg",
                 "title": "Cặp Đa Năng Simplex 06",
                 "author": "STARGO",
-                "price": 462
+                "price": 462,
+                "description": "Sản phẩm được thiết kế và sản xuất theo tiêu chuẩn Sakostyle U.S.A. Được sản xuất và phân phối độc quyền bởi SAKOS Việt Nam."
             },
             {
                 "id":503,
                 "image": "img/book/chi.jpg",
                 "title": "Ruột Chì Ngòi Lớn 2B",
                 "author": "Uyên Loan",
-                "price": 4
+                "price": 4,
+                "description": "Ruột Chì Ngòi Lớn 8103 2B có ruột chì lớn, chuyên sử dụng cho bút chì bấm ngòi 2.0 mm, rất lý tưởng để sử dụng vẽ sketch, vẽ kỹ thuật,... Sản phẩm có chất chì cho màu đậm, nét chì mịn, sắc nét và có độ bền màu cao. Chì viết không tạo bột chì, không làm rách giấy khi đè mạnh. Chất chì đậm, mịn Ruột Chì Ngòi Lớn 8103-2b có chất chì cho màu đậm, khi sử dụng sẽ tạo nên những nét chì mịn và sắc nét. Chì có độ bền màu cao, lâu phai nhưng cũng dễ dàng xóa sạch bằng gôm, rất tiện lợi. Ruột chì ngòi lớn, nét to Ruột chì lớn, chuyên sử dụng cho bút chì bấm ngòi 2.0 mm, rất lý tưởng để sử dụng vẽ sketch, vẽ kỹ thuật, phác họa. Ruột chì cứng, bền, không bị gãy đứt khúc, được đặt gọn gàng trong hộp nhựa, giúp bạn dễ dàng bảo quản và mang theo. Chất liệu an toàn Ruột chì được sản xuất trên chất liệu cao cấp, không chứa hoá chất độc hại, an toàn cho sức khoẻ người dùng. Chì viết không tạo mịn chì, không làm rách giấy khi đè mạnh."
             },
             {
                 "id":504,
                 "image": "img/book/bothuchanh.jpg",
                 "title": "Bộ 2 Hộp Thực Hành Toán Lớp 2",
                 "author": "Việt Nam",
-                "price": 188
+                "price": 188,
+                "description": "Bộ 2 Hộp Thực Hành Toán Lớp 2 Dùng Cho Học Sinh Bộ Thực Hành Toán Lớp 2 Sản phẩm gồm một bộ thiết bị dạy so sánh số, bộ thiết bị dạy phép tính và bộ thiết bị dạy hình phẳng với màu sắc và kích thước đa dạng, giúp trẻ hứng thú và học tốt hơn môn Toán lớp 2. Bộ dụng cụ hỗ trợ tối đa các kiến thức về phép tính cộng, trừ, nhân, chia, là bước đệm quan trọng cho trẻ ở những năm Tiểu học. Đặc biệt, sản phẩm được làm bằng các chất liệu cao cấp, không chứa các chất độc hại ảnh hưởng đến sức khỏe người tiêu dùng."
             },
             {
                 "id":505,
                 "image": "img/book/puzzle.jpg",
                 "title": "Bộ Xếp Hình Puzzle",
                 "author": "Castorland",
-                "price": 649
+                "price": 649,
+                "description": "Bộ Xếp Hình Puzzle - Castorland C-300570 - Tavola Di Capri CASTORLAND là công ty sản xuất tranh xếp hình hàng đầu Ba Lan với 30 năm kinh nghiệm đã tạo nên sự phát triển liên tục và vững chắc ở nhiều thị trường trên thế giới. Castorland puzzle được xuất khẩu đi hơn 50 quốc gia trên thế giới. Các sản phẩm Castorland Puzzle mang tính trí tuệ và giáo dục cao cho trẻ em. Sản phẩm đáp ứng các tiêu chuẩn an toàn về đồ chơi trẻ em EU-71 của Châu Âu, an toàn cho trẻ và thân thiện với môi trường. Các tranh ghép của Castorland đều gắn với những câu chuyện cổ tích; phong cảnh đẹp và nổi tiếng trên khắp thế giới Trong quá trình ghép tranh, các bé không chỉ mở rộng được các kiến thức, phát triển dược các kỹ năng quan sát, kỹ năng giải quyết vấn đề, khả năng suy nghĩ logic, suy nghĩ độc lập, đồng thời rèn luyện tính kiên trì cao."
             },
             {
                 "id":506,
                 "image": "img/book/cal.jpg",
                 "title": "Máy Tính Vinacal 570 ES Plus II ",
                 "author": "Vinacal",
-                "price": 540
+                "price": 540,
+                "description": "Máy Tính Học Sinh Vinacal 570ES Plus II Máy Tính Học Sinh Vinacal 570ES Plus II là dòng máy tính được ưa chuộng với nhiều tính năng nổi bật,chắc chắn máy sẽ đáp ứng tốt những nhu cầu về làm việc và học tập của bạn. Đặc biệt, sản phẩm đã được Bộ Giáo dục ra công văn xác nhận được phép mang vào phòng thi, hỗ trợ hiệu quả trong việc tính toán bài thi. Thông tin sản phẩm: Kiểu dáng và màu sắc đẹp Với thiết kế năng động, dễ dàng cầm tay và thao tác nhanh chóng, Máy tính Vinacal 570ES Plus II sẽ là một sự lựa chọn tối ưu và hiệu quả cho người dùng. Kiểu dáng nắp trượt hiện đại và được phối màu rất tinh tế, máy tính Vinacal 570ES Plus II thể hiện được đăng cấp vượt trội hơn so với các dòng máy khác về kiểu dáng. Sản phẩm có 2 màu: hồng trắng và xám trắng cho các bạn lựa chọn. Bổ sung nhiều tính năng vượt trội Với nhiều tính năng vượt trội và các tính năng mới được bổ sung giúp các bạn giải quyết được hầu hết các dạng toán khó: Tìm giới hạn lim, Lưu nghiệm trong Mode EQN, Tính tích của một dãy số... Sản phẩm sẽ rất hữu ích vì nó hỗ trợ các bạn rất nhiều trong suốt các năm học, đặc biệt là các kỳ thi quan trọng như tốt nghiệp THPT, cao đẳng, đại học. Tích hợp nhiều tính năng tiện ích Ngoài tính năng phong phú và đa dạng, máy tính này còn đáng được chú ý ở khả năng tích hợp nhiều chức năng tiện ích: phím cuộn, chức năng hiển thị lại, copy lại, phím lùi, tính năng CALC, SOLVE, ANS, số nhớ. Đây là dòng máy đang được thầy cô và các bạn học sinh ưa chuộng nhất hiện nay. Phím bấm nhạy Phím bấm của máy tính khoa học Máy tính Vinacal 570ES Plus II rất nhạy, giúp cho các bạn học sinh, sinh viên có thể bấm phím nhanh bằng cả hai tay mà không sợ thiếu số hoặc sai kết quả tính toán. Bạn sẽ không còn gặp khó khăn và mất thời gian, mang lại hiệu quả sử dụng cao. "
             },
             {
                 "id":507,
                 "image": "img/book/butdaquang.jpg",
                 "title": "Bút dạ quang",
-                "author": "Schner",
-                "price": 17
+                "author": "Schneider",
+                "price": 17,
+                "description": "Bút Dạ Quang Job - Schneider 1523 Bút đánh dấu với đầu đục 2 nét bút: 1 + 5 mm. Lượng mực nhiều, có thể đánh dấu được hơn 15.000 từ. Thân bút làm bằng nhựa PP chống bay hơi giữ cho bút luôn viết đều màu, bền màu. Màu phổ thông dùng cho giấy thường, giấy photo, giấy fax, có độ sáng tối đa và bắt sáng tốt, không làm lem nét chữ của mực khi viết chồng lên và không để lại vết khi qua photocopy. Kiểu dáng trẻ trung, hiện đaị, thân phẳng với các góc tròn, không lăn khi đặt trên bàn, rất thích hợp cho học sinh, sinh viên và nhân viên văn phòng."
             }
         ]
     });
