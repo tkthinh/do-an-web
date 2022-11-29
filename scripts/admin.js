@@ -850,7 +850,7 @@ function toggleMenu() {
 function closing() {
     var upateAdminStat = [false, ''];
     localStorage.setItem('adminStatus', JSON.stringify(upateAdminStat));
-    window.location.href = '/login.html';
+    window.location.href = '/index.html';
 }
 logout_btn.addEventListener('click', () => {
     closing();
