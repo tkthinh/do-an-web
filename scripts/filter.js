@@ -7,7 +7,6 @@ let item_eachPage=[]
 let currentPage=1
 let type_choices= document.getElementsByClassName("type")
 let price_choices= document.getElementsByClassName("price")
-let getbtnss=[]
 
 rendermainPage=(products,item_eachPage,currentPage)=>{
 
@@ -43,6 +42,7 @@ rendermainPage=(products,item_eachPage,currentPage)=>{
             for(let i=1; i<= totalPage; i++)
             { output += `<div onclick="handlePageNumber(${i})" class="movepage">${i}</div>` }
             document.getElementById("pagination-numbers").innerHTML=output
+
 //==========================btn-color-change======================
             let buttons =document.querySelectorAll(".movepage")
             document.addEventListener("click", function(evt){
@@ -64,8 +64,8 @@ rendermainPage=(products,item_eachPage,currentPage)=>{
                 (currentPage-1)*limitPage + limitPage,
             )
             renderItem(item_eachPage) 
-            getbtnss=[...document.querySelectorAll(".buy-btn")] 
-            console.log(getbtnss)
+            getbuttons(cart)
+
             }
             
 //=================================================
@@ -130,18 +130,22 @@ price_clear=(a)=>{
     else if(savingtype_choices.length !=0 &&  savingprice_choices.length !=0){
         products=type_clear(main)
         products=price_clear(products)}
-    else{rendermainPage(sp,item_eachPage,currentPage); return}
+    else{rendermainPage(sp,item_eachPage,currentPage)
+            getbuttons(cart); return}
 
 
     rendermainPage(products,item_eachPage,currentPage)
-    getbtnss=[...document.querySelectorAll(".buy-btn")]
-    console.log(getbtnss);
+    getbuttons(cart)
 }
 
 
 document.addEventListener("DOMContentLoaded", () => {
-    rendermainPage(sp,item_eachPage,currentPage)
-  
+    cart = setupAPP(cart);
+    cartLogic(cart);
+  rendermainPage(sp,item_eachPage,currentPage)
+  getbuttons(cart)
+            //   document.querySelector(".back").addEventListener("click", ()=>handlePageNumber(currentPage - 1));
+            // document.querySelector(".forward").addEventListener("click", ()=>handlePageNumber(currentPage + 1) );
   });
 
 
