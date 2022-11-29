@@ -12,7 +12,7 @@ var adminAcc = [
         "email": "nknam@45678"
     },
     {
-        "username": 'tkthinh',
+        "username": 'trinhtrang',
         "password": 56789,
         "name": "Vũ Lê Khánh Trình",
         "email": "vlktrinh@56789"

@@ -192,10 +192,13 @@ h3 {
     display: flex;
     width: max-content;
     height: 100%;
+    width: 300px;
+    padding-top: 10px;
+
 }
 .del_one_page_btn{
     color: brown;
-    width: 30%;
+    width: 20%;
     height: 100%;
     border-radius: 5px;
     font-weight: 530;
