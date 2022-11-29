@@ -26,7 +26,15 @@ orderTotal.outerHTML =
     </h2>`
 
 const orderBtn = document.querySelector('.order-form button')
+const customerName = document.querySelector('.customer-name')
+const customerPhone = document.querySelector('.customer-phone')
+const customerAddress = document.querySelector('.customer-address')
+
 orderBtn.addEventListener('click', function(){
+    if(customerName.value === '' || customerPhone.value === '' || customerAddress.value === ''){
+        alert('Vui lòng nhập đầy đủ thông tin')
+        return
+    }
     alert('Đã đặt hàng!')
     window.location.href = '/index.html'
     localStorage.removeItem('cart');
