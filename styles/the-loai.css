@@ -183,6 +183,10 @@ h3 {
   cursor: pointer;
 }
 
+.fa-chevron-right, .fa-chevron-left{
+  cursor: pointer;
+}
+
 
 /* responsive */
 @media(max-width: 900px){

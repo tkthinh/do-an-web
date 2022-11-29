@@ -7,6 +7,8 @@ let item_eachPage=[]
 let currentPage=1
 let type_choices= document.getElementsByClassName("type")
 let price_choices= document.getElementsByClassName("price")
+let backPg = document.querySelector('.back')
+let fowardPg = document.querySelector('.forward')
 
 rendermainPage=(products,item_eachPage,currentPage)=>{
 
@@ -40,19 +42,22 @@ rendermainPage=(products,item_eachPage,currentPage)=>{
             totalPage =Math.ceil(products.length/limitPage)
             let output = "";
             for(let i=1; i<= totalPage; i++)
-            { output += `<div onclick="handlePageNumber(${i})" class="movepage">${i}</div>` }
+            { output += `<div onclick="handlePageNumber(${i})" class="movepage-${i}">${i}</div>` }
             document.getElementById("pagination-numbers").innerHTML=output
 
 //==========================btn-color-change======================
-            let buttons =document.querySelectorAll(".movepage")
-            document.addEventListener("click", function(evt){
-                if(evt.target.classList.contains("movepage")){
-                  buttons.forEach(function(button){
-                    button.classList.remove("active");
-                  });
-                  evt.target.classList.add("active");           
-                }
-              });
+
+            // let buttons =document.querySelectorAll(".movepage")
+            // document.addEventListener("click", function(evt){
+            //     if(evt.target.classList.contains("movepage")){
+            //       buttons.forEach(function(button){
+            //         button.classList.remove("active");
+            //       });
+            //       evt.target.classList.add("active");           
+            //     }
+            //   });
+
+
 
 
         }
@@ -66,6 +71,13 @@ rendermainPage=(products,item_eachPage,currentPage)=>{
             renderItem(item_eachPage) 
             getbuttons(cart)
 
+            let currentPageIndicator = document.querySelector('.movepage-' +currentPage)
+            let pageIndicators = [...document.querySelectorAll('#pagination-numbers div')]
+            pageIndicators.forEach((pageIndicator)=>{
+                pageIndicator.classList.remove('active')
+            })
+            currentPageIndicator.classList.add('active')
+            
             }
             
 //=================================================
@@ -142,10 +154,18 @@ price_clear=(a)=>{
 document.addEventListener("DOMContentLoaded", () => {
     cart = setupAPP(cart);
     cartLogic(cart);
-  rendermainPage(sp,item_eachPage,currentPage)
-  getbuttons(cart)
-            //   document.querySelector(".back").addEventListener("click", ()=>handlePageNumber(currentPage - 1));
-            // document.querySelector(".forward").addEventListener("click", ()=>handlePageNumber(currentPage + 1) );
+    rendermainPage(sp,item_eachPage,currentPage)
+    getbuttons(cart)
+        backPg.addEventListener("click", function(){
+            if(currentPage === 1)
+                return
+            else handlePageNumber(--currentPage)
+        });
+        fowardPg.addEventListener("click", function(){
+            if(currentPage === totalPage)
+                return
+            else handlePageNumber(++currentPage)
+        });
   });
 
 
