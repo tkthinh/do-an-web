@@ -29,7 +29,7 @@ var adding_table = document.querySelector('.adding_table');
  * @type { HTMLSelectElement? }
  */
 //Lựa chọn loại sản phẩm
-var procuct_choice = document.querySelector('#procuct_choice');
+var product_choice = document.querySelector('#product_choice');
 /**
  * @type { HTMLButtonElement? }
  */
